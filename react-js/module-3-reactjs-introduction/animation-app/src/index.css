@@ -1,0 +1,63 @@
+body 
+{
+margin: 0;
+padding: 0;
+overflow-x: hidden;  
+}
+.app
+{
+width: 80%;
+height: auto;
+margin: auto;
+display: flex;
+flex-wrap: wrap;  
+animation: 2s ease alternate fadeInTopLeft;
+}
+.sidebar
+{
+width: 45%;
+height: 400px;
+background-color: black;
+color: white;
+padding: 25px;
+margin-top: 5%;  
+}
+.sidebar span 
+{
+animation: 2s flash infinite;  
+}
+.form
+{
+width: 40%;
+height: 400px;
+background-color: white;
+color: black;
+padding: 25px;  
+margin-top: 5%;
+
+}
+.form input[type="text"],textarea,[type="datetime-local"]
+{
+width: 300px;
+height: auto;
+padding: 10px;
+border: none;
+border-bottom: solid 2px black;
+}
+::placeholder
+{
+  font-size: 18px;
+}
+.form input[type="submit"]
+{
+width: auto;
+height: auto;
+padding: 10px;
+background-color: black;
+color: white;
+border: none;
+}
+.form h1 
+{
+animation: 2s infinite bounce;  
+}

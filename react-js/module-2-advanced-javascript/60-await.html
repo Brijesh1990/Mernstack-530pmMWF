@@ -1,0 +1,17 @@
+<script>
+function getMessage()
+{
+    return new Promise((resolve)=>{
+      setTimeout(()=>{
+        resolve("Hi i am Hetvi");
+      },4000)
+    })
+}
+
+async function showMessage()
+{
+    let message=await getMessage();
+    console.log(message)
+}    
+showMessage();
+</script>

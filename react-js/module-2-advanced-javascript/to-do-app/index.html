@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen py-8 px-4">
+<div class="max-w-2xl mx-auto">
+<div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+<h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">My To-Do List</h1>
+
+<div class="flex gap-2 mb-6">
+<input 
+type="text" 
+id="todoInput" 
+placeholder="Add a new task..." 
+class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+>
+<button 
+onclick="addTodo()" 
+class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold transition"
+>
+Add
+</button>
+</div>
+
+<ul id="todoList" class="space-y-2">
+<!-- Tasks will be added here -->
+</ul>
+
+<div class="mt-6 text-center text-gray-600 text-sm">
+<p>Total tasks: <span id="taskCount">0</span></p>
+</div>
+</div>
+</div>
+
+<script>
+const todoInput = document.getElementById('todoInput');
+const todoList = document.getElementById('todoList');
+const taskCount = document.getElementById('taskCount');
+
+function addTodo() {
+const text = todoInput.value.trim();
+if (text === '') {
+alert('Please enter a task!');
+return;
+}
+
+const li = document.createElement('li');
+li.className = 'flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition';
+li.innerHTML = `
+<input type="checkbox" class="w-5 h-5 cursor-pointer" onchange="toggleComplete(this)">
+<span class="flex-1 text-gray-800">${text}</span>
+<button onclick="deleteTodo(this)" class="text-red-500 hover:text-red-700 font-bold">Delete</button>
+`;
+todoList.appendChild(li);
+todoInput.value = '';
+updateCount();
+}
+
+function toggleComplete(checkbox) {
+const span = checkbox.nextElementSibling;
+span.classList.toggle('line-through');
+span.classList.toggle('text-gray-400');
+}
+
+function deleteTodo(btn) {
+btn.parentElement.remove();
+updateCount();
+}
+
+function updateCount() {
+taskCount.textContent = todoList.children.length;
+}
+
+todoInput.addEventListener('keypress', (e) => {
+if (e.key === 'Enter') addTodo();
+});
+</script>
+</body>
+</html>

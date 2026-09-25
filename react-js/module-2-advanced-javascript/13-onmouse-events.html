@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function display1()
+        {
+            document.getElementById("photo1").src='https://img.freepik.com/free-photo/scarlet-macaw-perched-branch_23-2152007131.jpg?semt=ais_hybrid&w=740&q=80';
+        }
+        
+        function display2()
+        {
+            document.getElementById("photo1").src='https://images.pexels.com/photos/32306337/pexels-photo-32306337/free-photo-of-scarlet-macaw-portrait-in-natural-habitat.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500';
+        }
+    </script>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+        }
+
+        </style>
+</head>
+<body>
+    
+    <img src="https://img.freepik.com/free-photo/scarlet-macaw-perched-branch_23-2152007131.jpg?semt=ais_hybrid&w=740&q=80" alt="photo" id="photo1" onmouseover="display2()" onmouseout="display1()">
+
+
+
+</body>
+</html>

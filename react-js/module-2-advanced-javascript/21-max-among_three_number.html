@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<script src='main.js'></script>
+<script>
+function chk()
+{
+var n1=document.getElementById("n1").value;    
+var n2=document.getElementById("n2").value;
+var n3=document.getElementById("n3").value;
+
+if(n1>n2 && n1>n3)
+{
+document.getElementById("result").innerHTML="N1 is max numbers"
+}
+else if (n2>n1 && n2>n3)
+{
+document.getElementById("result").innerHTML="N2 is max numbers"
+}
+else if (n3>n1 && n3>n2)
+{
+document.getElementById("result").innerHTML="N3 is max numbers"
+}
+else 
+{
+    
+document.getElementById("result").innerHTML="something went wrong contact with admin";
+}
+
+}
+</script>
+</head>
+<body>
+<p id="result"></p>
+<form>
+<input type="text" id="n1" placeholder="Enter N1 number">
+<br><br>
+
+<input type="text" id="n2" placeholder="Enter N2 number">
+<br><br>
+
+<input type="text" id="n3" placeholder="Enter N3 number">
+<br><br>
+
+<button type="button" onclick="chk()">Check here</button>
+</form>
+
+</body>
+</html>

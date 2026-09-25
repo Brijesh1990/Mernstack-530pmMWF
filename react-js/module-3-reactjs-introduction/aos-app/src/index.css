@@ -1,0 +1,100 @@
+body 
+{
+margin: 0;
+padding: 0;
+background: rgba(0,0,255,0.5);
+
+}
+.main
+{
+width: 90%;
+height: auto;
+margin: auto;
+margin-top: 5%;  
+color: white;
+text-align: center;
+}
+.main hr 
+{
+  border: solid 1px white;
+}
+.app
+{
+width: 60%;
+height: auto;
+margin: auto;
+margin-top: 5%;  
+display: flex;
+flex-wrap: wrap;
+}
+.box1 
+{
+width: 30%;
+height: 150px;
+background-color: black;
+border: solid 5px white;
+margin: 10px;
+padding: 10px;  
+}
+
+.box2 
+{
+width: 30%;
+height: 150px;
+background-color: black;
+border: solid 5px white;
+margin: 10px;
+padding: 10px;  
+margin-left: 25%;
+margin-top: 30%;
+}
+.myapp
+{
+width: 50%;
+height: auto;
+margin: auto;
+margin-top: 5%;
+font-size: 45px;  
+}
+.myapp h1 
+{
+   animation: 2s ease bounce infinite;
+}
+.myapp h2 
+{
+  font-size: 80px;
+  color: red;
+  animation: 2s ease bounce infinite;
+}
+.gallery-app
+{
+width: 30%;
+height: auto;
+margin: auto;  
+margin-top: 5%;
+}
+.gallery-app img 
+{
+width: 100%;
+height: auto;  
+border-radius: 50%;
+}
+
+.doll
+{
+width: 100%;
+height: auto;
+margin: auto;  
+}
+.doll img 
+{
+  width: 150px;
+  height: auto;
+  margin-top: 0%;
+  float: right !important;
+  animation: 2s ease fadeIn infinite;
+}
+.clearfix
+{
+  clear: both !important;
+}

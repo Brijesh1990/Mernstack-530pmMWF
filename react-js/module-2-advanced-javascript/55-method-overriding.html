@@ -1,0 +1,21 @@
+<script>
+class A 
+{
+    constructor(a,b)
+    {
+       this.a=a;
+       this.b=b;
+       
+    }
+}    
+class B extends A 
+{
+    constructor(a,b)
+    {
+       super(a,b) 
+    }
+}
+
+var obj=new B(15,10);
+console.log(obj);
+</script>

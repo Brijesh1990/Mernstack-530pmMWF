@@ -1,0 +1,26 @@
+<script>
+class A 
+{
+constructor(name,age)
+{
+    this.name=name;
+    this.age=age;
+}
+}
+class B extends A 
+{
+
+constructor(name,age,department,salary)
+{
+    super(name,age); //that can be access all the properties of class A 
+    this.department=department;
+    this.salary=salary;
+}
+}
+
+//call the object
+var obj=new B("krish",35,"CSE",115000);
+console.log(obj);
+
+// note : a parent class prperties used by its child class via extends keyword
+</script>

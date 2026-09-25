@@ -1,0 +1,47 @@
+<script>
+/*  
+
+for...of loop (used for values)
+
+Iterates over iterable objects
+
+Best for arrays, strings, maps, sets
+
+Cannot be used directly with plain objects
+
+
+for (let value of iterable) {
+    // code
+}
+
+
+*/    
+
+// let emp = ["brijesh", "milan", "rakesh","nilesh"];
+// // for (let name of emp) {
+// //     console.log(name);
+// // }
+
+// // for (let key of emp) {
+// //     console.log(key[0]);
+// // }
+
+// for (let name of emp) {
+//     console.log(name);
+// }
+
+let emp = new Array(); // new Array it is an instance of array
+
+emp[0] = "kumar";
+emp[1] = "brijesh";
+emp[2] = "rajesh";
+emp[3] = "nilesh";
+
+// console.log(emp);
+for(let name of emp)
+{
+  console.log(name);
+}
+
+
+</script>
