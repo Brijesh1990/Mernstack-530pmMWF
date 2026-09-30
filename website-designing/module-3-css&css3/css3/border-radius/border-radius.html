@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>border radius</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+         margin: 0;
+         padding: 0;
+         background-color: aliceblue;   
+        }
+        .parent 
+        {
+            width: 50%;
+            height: auto;
+            margin: auto;
+            margin-top: 5%;
+        }
+        .box1
+        {
+            width: 650px;
+            height: 250px;
+            border: solid 3px;
+            border-radius: 85px 0px 85px 0px;
+            margin-top: 3%;
+        }
+          .box2
+        {
+            width: 650px;
+            height: 250px;
+            border: solid 3px;
+            border-radius: 0px 85px 0px 85px;
+            margin-top: 3%;
+        }
+
+          .box3
+        {
+            width: 650px;
+            height: 650px;
+            border: solid 3px;
+            border-radius: 50%;
+            margin-top: 3%;
+        }
+        
+          .box3:hover
+        {
+            width: 250px;
+            height: 250px;
+            border: solid 3px;
+            border-radius: 50%;
+            margin-top: 3%;
+            background-color: coral;
+            transition: 5s ease all;
+            margin-left: 28%;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</div>    
+</body>
+</html>

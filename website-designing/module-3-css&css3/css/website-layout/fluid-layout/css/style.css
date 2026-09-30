@@ -1,0 +1,92 @@
+/* fluid layout : fluid layout is always width in % and height in %
+Note : fluid layout  help to create responsive content
+
+
+*/
+* 
+{
+margin: 0;
+padding: 0;    
+font-family: cursive;
+}
+body 
+{
+background-color: aliceblue;    
+overflow-x: hidden;
+}
+#header
+{
+width: 100%;
+height: 120px;
+background-color: white;
+top: 0;
+position: sticky;
+border-bottom: solid 2px lightblue;
+}
+
+#navbar
+{
+
+width: 94%;
+height: 100px;
+background-color: white;
+margin-top: 2%;
+margin-left: 3%;
+}
+#slider
+{
+width: 94%;
+height: 250px;
+background-color: white;
+margin-top: 2%;
+margin-left: 3%;   
+}
+#slider img 
+{
+width: 100%;
+height: 250px;
+
+}
+#content
+{
+width: 94%;
+height: auto;
+margin-top: 2%;
+margin-left: 3%;       
+}
+.product-grid
+{
+width: 100%;
+height: auto;
+margin-top: 0;     
+display: flex;
+flex-direction: row;
+}
+.product-grid1
+{
+width: 60%;
+height: 250px;
+background-color: white;
+margin-top: 2%;
+}
+.product-adv1
+{
+width: 30%;
+height: 250px;
+background-color: white;
+margin-left: 5%;
+margin-top: 2%;
+}
+.product-adv1 img
+{
+width: 100%;
+height: 250px;
+}
+
+#footer 
+{
+width: 100%;
+height: 350px;
+background-color: gray;
+margin-top: 3%;    
+}

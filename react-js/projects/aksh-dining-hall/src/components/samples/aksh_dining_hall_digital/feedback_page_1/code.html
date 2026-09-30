@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#f1ede8",
+                    "surface-container-high": "#ebe8e3",
+                    "inverse-on-surface": "#f4f0eb",
+                    "outline": "#8d706e",
+                    "inverse-surface": "#31302d",
+                    "surface-container-highest": "#e6e2dd",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed-dim": "#ffb3ad",
+                    "surface-tint": "#af2d2d",
+                    "surface-bright": "#fdf9f4",
+                    "on-secondary-fixed-variant": "#6b3b00",
+                    "on-secondary-fixed": "#2d1600",
+                    "primary-container": "#af2d2d",
+                    "primary-fixed": "#ffdad7",
+                    "surface": "#fdf9f4",
+                    "on-tertiary-fixed": "#241a00",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "background": "#fdf9f4",
+                    "surface-dim": "#ddd9d5",
+                    "tertiary-container": "#cca72f",
+                    "on-tertiary-container": "#4e3d00",
+                    "on-surface-variant": "#59413f",
+                    "surface-variant": "#e6e2dd",
+                    "on-primary-fixed": "#410004",
+                    "tertiary-fixed": "#ffe088",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "surface-container-low": "#f7f3ee",
+                    "on-secondary-container": "#734000",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "on-primary": "#ffffff",
+                    "primary": "#8d1219",
+                    "secondary-fixed": "#ffdcbf",
+                    "secondary-fixed-dim": "#ffb874",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#8e1319",
+                    "on-surface": "#1c1c19",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#fead5c",
+                    "secondary": "#8c4f00",
+                    "on-background": "#1c1c19",
+                    "inverse-primary": "#ffb3ad",
+                    "on-primary-container": "#ffccc8",
+                    "tertiary": "#735c00",
+                    "outline-variant": "#e1bfbc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="w-full sticky top-0 z-50 bg-[#fdf9f4] dark:bg-stone-950 backdrop-blur-md bg-opacity-90 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold font-['Newsreader'] text-[#8d1219] dark:text-[#af2d2d]">Aksh Dining Hall</div>
+<div class="hidden md:flex gap-8 items-center font-['Newsreader'] uppercase tracking-wide">
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] cursor-pointer active:scale-95 transition-transform" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] cursor-pointer active:scale-95 transition-transform" href="#">Menu</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] cursor-pointer active:scale-95 transition-transform" href="#">About Us</a>
+<a class="text-[#8d1219] dark:text-[#af2d2d] border-b-2 border-[#fead5c] pb-1 cursor-pointer active:scale-95 transition-transform" href="#">Feedback</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-[#8d1219] dark:text-[#af2d2d] cursor-pointer" data-icon="shopping_cart">shopping_cart</span>
+<button class="bg-[#8d1219] text-white px-6 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity active:scale-95">Login</button>
+</div>
+</div>
+</nav>
+
+
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative h-[409px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply z-10"></div>
+<img alt="Restaurant Atmosphere" class="absolute inset-0 w-full h-full object-cover" data-alt="cinematic close-up of a beautifully set fine dining table with elegant brass cutlery and warm ambient candlelight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHykweir1_X7xI2Wn8BTwuuNxl8kdjj54zYj58SjnFadiaB_ShO95Ofo755otMSzkEcU7HaqvLyUFK-y2XIkFVLXz6yL2Inv4z0xBgE0FyvicW7VG_B5r4AOctTJYlPDbV9oivCp1ypWWDRFAhokFwMS6FhVUZy5MBvHJVCSxR2JJprFoHXKedZHNIaAfaomv5umzwkW2ZwxSoEhYAXdoScW1GY0ACxXiUwOXumxgCJOoci_vY_qvsjnlEvdN85w3u1i_GxqTk_cPa"/>
+<div class="relative z-20 text-center px-6">
+<h1 class="text-5xl md:text-7xl text-on-primary font-bold mb-4 drop-shadow-lg">Your Experience Matters</h1>
+<p class="text-on-primary/90 text-lg md:text-xl font-label tracking-widest uppercase">Help us perfect the modern heirloom</p>
+</div>
+</section>
+<!-- Feedback Content -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Feedback Form Side -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-8 md:p-12 shadow-sm">
+<div class="mb-10">
+<h2 class="text-4xl text-primary mb-2">Share Your Thoughts</h2>
+<div class="h-1 w-20 bg-secondary-container"></div>
+</div>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-sm font-label font-semibold text-on-surface-variant uppercase tracking-wider">Full Name</label>
+<input class="w-full bg-surface-container-lowest border-outline-variant/20 border rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all" placeholder="Enter your name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-label font-semibold text-on-surface-variant uppercase tracking-wider">Email Address</label>
+<input class="w-full bg-surface-container-lowest border-outline-variant/20 border rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all" placeholder="your@email.com" type="email"/>
+</div>
+</div>
+<div class="space-y-4">
+<label class="block text-sm font-label font-semibold text-on-surface-variant uppercase tracking-wider">Rate Your Experience</label>
+<div class="flex gap-4">
+<button class="group flex flex-col items-center gap-2" type="button">
+<span class="material-symbols-outlined text-4xl text-secondary-container transition-transform group-hover:scale-110" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[10px] font-label uppercase">1</span>
+</button>
+<button class="group flex flex-col items-center gap-2" type="button">
+<span class="material-symbols-outlined text-4xl text-secondary-container transition-transform group-hover:scale-110" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[10px] font-label uppercase">2</span>
+</button>
+<button class="group flex flex-col items-center gap-2" type="button">
+<span class="material-symbols-outlined text-4xl text-secondary-container transition-transform group-hover:scale-110" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[10px] font-label uppercase">3</span>
+</button>
+<button class="group flex flex-col items-center gap-2" type="button">
+<span class="material-symbols-outlined text-4xl text-secondary-container transition-transform group-hover:scale-110" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[10px] font-label uppercase">4</span>
+</button>
+<button class="group flex flex-col items-center gap-2" type="button">
+<span class="material-symbols-outlined text-4xl text-outline-variant/40 transition-transform group-hover:scale-110" data-icon="star">star</span>
+<span class="text-[10px] font-label uppercase">5</span>
+</button>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-label font-semibold text-on-surface-variant uppercase tracking-wider">Detailed Feedback</label>
+<textarea class="w-full bg-surface-container-lowest border-outline-variant/20 border rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all resize-none" placeholder="Tell us about the flavors, the service, or your evening..." rows="5"></textarea>
+</div>
+<button class="w-full md:w-auto px-12 py-4 bg-primary text-on-primary rounded-lg font-label font-bold uppercase tracking-widest hover:bg-primary/90 active:scale-95 transition-all">
+                            Submit Feedback
+                        </button>
+</form>
+</div>
+<!-- Testimonials/Stats Side -->
+<div class="lg:col-span-5 space-y-12">
+<div class="relative group overflow-hidden rounded-xl">
+<img alt="Culinary Detail" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110" data-alt="aesthetic food photography of traditional Indian appetizer served on a modern dark ceramic plate with micro-greens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgq0nIqg2JwiOhDUUMe87etIpe6_ESjcZaTzsoBxSHeec2u8FbSTVCr0LYK5bV-KeIFikt50G5Ht-x7bwxQddBmsh1JDwoHhyeGrYwFKIo5oQACder8NvnzsiAZrnVpS7utFIsQcK5zP2jy7-ixEFcbEZk371uZ5A6IUYBeqIpoHMLcfaZgzQbIa5xCqaNQpNGaOJFKS6cVJPwIyqEPZtp4iZ0i3nXY1Zk0_7qweTFopYSmOEBS3KFTtRwGaofjRigOJ5_seQ7Y0z_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+<p class="text-on-primary italic font-headline text-2xl leading-relaxed">"A masterclass in balancing ancestral recipes with contemporary elegance."</p>
+</div>
+</div>
+<div class="space-y-8">
+<h3 class="text-3xl text-primary">Voices of our Guests</h3>
+<div class="space-y-6">
+<!-- Testimonial 1 -->
+<div class="p-6 bg-surface-container rounded-lg border-l-4 border-secondary transition-all hover:bg-surface-container-high">
+<div class="flex gap-1 mb-3">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-4">"The smoked dal makhani was unlike anything I've tasted in years. The atmosphere is quiet, sophisticated, and deeply welcoming."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-bold">AK</div>
+<div>
+<p class="text-sm font-bold uppercase tracking-tight">Anjali Kapoor</p>
+<p class="text-[10px] text-on-surface-variant font-label">DINED OCT 2023</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-6 bg-surface-container rounded-lg border-l-4 border-secondary transition-all hover:bg-surface-container-high">
+<div class="flex gap-1 mb-3">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm text-outline-variant/40" data-icon="star">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-4">"Impeccable service. They really take the heirloom concept seriously. Every dish tells a story."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-bold">MS</div>
+<div>
+<p class="text-sm font-bold uppercase tracking-tight">Michael Sterling</p>
+<p class="text-[10px] text-on-surface-variant font-label">DINED SEP 2023</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Closing Bento Section -->
+<section class="bg-surface-container-low py-20 mt-12">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 bg-surface rounded-xl p-10 flex flex-col justify-center border border-outline-variant/10">
+<h3 class="text-4xl text-primary mb-4">A Legacy of Taste</h3>
+<p class="text-on-surface-variant max-w-xl text-lg">We review every piece of feedback during our weekly culinary council meetings. Your voice directly shapes our next seasonal menu.</p>
+</div>
+<div class="bg-secondary-container rounded-xl p-10 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-5xl text-on-secondary-container mb-4" data-icon="restaurant" data-weight="fill" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<h4 class="text-xl font-bold text-on-secondary-container uppercase tracking-widest mb-2">4.8 / 5.0</h4>
+<p class="text-on-secondary-container/80 text-sm font-label">AVERAGE GUEST RATING</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 mt-auto bg-[#f7f3ee] dark:bg-stone-900">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 max-w-7xl mx-auto">
+<div class="text-xl font-['Newsreader'] text-[#8d1219]">Aksh Dining Hall</div>
+<div class="flex gap-8 font-['Plus_Jakarta_Sans'] text-sm">
+<a class="text-stone-500 hover:text-[#8d1219] underline decoration-[#fead5c] underline-offset-4 transition-all duration-200" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-[#8d1219] underline decoration-[#fead5c] underline-offset-4 transition-all duration-200" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-[#8d1219] underline decoration-[#fead5c] underline-offset-4 transition-all duration-200" href="#">Contact Us</a>
+</div>
+<div class="text-stone-500 font-['Plus_Jakarta_Sans'] text-sm">
+                © 2024 Aksh Dining Hall. The Modern Heirloom.
+            </div>
+</div>
+</footer>
+</body></html>

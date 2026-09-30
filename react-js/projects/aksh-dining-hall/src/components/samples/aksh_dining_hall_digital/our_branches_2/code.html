@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-secondary-container": "#734000",
+                    "on-primary-fixed": "#410004",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#e1bfbc",
+                    "on-surface": "#1c1c19",
+                    "inverse-on-surface": "#f4f0eb",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#241a00",
+                    "tertiary": "#735c00",
+                    "surface-container-highest": "#e6e2dd",
+                    "primary-container": "#af2d2d",
+                    "surface-variant": "#e6e2dd",
+                    "primary-fixed-dim": "#ffb3ad",
+                    "on-secondary-fixed": "#2d1600",
+                    "surface-container": "#f1ede8",
+                    "secondary": "#8c4f00",
+                    "surface-container-low": "#f7f3ee",
+                    "on-error-container": "#93000a",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#fdf9f4",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "inverse-surface": "#31302d",
+                    "secondary-container": "#fead5c",
+                    "outline": "#8d706e",
+                    "secondary-fixed": "#ffdcbf",
+                    "on-surface-variant": "#59413f",
+                    "on-secondary-fixed-variant": "#6b3b00",
+                    "background": "#fdf9f4",
+                    "primary": "#8d1219",
+                    "surface-dim": "#ddd9d5",
+                    "surface": "#fdf9f4",
+                    "on-primary-fixed-variant": "#8e1319",
+                    "tertiary-container": "#cca72f",
+                    "on-background": "#1c1c19",
+                    "secondary-fixed-dim": "#ffb874",
+                    "inverse-primary": "#ffb3ad",
+                    "on-primary-container": "#ffccc8",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#ffe088",
+                    "primary-fixed": "#ffdad7",
+                    "surface-container-high": "#ebe8e3",
+                    "on-tertiary-container": "#4e3d00",
+                    "surface-tint": "#af2d2d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 50px -12px rgba(28, 28, 25, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="w-full sticky top-0 z-50 bg-[#fdf9f4] dark:bg-stone-950 backdrop-blur-md bg-opacity-90 shadow-sm dark:shadow-none">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold font-['Newsreader'] text-[#8d1219] dark:text-[#af2d2d]">Aksh Dining Hall</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] font-['Newsreader'] uppercase tracking-wide transition-colors duration-300" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] font-['Newsreader'] uppercase tracking-wide transition-colors duration-300" href="#">Menu</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] font-['Newsreader'] uppercase tracking-wide transition-colors duration-300" href="#">About Us</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] font-['Newsreader'] uppercase tracking-wide transition-colors duration-300" href="#">Feedback</a>
+<a class="text-[#8d1219] dark:text-[#af2d2d] border-b-2 border-[#fead5c] pb-1 font-['Newsreader'] uppercase tracking-wide" href="#">Branches</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="cursor-pointer active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[#8d1219]" data-icon="shopping_cart">shopping_cart</span>
+</div>
+<button class="bg-[#8d1219] text-white px-6 py-2 rounded-lg font-['Plus_Jakarta_Sans'] uppercase tracking-widest text-xs font-bold hover:bg-[#af2d2d] transition-colors duration-300">Login</button>
+</div>
+</nav>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-16">
+<!-- Hero Section -->
+<section class="relative mb-24 flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2 z-10">
+<span class="text-secondary font-medium tracking-[0.2em] uppercase text-sm mb-4 block">Our Presence</span>
+<h1 class="font-headline text-6xl md:text-8xl text-primary leading-tight mb-8">Sacred Spaces of <span class="italic">Taste</span></h1>
+<p class="text-on-surface-variant text-lg max-w-md leading-relaxed">From the bustling streets of Ahmedabad to the royal charm of Rajkot, we bring the heirloom recipes of Gujarat to four distinct architectural landmarks.</p>
+</div>
+<div class="w-full md:w-3/5 h-[500px] relative">
+<div class="absolute -top-12 -left-12 w-full h-full bg-surface-container-low rounded-xl -z-10"></div>
+<img class="w-full h-full object-cover rounded-xl editorial-shadow" data-alt="ultra-wide interior shot of a luxurious Indian fine dining hall with vaulted ceilings, warm pendant lighting, and dark wood accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnw6Rw2DCi559UfHB-u685WqP27tmGndaV0vRM26dWkR1AqpM3VB8seuFOTW8RlrrzaNYLXQWzozNGAmkUgAiteR7AP7UREB3AbY-BsU2DCROc6EliIVOWMg7zx7M_LxwkR7oXemVdM5cCOJbUbUBIN1VgKDSavf2Uxg9bHY3jYVM2-XnXdiBxo8gfNiWuVeoRLjIJrhQoK0Bzo1KCowzbK8hYvOqgg18WQ34Ph4Vs_nmF88F8bDkSBvGqgfAfkhELkUSrHBD1KP5X"/>
+</div>
+</section>
+<!-- Branches Grid: Asymmetric Layout -->
+<div class="space-y-32">
+<!-- Branch 1: Ahmedabad (Flagship) -->
+<section class="flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/2 group">
+<div class="relative overflow-hidden rounded-xl">
+<img class="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="architectural shot of a modern restaurant facade in Ahmedabad with sandstone pillars and lush tropical landscaping at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClQdOkDP5KvZmP7lo6YphqI4MUz1vM7YmJFeAKo3slBKnYjAvgT0wJK1fDo_gDX4AaUnf6DaixFyAAnYp94wdIw_kUl1tA7hqrozS9Cw_HI1HXKmn2RecT4qTQouLcH9-hJNtKaXV02EMOtte4asM6J11Ztxr8yGizEhV-NqAnYkKoBCwX7lBsI9ksaBnq9-5fhUpa8axs94eNqWIekcBjA_effgtI4XMI3rMnOJEBzy9wGehwKa_tQWcWUmrWaxWqxvnv4KDO0haF"/>
+<div class="absolute top-8 right-8 bg-surface-container-lowest/90 backdrop-blur px-6 py-2 rounded-full text-primary font-bold tracking-widest text-xs uppercase">Flagship</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 lg:pl-12">
+<h2 class="font-headline text-5xl text-on-surface mb-6">Ahmedabad</h2>
+<div class="space-y-6 mb-10">
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
+<p class="text-on-surface-variant font-body">Heritage Square, Sindhu Bhavan Road, Ahmedabad, GJ 380054</p>
+</div>
+<div class="flex gap-4 items-center">
+<span class="material-symbols-outlined text-secondary" data-icon="call">call</span>
+<p class="text-on-surface-variant font-body">+91 79 4005 8822</p>
+</div>
+<div class="flex gap-4 items-center">
+<span class="material-symbols-outlined text-secondary" data-icon="schedule">schedule</span>
+<p class="text-on-surface-variant font-body">11:30 AM – 3:30 PM, 7:00 PM – 11:00 PM</p>
+</div>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold tracking-widest text-sm uppercase flex items-center gap-3 hover:bg-secondary hover:text-on-secondary transition-all">
+                        View on Map
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_outward">arrow_outward</span>
+</button>
+</div>
+</section>
+<!-- Branch 2: Rajkot (The Royal Estate) -->
+<section class="flex flex-col md:flex-row-reverse gap-12 items-center">
+<div class="w-full md:w-1/2 group">
+<div class="relative overflow-hidden rounded-xl">
+<img class="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="interior of a royal themed dining hall in Rajkot with ornate gold leaf details, velvet chairs, and traditional jali patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1RzOnYyB3UamCeoQvMje5YKsVYY06mKK3hCK8UvBE-wn2DdVF2Jx8uWHgjTXXyZ-bT1ENy3EBu_EpkyiFgvvZK4HV6oSAk3L6ic4nwUxV5aeLBWDj_0kswQd0xVZqgzO42DqeqTiiVStGF7iKi1leVoBMvpbKXkbA4UUWs7CnxrQC3-hP5Eyhm16k8boU-6HNItSnb462Xk71e2IfM3CH_D-xMYTqtEWTh0jtVWVfXfwjcUH3RqsCxQ1fuWwLIWeggiJIpLICuA_A"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 lg:pr-12">
+<h2 class="font-headline text-5xl text-on-surface mb-6">Rajkot</h2>
+<div class="space-y-6 mb-10">
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
+<p class="text-on-surface-variant font-body">Palace Road, Near Jubilee Garden, Rajkot, GJ 360001</p>
+</div>
+<div class="flex gap-4 items-center">
+<span class="material-symbols-outlined text-secondary" data-icon="call">call</span>
+<p class="text-on-surface-variant font-body">+91 281 223 4455</p>
+</div>
+<div class="flex gap-4 items-center">
+<span class="material-symbols-outlined text-secondary" data-icon="schedule">schedule</span>
+<p class="text-on-surface-variant font-body">12:00 PM – 4:00 PM, 7:00 PM – 11:30 PM</p>
+</div>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold tracking-widest text-sm uppercase flex items-center gap-3 hover:bg-secondary hover:text-on-secondary transition-all">
+                        View on Map
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_outward">arrow_outward</span>
+</button>
+</div>
+</section>
+<!-- Bento-style grid for smaller branches -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Branch 3: Vadodara -->
+<article class="bg-surface-container-low p-8 rounded-xl flex flex-col">
+<img class="w-full h-64 object-cover rounded-lg mb-8" data-alt="minimalist modern restaurant interior in Vadodara with clean lines, light oak wood, and floor-to-ceiling windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3KaM-axXJRNxh-Iq8mZ_FhYdY6ERJ67NKCyarkSUgmJiOiIjBSE_znlJoAH6-0LKIYVA3eW5A9lsKhB5NERQy4XbyfI4O8FT6nwdeJoirVS3aXnTypeJXZemfMLNJ3iK8nxyeIX_iN1LJ1MDzqaRiToBKU0B-EP0a7Gfr8wnaauEubbohnjaC5GcSv_aVxtBb9nl25nMVCG7OfcBZSBRhB0R8Hep9Cn1BCyImkXOClgDSQou3bZMlyyC-wmtV72KQiccoCXJprU2L"/>
+<h3 class="font-headline text-4xl text-on-surface mb-4">Vadodara</h3>
+<div class="flex-grow space-y-4 mb-8">
+<p class="text-on-surface-variant text-sm"><span class="font-bold text-secondary mr-2">ADD:</span> Alkapuri Commercial Hub, RC Dutt Road, Vadodara</p>
+<p class="text-on-surface-variant text-sm"><span class="font-bold text-secondary mr-2">PH:</span> +91 265 233 1122</p>
+</div>
+<button class="border border-outline-variant text-primary font-bold py-3 rounded-lg uppercase tracking-widest text-xs hover:bg-surface-container-highest transition-colors">View on Map</button>
+</article>
+<!-- Branch 4: Surat -->
+<article class="bg-surface-container-low p-8 rounded-xl flex flex-col">
+<img class="w-full h-64 object-cover rounded-lg mb-8" data-alt="chic restaurant lounge in Surat featuring emerald green booths and brass accents under warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDshYmdfRGLXstiFDOs-4WodI_eyQA2dj1n0jUJMTTettmSo1bGfHIGlqlDjVQJojCiOgqBde-V_pRG0uopv7HA_Zvv9uoLQGHDGtv_MfKkYoLRba8GSIkCyELbA4_vpHS39NxD2YdqQkZvgsTPVr5selEXGZsOPrYbiIKQEjuz-5pCs1szXsjaqzDoEfMAHBYfLAHaX6aZWRvF7RjfrHMl6Kj2b-6OAYuLiBbqQQ_ZmloKPCbIrJnwqn6t867NirDQziA7vrpGMnrM"/>
+<h3 class="font-headline text-4xl text-on-surface mb-4">Surat</h3>
+<div class="flex-grow space-y-4 mb-8">
+<p class="text-on-surface-variant text-sm"><span class="font-bold text-secondary mr-2">ADD:</span> Diamond Plaza, Adajan Road, Surat</p>
+<p class="text-on-surface-variant text-sm"><span class="font-bold text-secondary mr-2">PH:</span> +91 261 278 9900</p>
+</div>
+<button class="border border-outline-variant text-primary font-bold py-3 rounded-lg uppercase tracking-widest text-xs hover:bg-surface-container-highest transition-colors">View on Map</button>
+</article>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 mt-24 bg-[#f7f3ee] dark:bg-stone-900">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 max-w-7xl mx-auto">
+<div class="text-xl font-['Newsreader'] text-[#8d1219]">Aksh Dining Hall</div>
+<div class="flex gap-8">
+<a class="text-stone-500 hover:text-[#8d1219] font-['Plus_Jakarta_Sans'] text-sm transition-all duration-200 underline decoration-[#fead5c] underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-[#8d1219] font-['Plus_Jakarta_Sans'] text-sm transition-all duration-200 underline decoration-[#fead5c] underline-offset-4" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-[#8d1219] font-['Plus_Jakarta_Sans'] text-sm transition-all duration-200 underline decoration-[#fead5c] underline-offset-4" href="#">Contact Us</a>
+</div>
+<div class="text-stone-500 font-['Plus_Jakarta_Sans'] text-sm">© 2024 Aksh Dining Hall. The Modern Heirloom.</div>
+</div>
+</footer>
+</body></html>

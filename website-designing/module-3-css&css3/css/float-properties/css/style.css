@@ -1,0 +1,32 @@
+body 
+{
+margin: 0;
+padding: 0;
+background-color: aqua;    
+}
+
+#content 
+{
+width: 60%;
+height: 250px;
+margin: auto;
+background-color: white;
+box-shadow: 1px 2px 1px 2px;  
+margin-top: 5%;  
+padding: 35px;
+}
+
+.box1 
+{
+width: 50%;
+height: 250px;
+background-color: white;   
+float: left; 
+}
+.box2
+{
+width: 50%;
+height: 250px;
+background-color: black;   
+float: right;
+}

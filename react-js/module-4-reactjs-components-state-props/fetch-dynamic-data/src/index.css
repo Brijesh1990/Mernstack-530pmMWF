@@ -1,0 +1,36 @@
+body 
+{
+margin: 0;
+padding: 0;  
+}
+h1 
+{
+font-size: 45px;
+margin-top: 5%;
+text-decoration: underline;  
+}
+.app 
+{
+width: 80%;
+height: auto;
+margin: auto;
+border-right: solid 2px gray;
+display: flex;
+flex-wrap: wrap; 
+margin-top: 8%; 
+}
+.emp-grid
+{
+width: 30%;
+height: auto;
+margin: 3px;
+padding: 10px;
+font-size: 20px;
+border-left: solid 1px gray;  
+text-align: center;
+}
+.emp-grid img 
+{
+width: 150px;
+height: 120px;  
+}

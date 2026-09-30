@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<!-- tailwinds css -->
+<link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+<!-- font address  -->
+ <link rel='stylesheet' type='text/css' media='screen' href='css/font-awesome.css'>
+<!-- tailwind js -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+<header class="bg-white shadow top-0  z-50 sticky">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Top row -->
+    <div class="flex items-center justify-between py-4">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <h1 class="font-bold text-3xl sm:text-4xl">
+            <a href="index.html">
+          <span class="text-yellow-400">Blink</span
+          ><span class="text-green-600">it</span>
+          </a></h1>
+      </div>
+
+      <!-- Desktop / Tablet search -->
+      <div class="hidden md:block flex-1 mx-6">
+        <input
+          type="text"
+          placeholder="Search for products..."
+          class="border border-gray-300 rounded-full px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
+      </div>
+
+      <!-- Desktop / Tablet buttons -->
+      <div class="hidden md:flex items-center gap-3">
+        <button command="show-modal" commandfor="dialog"
+          class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700"
+        >
+          Login
+        </button>
+        <button command="show-modal" commandfor="dialog1"
+          class="bg-yellow-400 text-white px-4 py-2 rounded-full hover:bg-yellow-500"
+        >
+          Cart
+        </button>
+      </div>
+
+      <!-- Mobile toggler -->
+      <button
+        id="menuToggle"
+        class="md:hidden inline-flex items-center justify-center p-2 rounded-md border border-gray-200 hover:bg-gray-100"
+        aria-label="Toggle menu"
+      >
+        <!-- simple hamburger icon -->
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile dropdown menu -->
+    <div id="mobileMenu" class="md:hidden space-y-3 pb-4 hidden">
+      <!-- search box -->
+      <div>
+        <input
+          type="text"
+          placeholder="Search for products..."
+          class="border border-gray-300 rounded-full px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
+      </div>
+
+      <!-- login & cart buttons -->
+      <div class="flex flex-col xs:flex-row gap-3">
+        <button command="show-modal" commandfor="dialog"
+          class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 w-full"
+        >
+          Login
+        </button>
+        <button command="show-modal" commandfor="dialog1"
+          class="bg-yellow-400 text-white px-4 py-2 rounded-full hover:bg-yellow-500 w-full"
+        >
+          Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- content section -->
+<section class="w-full bg-gray-50 min-h-screen">
+    <!-- Hero Section -->
+    <div class="mx-auto max-w-7xl px-6 py-20 text-center">
+        <h1 class="text-4xl font-bold text-gray-900 md:text-5xl">
+            Join the Team That Delivers Fast!
+        </h1>
+        <p class="mt-4 text-lg text-gray-600 md:max-w-2xl md:mx-auto">
+            Help us build the fastest grocery delivery experience. We are hiring across
+            engineering, design, operations, product & more.
+        </p>
+        <button class="mt-6 bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition">
+            View Open Positions
+        </button>
+    </div>
+
+    <!-- Features / Culture Section -->
+    <div class="mx-auto max-w-7xl px-6 py-16 grid gap-10 md:grid-cols-3">
+        <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold text-gray-800">Fast-Moving Culture</h3>
+            <p class="mt-3 text-gray-600">
+                Work in a high-energy, fast-paced environment where decisions happen quickly.
+            </p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold text-gray-800">Solve Real Problems</h3>
+            <p class="mt-3 text-gray-600">
+                Build products used by millions of customers every day.
+            </p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold text-gray-800">Grow With Us</h3>
+            <p class="mt-3 text-gray-600">
+                Learn, grow, and accelerate your career with mentorship & ownership.
+            </p>
+        </div>
+    </div>
+
+    <!-- Job Categories -->
+    <div class="mx-auto max-w-7xl px-6 py-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">Departments</h2>
+
+        <div class="grid gap-6 md:grid-cols-3">
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition cursor-pointer">
+                <h3 class="text-xl font-semibold mb-2">Engineering</h3>
+                <p class="text-gray-600">Backend, Frontend, Infra, QA</p>
+            </div>
+
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition cursor-pointer">
+                <h3 class="text-xl font-semibold mb-2">Product & Design</h3>
+                <p class="text-gray-600">Product Managers, UX/UI Designers</p>
+            </div>
+
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition cursor-pointer">
+                <h3 class="text-xl font-semibold mb-2">Operations</h3>
+                <p class="text-gray-600">Supply chain, City Ops, Fleet</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Job Listing Grid -->
+    <div class="mx-auto max-w-7xl px-6 py-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">Open Roles</h2>
+
+        <div class="grid gap-8 md:grid-cols-2">
+            <!-- Job Card -->
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold text-gray-800">Frontend Engineer</h3>
+                <p class="text-gray-600 mt-1">Bengaluru • Full-time</p>
+                <button type="button" command="show-modal" commandfor="dialog2" class="mt-4 text-green-600 font-semibold hover:underline" >
+                    Apply Now →
+                </button>
+            </div>
+
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold text-gray-800">Product Designer</h3>
+                <p class="text-gray-600 mt-1">Gurgaon • Full-time</p>
+                <button type="button" command="show-modal" commandfor="dialog2" class="mt-4 text-green-600 font-semibold hover:underline">
+                    Apply Now →
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-green-600 text-white py-16 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold">Ready to Build Something Big?</h2>
+        <p class="mt-4 opacity-90 md:max-w-xl mx-auto">
+            Join our mission to make grocery delivery faster and smarter.
+        </p>
+        <button class="mt-6 bg-white text-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+            Explore Careers
+        </button>
+    </div>
+</section>
+
+<!-- create a footer of blinkit -->
+ <footer class="bg-gray-100 mt-10 py-10">
+  <div class="max-w-7xl mx-auto px-4">
+    
+    <!-- Top Section -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-gray-700">
+      
+      <!-- About -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">About Blinkit</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="about.html" class="hover:text-black">About us</a></li>
+          <li><a href="career.html" class="hover:text-black">Careers</a></li>
+          <li><a href="press.html" class="hover:text-black">Press</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Categories</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="fruits.html" class="hover:text-black">Fruits & Vegetables</a></li>
+          <li><a href="dairy.html" class="hover:text-black">Dairy & Bakery</a></li>
+          <li><a href="snacks.html" class="hover:text-black">Snacks & Beverages</a></li>
+        </ul>
+      </div>
+
+      <!-- Customer Help -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Customer Help</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="faq.html" class="hover:text-black">FAQ</a></li>
+          <li><a href="privacy.html" class="hover:text-black">Privacy Policy</a></li>
+          <li><a href="terms.html" class="hover:text-black">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Follow Us</h3>
+        <div class="flex items-center space-x-4 text-2xl text-gray-600">
+          <i class="fa fa-facebook hover:text-blue-600"></i>
+          <i class="fa fa-twitter hover:text-blue-400"></i>
+          <i class="fa fa-instagram hover:text-pink-500"></i>
+          <i class="fa fa-whatsapp hover:text-green-500"></i>
+          <i class="fa fa-snapchat hover:text-yellow-500"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-300 my-6"></div>
+
+    <!-- Bottom Section -->
+    <div class="text-center text-sm text-gray-600">
+      &copy; 2024 Blinkit. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- login form modal -->
+<el-dialog>
+  <dialog id="dialog" aria-labelledby="dialog-title" class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent top-0   mt-5">
+    <el-dialog-backdrop class="fixed inset-0 bg-gray-300 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
+
+    <div tabindex="0" class="w-100 mx-auto mt-15 min-h-full rounded-2xl items-end justify-center p-10 text-center focus:outline-none sm:items-center sm:p-0">
+      
+      <el-dialog-panel class="relative transform overflow-hidden rounded-3xl bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
+
+        <div class="bg-white p-15 px-4 pt-5 pb-4 sm:p-0 sm:pb-0">
+          <div class="sm:flex sm:items-start">
+           
+            <div class="mt-3 text-center p-10 sm:mt-0 sm:ml-4 sm:text-left">
+              <h3 id="dialog-title" class="font-semibold text-gray-900 text-4xl">Login Form</h3>
+              <div class="mt-2 ">
+                <form class="space-y-4">
+                  <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+                    <input type="email" id="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring-yellow-400 focus:border-yellow-400" placeholder="you@example.com" />
+                  </div>
+
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                        <input type="password" id="password" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring-yellow-400 focus:border-yellow-400" placeholder="Enter your password" />
+                    </div>
+
+                     <div>
+                      
+                        <input type="submit" id="password" class="mt-1 block w-full border border-red-500 bg-red-500 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring-yellow-400 focus:border-yellow-400" placeholder="Enter your password" value="Login" />
+                    </div>
+
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+          <button type="button" command="close" commandfor="dialog" class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-red-500 sm:ml-3 sm:w-auto">Deactivate</button>
+          <button type="button" command="close" commandfor="dialog" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs inset-ring inset-ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Cancel</button>
+        </div>
+      </el-dialog-panel>
+    </div>
+  </dialog>
+</el-dialog>
+<!-- cart  modal -->
+<el-dialog>
+  <dialog id="dialog1" aria-labelledby="dialog-title" class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent top-0   mt-5">
+    <el-dialog-backdrop class="fixed inset-0 bg-gray-300 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
+
+    <div tabindex="0" class="w-100 mx-auto mt-25 rounded-2xl min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0">
+      <el-dialog-panel class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
+
+        <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <div class="sm:flex sm:items-start p-10">
+           
+            <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                <h3 id="dialog-title" class="font-semibold text-gray-900 text-4xl">Cart Items</h3>
+                <div class="mt-2">
+                <p class="text-gray-500">Your cart is currently empty.</p>
+                <!-- add button go to home -->
+                <div class="mt-4">
+                   <!-- create a login button -->
+                     <button command="show-modal" commandfor="dialog"
+          class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 w-full"
+        >
+          Login
+        </button>
+                </div>
+           
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+        <a href="index.html" class="inline-block bg-red-600 text-white px-4 py-2 rounded-full hover:bg-green-700">Go to Home</a>
+        </div>
+      </el-dialog-panel>
+    </div>
+  </dialog>
+</el-dialog>
+<!-- apply now modal -->
+<el-dialog>
+  <dialog id="dialog2" aria-labelledby="dialog-title" class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent top-0   mt-5">
+    <el-dialog-backdrop class="fixed inset-0 bg-gray-300 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
+
+    <div tabindex="0" class="w-100 mx-auto mt-15 min-h-full rounded-2xl items-end justify-center p-10 text-center focus:outline-none sm:items-center sm:p-0">
+      
+      <el-dialog-panel class="relative transform overflow-hidden rounded-3xl bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
+
+        <div class="bg-white p-15 px-4 pt-5 pb-4 sm:p-0 sm:pb-0">
+          <div class="sm:flex sm:items-start">
+
+            <div class="mt-3 text-center p-10 sm:mt-0 sm:ml-4 sm:text-left">
+  <h3 id="dialog-title" class="font-semibold text-gray-900 text-4xl">
+    Apply Now
+  </h3>
+
+  <div class="mt-6">
+    <form class="space-y-5">
+
+      <!-- Full Name -->
+      <div>
+        <label for="fullname" class="block text-sm font-medium text-gray-700">
+          Full Name
+        </label>
+        <input
+          type="text"
+          id="fullname"
+          class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 
+          focus:outline-none focus:ring-yellow-400 focus:border-yellow-400"
+          placeholder="Enter your full name"
+        />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">
+          Email Address
+        </label>
+        <input
+          type="email"
+          id="email"
+          class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 
+          focus:outline-none focus:ring-yellow-400 focus:border-yellow-400"
+          placeholder="you@example.com"
+        />
+      </div>
+
+      <!-- Phone -->
+      <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700">
+          Phone Number
+        </label>
+        <input
+          type="text"
+          id="phone"
+          class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 
+          focus:outline-none focus:ring-yellow-400 focus:border-yellow-400"
+          placeholder="+91 9876543210"
+        />
+      </div>
+
+      <!-- Role Selection -->
+      <div>
+        <label for="position" class="block text-sm font-medium text-gray-700">
+          Position Applying For
+        </label>
+        <select
+          id="position"
+          class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 
+          focus:outline-none focus:ring-yellow-400 focus:border-yellow-400"
+        >
+          <option>Frontend Developer</option>
+          <option>Backend Developer</option>
+          <option>UI/UX Designer</option>
+          <option>Product Manager</option>
+          <option>Operations Executive</option>
+        </select>
+      </div>
+
+      <!-- Resume Upload -->
+      <div>
+        <label for="resume" class="block text-sm font-medium text-gray-700">
+          Upload Resume (PDF)
+        </label>
+        <input
+          type="file"
+          id="resume"
+          accept=".pdf"
+          class="mt-2 block w-full border border-gray-300 rounded-md px-3 py-2 
+          bg-white shadow-sm focus:outline-none focus:ring-yellow-400 focus:border-yellow-400"
+        />
+      </div>
+
+      <!-- Cover Letter -->
+      <div>
+        <label for="cover" class="block text-sm font-medium text-gray-700">
+          Cover Letter (optional)
+        </label>
+        <textarea
+          id="cover"
+          rows="4"
+          class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 
+          focus:outline-none focus:ring-yellow-400 focus:border-yellow-400"
+          placeholder="Tell us why you're a great fit..."
+        ></textarea>
+      </div>
+
+      <!-- Submit -->
+      <div>
+        <input
+          type="submit"
+          value="Submit Application"
+          class="mt-1 block w-full border border-green-600 bg-green-600 text-white 
+          rounded-md shadow-sm px-3 py-2 cursor-pointer 
+          hover:bg-green-700 transition font-semibold
+          focus:outline-none focus:ring-yellow-400 focus:border-yellow-400"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+
+           
+           
+          </div>
+        </div>
+       
+      </el-dialog-panel>
+    </div>
+  </dialog>
+</el-dialog>
+<!-- modal js -->
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+<!-- simple JS for toggler -->
+<script>
+  const menuBtn = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+</body>
+</html>

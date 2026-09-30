@@ -1,0 +1,12 @@
+{
+  "addtask": [
+    {
+      "taskName": "flutter mobile app ",
+      "taskPriority": "low",
+      "taskDate": "2026-05-29",
+      "taskDetails": "call api in mobile using flutter ",
+      "id": "mcl7gws_15A"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

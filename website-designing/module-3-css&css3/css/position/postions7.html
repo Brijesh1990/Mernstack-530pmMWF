@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            z-index: 1000;
+        }
+        section {
+            padding: 20px;
+            height: 2000px; /* For demonstration purposes */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Sticky Header
+    </header>
+    <section>
+        <p>Scroll down to see the sticky header in action.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,101 @@
+{
+  "users": [
+    {
+      "fname": "brijesh",
+      "lname": "pandey",
+      "email": "bk@gmail.com",
+      "phone": "9121212121",
+      "uname": "brij",
+      "role": "admin",
+      "address": "user",
+      "password": "123",
+      "confirmpassword": "123",
+      "id": "UopPVfLV1Js"
+    },
+    {
+      "fname": "brijesh",
+      "lname": "pandey",
+      "email": "bk@gmail.com",
+      "phone": "9121212121",
+      "uname": "brij",
+      "role": "admin",
+      "address": "user",
+      "password": "123",
+      "confirmpassword": "123",
+      "id": "l5M7QxlGbLE"
+    },
+    {
+      "fname": "brijesh",
+      "lname": "pandey",
+      "email": "bk@gmail.com",
+      "phone": "9121212121",
+      "uname": "brij",
+      "role": "admin",
+      "address": "user",
+      "password": "123",
+      "confirmpassword": "123",
+      "id": "GkB5OtccEI0"
+    },
+    {
+      "fname": "brijesh",
+      "lname": "pandey",
+      "email": "bk@gmail.com",
+      "phone": "9121212121",
+      "uname": "brij",
+      "role": "admin",
+      "address": "user",
+      "password": "123",
+      "confirmpassword": "123",
+      "id": "RkBUf3ot0JA"
+    },
+    {
+      "fname": "brijesh",
+      "lname": "pandey",
+      "email": "bk@gmail.com",
+      "phone": "9121212121",
+      "uname": "brij",
+      "role": "admin",
+      "address": "user",
+      "password": "123",
+      "confirmpassword": "123",
+      "id": "oza7CdCY8go"
+    },
+    {
+      "fname": "brijesh",
+      "lname": "pandey",
+      "email": "bk@gmail.com",
+      "phone": "9121212121",
+      "uname": "brij",
+      "role": "admin",
+      "address": "user",
+      "password": "123",
+      "confirmpassword": "123",
+      "id": "CnTnjZ7XIeg"
+    },
+    {
+      "fname": "mitesh",
+      "lname": "pandey",
+      "email": "b@gmail.com",
+      "phone": "921212121",
+      "uname": "user",
+      "role": "manager",
+      "address": "hi",
+      "password": "123",
+      "confirmpassword": "123",
+      "id": "SLkAddnR-a0"
+    },
+    {
+      "fname": "aaa",
+      "lname": "aaa",
+      "email": "a@gmail.com",
+      "phone": "921212121",
+      "uname": "aaa",
+      "role": "admin",
+      "address": "aa",
+      "password": "aa",
+      "confirmpassword": "aa",
+      "id": "WAahhy70-38"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,11 @@
+.app 
+{
+width: 60%;
+height: auto;
+margin: auto;
+padding: 20px;  
+}
+.app button{
+ width: 10%;
+ height: auto; 
+} 

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flipkart Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fk-fav.png" />
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-blue-600 w-full text-white sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center gap-3">
+       <a href="index.html"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fk-logo_9fddff.png" class="w-25" alt="Flipkart Logo"></a>
+        <div class="lg:block w-full ms-45">
+          <input type="text" placeholder="Search for Products, Brands and More"
+            class="bg-white w-150 rounded px-3 py-2 text-black outline-none" />
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <button class="hidden sm:inline-block text-sm hover:underline">Become a Seller</button>
+        <button class="hidden sm:inline-block text-sm hover:underline">More</button>
+       <a href="cart.html"><button class="flex items-center gap-2 bg-blue-700 px-3 py-2 rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9h14l-2-9m-6 9a2 2 0 100-4 2 2 0 000 4z" />
+          </svg>
+          <span>Cart</span> 
+        </button></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- cart view section -->
+<!-- View Cart Section -->
+<section class="max-w-7xl mx-auto mt-10 px-4">
+  <h2 class="text-2xl font-semibold mb-6 text-gray-800">My Cart (3 Items)</h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    
+    <!-- Cart Items -->
+    <div class="lg:col-span-2 space-y-4">
+
+      <!-- Item 1 -->
+      <div class="flex items-center justify-between bg-white shadow rounded-lg p-4">
+        <div class="flex items-center gap-4">
+          <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/x/i/z/-original-imah4gzvt4pbfhbq.jpeg?q=70" class="w-20 h-20 object-contain" alt="Product">
+          <div>
+            <h3 class="font-medium text-gray-800">Redmi Note 13 Pro 5G (Midnight Black, 128 GB)</h3>
+            <p class="text-sm text-gray-500">6 GB RAM | 128 GB Storage</p>
+            <div class="flex items-center gap-4 mt-2">
+              <div class="flex items-center border border-gray-300 rounded">
+                <button class="px-3 py-1 hover:bg-gray-200">-</button>
+                <span class="px-3 py-1 border-x border-gray-300">1</span>
+                <button class="px-3 py-1 hover:bg-gray-200">+</button>
+              </div>
+              <button class="text-sm text-blue-600 hover:underline">Remove</button>
+            </div>
+          </div>
+        </div>
+        <div class="text-right">
+          <p class="text-lg font-semibold text-gray-800">₹18,999</p>
+          <p class="text-sm text-green-600">10% Off</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="flex items-center justify-between bg-white shadow rounded-lg p-4">
+        <div class="flex items-center gap-4">
+          <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/shoe/t/n/9/6-aq-122-grey-original-imah3u62rshmzkgu.jpeg?q=70" class="w-20 h-20 object-contain" alt="Shoes">
+          <div>
+            <h3 class="font-medium text-gray-800">Nike Air Zoom Running Shoes</h3>
+            <p class="text-sm text-gray-500">Size: 9 | Color: Gray</p>
+            <div class="flex items-center gap-4 mt-2">
+              <div class="flex items-center border border-gray-300 rounded">
+                <button class="px-3 py-1 hover:bg-gray-200">-</button>
+                <span class="px-3 py-1 border-x border-gray-300">2</span>
+                <button class="px-3 py-1 hover:bg-gray-200">+</button>
+              </div>
+              <button class="text-sm text-blue-600 hover:underline">Remove</button>
+            </div>
+          </div>
+        </div>
+        <div class="text-right">
+          <p class="text-lg font-semibold text-gray-800">₹6,499</p>
+          <p class="text-sm text-green-600">5% Off</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="flex items-center justify-between bg-white shadow rounded-lg p-4">
+        <div class="flex items-center gap-4">
+          <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/laptop-bag/k/i/o/15-6-inch-backpack-anti-theft-laptop-bag-for-men-and-women-original-imagzgh4uxycakxx.jpeg?q=70" class="w-20 h-20 object-contain" alt="Bag">
+          <div>
+            <h3 class="font-medium text-gray-800">HP Anti-Theft Laptop Backpack</h3>
+            <p class="text-sm text-gray-500">Capacity: 25L | Color: Black</p>
+            <div class="flex items-center gap-4 mt-2">
+              <div class="flex items-center border border-gray-300 rounded">
+                <button class="px-3 py-1 hover:bg-gray-200">-</button>
+                <span class="px-3 py-1 border-x border-gray-300">1</span>
+                <button class="px-3 py-1 hover:bg-gray-200">+</button>
+              </div>
+              <button class="text-sm text-blue-600 hover:underline">Remove</button>
+            </div>
+          </div>
+        </div>
+        <div class="text-right">
+          <p class="text-lg font-semibold text-gray-800">₹999</p>
+          <p class="text-sm text-green-600">15% Off</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Price Details -->
+    <div class="bg-white shadow rounded-lg p-6 h-fit">
+      <h3 class="text-lg font-semibold border-b pb-3 mb-4">PRICE DETAILS</h3>
+      <div class="space-y-2 text-sm">
+        <div class="flex justify-between">
+          <span>Price (4 items)</span>
+          <span>₹26,497</span>
+        </div>
+        <div class="flex justify-between">
+          <span>Discount</span>
+          <span class="text-green-600">− ₹2,000</span>
+        </div>
+        <div class="flex justify-between">
+          <span>Delivery Charges</span>
+          <span class="text-green-600">Free</span>
+        </div>
+        <div class="border-t pt-3 flex justify-between font-semibold text-gray-800">
+          <span>Total Amount</span>
+          <span>₹24,497</span>
+        </div>
+      </div>
+      <a href="checkout.html"><button class="w-full mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition">PLACE ORDER</button></a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 pt-10 pb-6 mt-15">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 border-b border-gray-700 pb-8">
+
+      <!-- ABOUT -->
+      <div>
+        <h3 class="text-white font-semibold mb-3 text-sm">ABOUT</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Contact Us</a></li>
+          <li><a href="#" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Careers</a></li>
+          <li><a href="#" class="hover:underline">Flipkart Stories</a></li>
+          <li><a href="#" class="hover:underline">Press</a></li>
+        </ul>
+      </div>
+
+      <!-- HELP -->
+      <div>
+        <h3 class="text-white font-semibold mb-3 text-sm">HELP</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Payments</a></li>
+          <li><a href="#" class="hover:underline">Shipping</a></li>
+          <li><a href="#" class="hover:underline">Cancellation & Returns</a></li>
+          <li><a href="#" class="hover:underline">FAQ</a></li>
+          <li><a href="#" class="hover:underline">Report Infringement</a></li>
+        </ul>
+      </div>
+
+      <!-- POLICY -->
+      <div>
+        <h3 class="text-white font-semibold mb-3 text-sm">POLICY</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Return Policy</a></li>
+          <li><a href="#" class="hover:underline">Terms of Use</a></li>
+          <li><a href="#" class="hover:underline">Security</a></li>
+          <li><a href="#" class="hover:underline">Privacy</a></li>
+          <li><a href="#" class="hover:underline">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <!-- SOCIAL -->
+      <div>
+        <h3 class="text-white font-semibold mb-3 text-sm">SOCIAL</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Facebook</a></li>
+          <li><a href="#" class="hover:underline">Twitter</a></li>
+          <li><a href="#" class="hover:underline">YouTube</a></li>
+          <li><a href="#" class="hover:underline">Instagram</a></li>
+        </ul>
+      </div>
+
+      <!-- MAIL US -->
+      <div>
+        <h3 class="text-white font-semibold mb-3 text-sm">Mail Us:</h3>
+        <p class="text-sm text-gray-400">
+          Flipkart Internet Private Limited,<br />
+          Buildings Alyssa, Begonia & Clove Embassy Tech Village,<br />
+          Outer Ring Road, Devarabeesanahalli Village,<br />
+          Bengaluru, 560103, Karnataka, India
+        </p>
+      </div>
+
+      <!-- REGISTERED OFFICE -->
+      <div>
+        <h3 class="text-white font-semibold mb-3 text-sm">Registered Office Address:</h3>
+        <p class="text-sm text-gray-400">
+          Flipkart Internet Private Limited,<br />
+          Buildings Alyssa, Begonia & Clove Embassy Tech Village,<br />
+          Outer Ring Road, Devarabeesanahalli Village,<br />
+          Bengaluru, 560103, Karnataka, India<br />
+          CIN : U51109KA2012PTC066107<br />
+          Telephone: <a href="tel:18002029898" class="text-blue-400 hover:underline">1800 202 9898</a>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="flex flex-col md:flex-row justify-between items-center mt-6 text-sm text-gray-400">
+      <div class="flex flex-wrap items-center gap-6 mb-3 md:mb-0">
+        <span class="flex items-center gap-2">
+          <img src="https://img.icons8.com/color/24/000000/sell.png" alt="" class="w-5 h-5">
+          Become a Seller
+        </span>
+        <span class="flex items-center gap-2">
+          <img src="https://img.icons8.com/fluency/24/000000/medal.png" alt="" class="w-5 h-5">
+          Advertise
+        </span>
+        <span class="flex items-center gap-2">
+          <img src="https://img.icons8.com/color/24/000000/customer-support.png" alt="" class="w-5 h-5">
+          Help Center
+        </span>
+        <span>© 2025 Flipkart Clone</span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method_69e7ec.png" alt="Payments" class="h-8" />
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

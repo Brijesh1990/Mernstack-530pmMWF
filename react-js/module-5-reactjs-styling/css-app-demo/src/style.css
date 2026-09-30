@@ -1,0 +1,19 @@
+body 
+{
+background-color: cadetblue;  
+}
+.app
+{
+width: 40%;
+height: auto;
+margin: auto;
+margin-top: 5%;
+padding: 20px;
+background-color: aqua;
+}
+.app:hover
+{
+border-radius: 20px;
+background-color: black;
+color: white;
+}

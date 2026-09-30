@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<script src='main.js'></script>
+<style>
+body
+{
+margin: 0;
+padding: 0;
+background-color: aqua;  
+}  
+#header
+{
+width: 40%;
+height: 100px;
+background-color: black;
+margin-left: 30%;
+top: 0 !important;
+/* position: sticky; */
+position: fixed;
+margin-top: 0%;
+z-index: 10; 
+}
+#content
+{
+width: 40%;
+height: 2024px;
+background-color: white;
+top: 0 !important;
+margin-top: 0%;
+margin-left: 30%;
+position: relative;
+}
+.parent 
+{
+width: 100%;
+height: auto;
+position: absolute;
+top: 5%;  
+/* left: 2%;
+right: 5%;
+bottom: 5%;   */
+
+}
+.box1 
+{
+width: 90%;
+height: 100px;
+margin-left: 5%;
+background-color: blue;  
+margin-top: 5%;
+
+}
+.box2 
+{
+width: 90%;
+height: 100px;
+margin-left: 5%;
+background-color: blue;  
+margin-top: 5%;
+
+}
+.box3
+{
+width: 90%;
+height: 100px;
+margin-left: 5%;
+background-color: blue;  
+margin-top: 5%;
+
+}
+.box4
+{
+width: 90%;
+height: 100px;
+margin-left: 5%;
+background-color: blue;  
+margin-top: 5%;
+}
+</style>
+</head>
+<body>
+<section id="header">
+<div class="info"></div>
+<div class="search"></div>
+<div class="account"></div>   
+</section>
+
+<!-- content -->
+<section id="content">
+<div class="parent">
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+</div>
+</section>
+</body>
+</html>

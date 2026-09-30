@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f1ede8",
+                        "surface-container-high": "#ebe8e3",
+                        "inverse-on-surface": "#f4f0eb",
+                        "outline": "#8d706e",
+                        "inverse-surface": "#31302d",
+                        "surface-container-highest": "#e6e2dd",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#ffb3ad",
+                        "surface-tint": "#af2d2d",
+                        "surface-bright": "#fdf9f4",
+                        "on-secondary-fixed-variant": "#6b3b00",
+                        "on-secondary-fixed": "#2d1600",
+                        "primary-container": "#af2d2d",
+                        "primary-fixed": "#ffdad7",
+                        "surface": "#fdf9f4",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "background": "#fdf9f4",
+                        "surface-dim": "#ddd9d5",
+                        "tertiary-container": "#cca72f",
+                        "on-tertiary-container": "#4e3d00",
+                        "on-surface-variant": "#59413f",
+                        "surface-variant": "#e6e2dd",
+                        "on-primary-fixed": "#410004",
+                        "tertiary-fixed": "#ffe088",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "surface-container-low": "#f7f3ee",
+                        "on-secondary-container": "#734000",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "primary": "#8d1219",
+                        "secondary-fixed": "#ffdcbf",
+                        "secondary-fixed-dim": "#ffb874",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#8e1319",
+                        "on-surface": "#1c1c19",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#fead5c",
+                        "secondary": "#8c4f00",
+                        "on-background": "#1c1c19",
+                        "inverse-primary": "#ffb3ad",
+                        "on-primary-container": "#ffccc8",
+                        "tertiary": "#735c00",
+                        "outline-variant": "#e1bfbc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="w-full sticky top-0 z-50 bg-[#fdf9f4] dark:bg-stone-950 backdrop-blur-md bg-opacity-90 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold font-['Newsreader'] text-[#8d1219] dark:text-[#af2d2d] cursor-pointer active:scale-95 transition-transform">
+                Aksh Dining Hall
+            </div>
+<nav class="hidden md:flex items-center gap-8 font-['Newsreader'] uppercase tracking-wide">
+<a class="text-[#8d1219] dark:text-[#af2d2d] border-b-2 border-[#fead5c] pb-1 cursor-pointer transition-colors duration-300" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] cursor-pointer transition-colors duration-300" href="#">Menu</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] cursor-pointer transition-colors duration-300" href="#">About Us</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] cursor-pointer transition-colors duration-300" href="#">Feedback</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 text-[#8d1219] dark:text-[#af2d2d] hover:bg-stone-100/50 dark:hover:bg-stone-800/50 transition-colors rounded-full">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="px-6 py-2 bg-primary text-on-primary font-body font-semibold rounded-lg hover:bg-primary/90 transition-all active:scale-95">
+                    Login
+                </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-8">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-sm font-semibold tracking-wider uppercase">Traditional Flavors, Modern Craft</span>
+<h1 class="text-7xl md:text-8xl text-primary leading-tight font-light">The Modern <span class="italic font-normal">Heirloom</span> of Taste.</h1>
+<p class="text-xl text-on-surface-variant font-body max-w-lg leading-relaxed">Experience a curated culinary journey through Gujarat, Punjab, and the Orient, served with ancestral warmth and contemporary elegance.</p>
+<div class="flex items-center gap-6">
+<button class="px-10 py-5 bg-primary text-on-primary font-label font-bold rounded-lg shadow-xl shadow-primary/20 hover:shadow-2xl transition-all active:scale-95 text-lg">
+                            Order Now
+                        </button>
+<button class="group flex items-center gap-3 font-label font-semibold text-primary hover:text-secondary transition-colors">
+                            Explore Menu
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_right_alt">arrow_right_alt</span>
+</button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-20 -right-20 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<div class="relative z-10 aspect-[4/5] rounded-xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-700">
+<img class="w-full h-full object-cover" data-alt="Exquisite traditional Indian thali served on a polished brass plate with various colorful curries, dal, and handmade flatbreads under warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGI233CDec_3lLVRE7Q4KB4C3JZmq8Y1_k17N0WnBsMfA9-uNsPB1RbAhAsst4EO6w_nCY1Tu8sp5I-TdB-hsbxxUNFa3Lq-Ndb0WyJs5-rhs9xrWopXgbA9yV5OoamsDwzJR6fbvTj4aAlHS1Ic-NSW9FQOX9ISmXYcBIgVxD74y04rWhYLqfZCP8QtN-qD_spdgi_JQLPOJV-h-Kq1Mf-z_8N3pM9ETFW5EgZl1-4aF8y7_ujgrBYnt1bM8PFVrwxWpTyVe1LqKa"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<p class="font-headline text-3xl">Grand Maharaja Thali</p>
+<p class="font-body text-sm opacity-80 uppercase tracking-widest">Our Signature Experience</p>
+</div>
+</div>
+<!-- Overlapping element for Editorial Style -->
+<div class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-8 shadow-xl max-w-xs hidden lg:block transform -rotate-3 hover:rotate-0 transition-transform duration-500">
+<p class="text-primary font-headline text-2xl italic mb-2">Authentic Masala</p>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">Our spices are stone-ground daily following a 120-year-old family recipe, preserving every aromatic note.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Thalis / Cuisine Bento -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-end mb-16">
+<div class="space-y-4">
+<h2 class="text-5xl text-primary font-light">Featured <span class="italic">Cuisines</span></h2>
+<div class="h-1 w-24 bg-secondary-container"></div>
+</div>
+<p class="text-on-surface-variant font-body max-w-xs text-right hidden md:block">Each platter is a curated map of regional spices and centuries-old culinary heritage.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto">
+<!-- Gujarati -->
+<div class="md:col-span-7 group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="h-[400px] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up of a vibrant Gujarati thali with kadhi, dhokla, and various sweet and savory bowls on a rustic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfjiH9IbWMH0b4Ug1RsTBOTu-EbeOXHmxYTlwfzUVw4xlMTjUc3yBMT82YdMUML65FYXoPObjMLL9soZ4h-eKRyFKd_Dnvn3Xdcuh9TTFWhTbWpVEo98yq8Gol2UPSG37HnVkbelOo34-ZjJhpptCFXsZ2NdxWh257azaBPDODe3x7JgipnOYpONla43azGL2BFndi8jrwAo_6CGYsU4UyPhHIhZzVKKFjQcLbBJ-uhP5Bj-qLQEbTDgva78XITcUtrsbTiBZbeghz"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-4xl text-primary">Royal Gujarati</h3>
+<span class="text-secondary font-headline text-2xl">₹450</span>
+</div>
+<p class="text-on-surface-variant font-body mb-6 leading-relaxed">A sweet and savory symphony of Dhokla, Kadhi, and seasonally inspired vegetable preparations.</p>
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed rounded-full text-xs font-bold uppercase tracking-tighter">Chef's Choice</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant rounded-full text-xs font-bold uppercase tracking-tighter">Vegetarian</span>
+</div>
+</div>
+</div>
+<!-- Punjabi -->
+<div class="md:col-span-5 flex flex-col gap-8">
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-500 flex-1">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Rich Punjabi Dal Makhani and Garlic Naan with a dollop of white butter in an artistic moody setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKgwvxnkVY2Tsc_diXi1Mp3wg-qFGLCkZuVY68clsQ8yCmOf9fb6xCU_5KqLTeRO2e295004LmBoJvp9vZHvbzXY3fbAdb4szqKR0M3-LLyrseJnLL6WzuK0hX9GcXpf5invnrs1q3PHbKkjURBmYkJKJGVDmowYr1UPw8iQYICbnK9EkVA0ZTRkOOMYpaOMBMrVEBySmqFY9k-7C_SuhOxWlqmfpTX2YZe40lX4XVr1oZOFTMmz93qP-siYWW8_bp_qgjpds5tXnd"/>
+</div>
+<div class="p-6">
+<h3 class="text-2xl text-primary font-headline">Robust Punjab</h3>
+<p class="text-on-surface-variant text-sm font-body mt-2">Smoky Dal Makhani and butter-glazed Naan.</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-500 flex-1">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Stir-fried noodles with crisp vegetables and vibrant sauces in a modern black ceramic bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeNPuHRjpzr1eVBBUhSeYk8RetEr-QGXaZPVj7GXjNhP62eNq0MRkA-fBmKWtpaZ5tCUuM0LRZWQkXwW7fFGIi7fRSjRo3EYvm9FIQnO5qN6naM8JJZoPp3yfOAr54sPucBwpklm6NyOkcyK3YBaak5Td6qgpBocFp5JMt_BuHYDWHvIeZNlmxdFgIrqlFII98NQT0wvbfolLb69QtoQsN_PwXDpjOzpODMONreV6wKd84lx0Mm0LLRhK0c6VB02r0oJMeECzyhvYh"/>
+</div>
+<div class="p-6">
+<h3 class="text-2xl text-primary font-headline">Oriental Fusion</h3>
+<p class="text-on-surface-variant text-sm font-body mt-2">Modern Chinese classics with a deshi twist.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Offers & Combos -->
+<section class="py-24 bg-surface relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1 grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<div class="aspect-square rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Assorted small plates of appetizers and salads arranged artistically" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1CmdD4p--FGV7GYYKPzpd5Sl413nk15JuYx4Xxik_YYBNSuczN-kia72aJBeB7oBqYBS9J_Uu72ECDMm-CCo--kqxlJ0IO7d1yHpHehyl9lHHElLv6pYYgLFqgjtd3FlNmQb9ZyBBdrYt7ka7on1SL42VEeRe2mNYVPeg3BrWrfMf6tOBIavJnaH6ebu-GYzbtDSPlGtSOWD_VyAkpNf5F8X68Xa81haiMh7yBBVTokDiegSap9q_5I7UVhJnw48Ew9ysk7VolYKA"/>
+</div>
+<div class="bg-primary p-6 rounded-xl text-on-primary">
+<span class="font-headline text-5xl">20%</span>
+<p class="font-body text-sm mt-2 uppercase tracking-widest">Weekend Family Brunch</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-secondary-container p-6 rounded-xl text-on-secondary-container">
+<span class="font-headline text-5xl">B1G1</span>
+<p class="font-body text-sm mt-2 uppercase tracking-widest">Beverage Happy Hours</p>
+</div>
+<div class="aspect-[3/4] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Fresh fruit lassi served in traditional earthen pots on a marble surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwVXFHzndGygrxUiOoHxsKJx302exAhf-hGGbVSdO-7T_oh6s7q5G19w92cYO3dF-AXCbQPZuQBA2532T7UPfeiNxd0JNgW6aamjQmgfHQDzKWm-CY9llDT09fi2DsHZEtYrS_7qsSC8vsSxCcWiFoi92Kix_F3uyjp27ZnHakVzqaMKn9OSiyPG3URnpclrKf-cHAQo0OY5p87BlL2MuFuvce4ynuzzjSUtz6JlwmPq9tV7MP8q83odmqV4IjzmLZKbVx_e6dyYeo"/>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 space-y-8">
+<h2 class="text-6xl text-primary font-light">The Golden <span class="italic">Hour</span> Specials</h2>
+<p class="text-xl text-on-surface-variant font-body leading-relaxed">Discover our limited-time curated combos designed for the ultimate communal dining experience. Perfect for families, colleagues, and celebrations.</p>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<div class="p-3 rounded-full bg-surface-container">
+<span class="material-symbols-outlined text-primary" data-icon="restaurant">restaurant</span>
+</div>
+<div>
+<h4 class="text-xl font-headline text-on-surface">The Corporate Platter</h4>
+<p class="text-on-surface-variant font-body text-sm">Balanced lunch combos for high-performing teams.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="p-3 rounded-full bg-surface-container">
+<span class="material-symbols-outlined text-primary" data-icon="celebration">celebration</span>
+</div>
+<div>
+<h4 class="text-xl font-headline text-on-surface">Anniversary Curations</h4>
+<p class="text-on-surface-variant font-body text-sm">A 7-course blind tasting menu for your special moments.</p>
+</div>
+</div>
+</div>
+<button class="px-8 py-4 bg-secondary text-on-primary rounded-lg font-bold hover:bg-secondary/90 transition-all">View All Offers</button>
+</div>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -z-0 skew-x-12 translate-x-1/2"></div>
+</section>
+<!-- Customer Reviews -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-5xl text-primary font-light">Voices of <span class="italic">Our Guests</span></h2>
+<p class="text-on-surface-variant font-body">The true heart of Aksh lies in the stories shared at our tables.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="p-10 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/10">
+<div class="flex gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg text-on-surface font-body italic leading-relaxed mb-8">"The Gujarati thali here is a time machine. It took me straight back to my grandmother's kitchen in Ahmedabad. Pure soul food."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of a smiling middle-aged man with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnTF10s2frwKvcKwAmtJsHM1EK-JHoHqq_bxlAnPZ8PD8k0wGmvJ9Rmct7YRd5N0I9P2mfxtakhA7it62zVj_do0Re4eRsPJubzpBzIBB_L07vmAKUCFx_LOOyCjsdrFZGWNjf60Kf_zSC6USNf5kpXjvCugpwbzUGRkmSRmy1hAUDoAQPy0MnSDhsVAc-bU5PS5JHekbFJmVuCjtxQc_0dh9nuB20z5pVqEx8C_aREbKszz5en-S91EW3q2JEuZ96WBxk6WJyeUpe"/>
+</div>
+<div>
+<p class="font-headline text-lg font-bold text-primary">Anand Shah</p>
+<p class="text-xs font-body text-on-surface-variant uppercase tracking-widest">Food Critic</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-10 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/10">
+<div class="flex gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg text-on-surface font-body italic leading-relaxed mb-8">"Exquisite presentation meets authentic taste. The Punjabi Dal Makhani is arguably the best in the city. A true heirloom experience."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young professional woman with a soft background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArhPeQUelK7fh8TcHvlOc39bSSgqWiB7H7AP_8CMMxdDm460VPt3Hzh1Va3VFAo_Sfccwk4Zz_yFluZlQLSMGem4BDsprCK6WBk1Njd193BZhxqelrfxE9v21QzOts3-xlToJ8zLOqldUO2Z8Z1k3Ml9wKpr6x8jVpuvNzfzxKehW9TNykSi1CINc23_Xh2hQEN_QruKLJH17FD_VUnE0Xu_xJOqylkKz2zgrJeZrS5sg9-y7JA9TXedXTt0kgKryZBQ4beG0lM6G5"/>
+</div>
+<div>
+<p class="font-headline text-lg font-bold text-primary">Priya Kapoor</p>
+<p class="text-xs font-body text-on-surface-variant uppercase tracking-widest">Tech Lead</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-10 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/10">
+<div class="flex gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg text-on-surface font-body italic leading-relaxed mb-8">"I love how they've modernized the dining experience without losing the essence of Indian hospitality. The staff is exceptional."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of a cheerful young man in a smart casual outfit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfocXVNla-Ryq7gdfnz1SSQe-kG6aKgCMYztB77QcmCnyvs1VWLz1iGJVkUB3113TtxnvYqEblMX9OjSbXtBkm3Hm8lNfj9CLQIPDSigXoa6OTB-Ii0J_H6rQhWxELtblwy2unYUCRlxjWypB-LSVJq7haahADHSt7pDgmNVyRXAL4j3-0_0eOGS-XUOVZNxI-z6e-7X32LBDiKTWG-yyV6m9khvd9S88JbHf9mf6DPmL2Wm2tO5vApuUL_9QKU9h8EODiGgIGF1e8"/>
+</div>
+<div>
+<p class="font-headline text-lg font-bold text-primary">Rahul Mehta</p>
+<p class="text-xs font-body text-on-surface-variant uppercase tracking-widest">Interior Designer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 mt-auto bg-[#f7f3ee] dark:bg-stone-900 border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col gap-2">
+<div class="text-xl font-['Newsreader'] text-[#8d1219]">Aksh Dining Hall</div>
+<p class="text-stone-500 font-['Plus_Jakarta_Sans'] text-sm italic">Crafting memories through heritage recipes.</p>
+</div>
+<nav class="flex gap-8">
+<a class="text-stone-500 hover:text-[#8d1219] font-['Plus_Jakarta_Sans'] text-sm transition-all duration-200 underline decoration-[#fead5c] underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-[#8d1219] font-['Plus_Jakarta_Sans'] text-sm transition-all duration-200 hover:underline decoration-[#fead5c] underline-offset-4" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-[#8d1219] font-['Plus_Jakarta_Sans'] text-sm transition-all duration-200 hover:underline decoration-[#fead5c] underline-offset-4" href="#">Contact Us</a>
+</nav>
+<div class="text-stone-500 font-['Plus_Jakarta_Sans'] text-sm text-center md:text-right">
+                © 2024 Aksh Dining Hall. The Modern Heirloom.
+            </div>
+</div>
+</footer>
+</body></html>

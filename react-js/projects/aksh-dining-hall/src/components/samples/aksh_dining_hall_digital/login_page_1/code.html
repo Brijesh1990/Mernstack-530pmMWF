@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#ffe088",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#ebe8e3",
+                        "secondary": "#8c4f00",
+                        "inverse-primary": "#ffb3ad",
+                        "background": "#fdf9f4",
+                        "primary-fixed": "#ffdad7",
+                        "on-surface": "#1c1c19",
+                        "on-secondary-fixed-variant": "#6b3b00",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "surface": "#fdf9f4",
+                        "surface-dim": "#ddd9d5",
+                        "on-surface-variant": "#59413f",
+                        "outline": "#8d706e",
+                        "on-primary-container": "#ffccc8",
+                        "surface-container-highest": "#e6e2dd",
+                        "secondary-container": "#fead5c",
+                        "inverse-surface": "#31302d",
+                        "tertiary": "#735c00",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#1c1c19",
+                        "primary-fixed-dim": "#ffb3ad",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "surface-container-low": "#f7f3ee",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#cca72f",
+                        "on-secondary-container": "#734000",
+                        "surface-bright": "#fdf9f4",
+                        "outline-variant": "#e1bfbc",
+                        "on-tertiary-container": "#4e3d00",
+                        "on-primary-fixed-variant": "#8e1319",
+                        "primary": "#8d1219",
+                        "inverse-on-surface": "#f4f0eb",
+                        "primary-container": "#af2d2d",
+                        "secondary-fixed": "#ffdcbf",
+                        "on-primary-fixed": "#410004",
+                        "on-secondary-fixed": "#2d1600",
+                        "secondary-fixed-dim": "#ffb874",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e6e2dd",
+                        "surface-tint": "#af2d2d",
+                        "on-tertiary-fixed": "#241a00",
+                        "surface-container": "#f1ede8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar (Suppressed for focused login task, as per UX Goal in Instructions) -->
+<!-- However, the prompt specifically asks to ensure integration, so I will provide a minimal version or the full shell based on the "Destination Rule". Since login is transactional, suppression is standard, but I will include it as requested by the user prompt specifically. -->
+<header class="bg-[#fdf9f4] dark:bg-stone-950 backdrop-blur-md bg-opacity-90 w-full sticky top-0 z-50 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold font-['Newsreader'] text-[#8d1219] dark:text-[#af2d2d] uppercase tracking-wide">
+                Aksh Dining Hall
+            </div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] transition-colors duration-300" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] transition-colors duration-300" href="#">Menu</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] transition-colors duration-300" href="#">About Us</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] transition-colors duration-300" href="#">Feedback</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#8d1219] cursor-pointer active:scale-95 transition-transform" data-icon="shopping_cart">shopping_cart</span>
+<button class="bg-[#8d1219] text-white px-6 py-2 rounded-lg font-['Newsreader'] uppercase tracking-widest text-sm hover:opacity-90 transition-opacity">Login</button>
+</div>
+</div>
+</header>
+<main class="flex-grow flex items-center justify-center p-4 md:p-8 lg:p-12">
+<div class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 bg-surface-container-lowest overflow-hidden shadow-sm">
+<!-- Hero Image Section (Asymmetric) -->
+<div class="relative hidden md:block overflow-hidden group">
+<img alt="Dining Ambience" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxurious fine dining interior with warm amber lighting, ornate golden decor, and a beautifully set table with maroon linen napkins." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDza4Jmx3kVfOTBz2F7c64nPY23WsJAGPnabKkxaYcCZlosBb8Sn5buubOGlt5hgzIfNE1n9lau2txVjOLxhPv7zbOMSIkemyoANitwNw7nWa6ENl8D29cPxC_-K7J5aQAgGtjW65h005Nmj4brVZuwaDV-FXdwfXexZPJvnDiebO0kL61WgQjc6oJbWVto4gLJG7X_1QhOCrG-n2fJGW-zK86sPPH3C5QrM0VBoy-qBJJmvJYfttssEmUhty55-eDAioS6PcEML-5x"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-12 left-12 right-12">
+<h2 class="text-white text-5xl font-medium mb-4 leading-tight italic">
+                        The Modern <br/>Heirloom
+                    </h2>
+<p class="text-primary-fixed-dim font-body text-lg max-w-xs">
+                        Taste the legacy of spices passed down through generations in a contemporary sanctuary.
+                    </p>
+</div>
+</div>
+<!-- Login Form Section -->
+<div class="p-8 md:p-16 flex flex-col justify-center bg-surface-container-low">
+<div class="mb-10">
+<h1 class="text-primary text-4xl font-semibold mb-2">Welcome Back</h1>
+<p class="text-on-surface-variant font-body">Sign in to your account to continue your culinary journey.</p>
+</div>
+<form class="space-y-6">
+<div class="space-y-1">
+<label class="text-primary font-headline text-lg font-medium" for="email">Email Address</label>
+<input class="w-full bg-surface-container-high border-none focus:ring-2 focus:ring-secondary-container rounded-lg p-4 font-body placeholder-on-surface-variant/40" id="email" placeholder="e.g. guest@aksh.com" type="email"/>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between items-center">
+<label class="text-primary font-headline text-lg font-medium" for="password">Password</label>
+<a class="text-sm font-body text-secondary hover:underline underline-offset-4" href="#">Forgot Password?</a>
+</div>
+<input class="w-full bg-surface-container-high border-none focus:ring-2 focus:ring-secondary-container rounded-lg p-4 font-body" id="password" placeholder="••••••••" type="password"/>
+</div>
+<div class="pt-2">
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-body font-bold text-lg active:scale-95 transition-all shadow-md hover:bg-primary-container" type="submit">
+                            Login
+                        </button>
+</div>
+</form>
+<div class="relative my-8">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-outline-variant opacity-30"></div></div>
+<div class="relative flex justify-center text-sm uppercase"><span class="bg-surface-container-low px-4 text-on-surface-variant font-label tracking-widest">or continue with</span></div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 bg-surface-container-lowest border border-outline-variant/20 py-3 rounded-lg hover:bg-surface transition-colors active:scale-95">
+<svg class="w-5 h-5" viewbox="0 0 24 24"><path d="M24 12.27c0-.85-.07-1.53-.22-2.23H12v4.17h6.75c-.32 1.54-1.22 2.86-2.58 3.72v3.02h4.15C22.78 18.96 24 15.93 24 12.27z" fill="#EA4335"></path><path d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-4.15-3.02c-1.15.77-2.62 1.22-3.78 1.22-2.92 0-5.39-1.97-6.27-4.62H1.54v3.13C3.51 21.72 7.51 24 12 24z" fill="#FBBC05"></path><path d="M5.73 14.67C5.51 14.02 5.39 13.33 5.39 12.6c0-.73.12-1.42.34-2.07V7.4H1.54C.56 9.36 0 11.43 0 12.6c0 1.17.56 3.24 1.54 5.2h4.19l-.15-3.13z" fill="#34A853"></path><path d="M12 5.33c1.77 0 3.35.61 4.6 1.8l3.45-3.45C17.95 1.55 15.24 0 12 0 7.51 0 3.51 2.28 1.54 5.73l4.19 3.27c.88-2.65 3.35-4.62 6.27-4.62z" fill="#4285F4"></path></svg>
+<span class="font-label text-sm font-semibold">Google</span>
+</button>
+<button class="flex items-center justify-center gap-2 bg-surface-container-lowest border border-outline-variant/20 py-3 rounded-lg hover:bg-surface transition-colors active:scale-95">
+<svg class="w-5 h-5" fill="#1877F2" viewbox="0 0 24 24"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07c0 6.03 4.43 11.02 10.12 11.91v-8.41H7.04v-3.5h3.08V9.41c0-3.04 1.8-4.72 4.58-4.72 1.33 0 2.72.24 2.72.24v2.99h-1.53c-1.51 0-1.98.94-1.98 1.89v2.26h3.37l-.54 3.5h-2.83v8.41C19.57 23.09 24 18.1 24 12.07z"></path></svg>
+<span class="font-label text-sm font-semibold">Facebook</span>
+</button>
+</div>
+<p class="mt-10 text-center font-body text-on-surface-variant">
+                    New to the hall? 
+                    <a class="text-primary font-bold hover:underline decoration-secondary-container underline-offset-4" href="#">Create an Account</a>
+</p>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f7f3ee] dark:bg-stone-900 w-full py-12 px-6 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 max-w-7xl mx-auto">
+<div class="text-xl font-['Newsreader'] text-[#8d1219]">Aksh Dining Hall</div>
+<div class="flex flex-col md:flex-row gap-6 items-center">
+<p class="font-['Plus_Jakarta_Sans'] text-sm text-stone-500">© 2024 Aksh Dining Hall. The Modern Heirloom.</p>
+<div class="flex gap-4">
+<a class="text-stone-500 hover:text-[#8d1219] font-['Plus_Jakarta_Sans'] text-sm transition-all duration-200 underline decoration-[#fead5c] underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-[#8d1219] font-['Plus_Jakarta_Sans'] text-sm transition-all duration-200 underline decoration-[#fead5c] underline-offset-4" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-[#8d1219] font-['Plus_Jakarta_Sans'] text-sm transition-all duration-200 underline decoration-[#fead5c] underline-offset-4" href="#">Contact Us</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

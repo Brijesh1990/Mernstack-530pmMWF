@@ -1,0 +1,33 @@
+body 
+{
+background-color: lightgray;    
+}
+div 
+{
+width: 60%;
+height: auto;
+margin: auto;
+background-color: white;
+padding: 25px;    
+}
+div h1 
+{
+ font-size: 55px;
+ text-align: center;
+ color: blue;   
+}
+div hr 
+{
+width: 30%;    
+}
+img 
+{
+border-radius: 50%;
+margin: 20px;    
+}
+img:hover 
+{
+/* filter: grayscale(100%);     */
+
+filter: brightness(70%);
+}

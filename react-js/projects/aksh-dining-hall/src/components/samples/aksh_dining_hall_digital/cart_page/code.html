@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f1ede8",
+                        "surface-container-high": "#ebe8e3",
+                        "inverse-on-surface": "#f4f0eb",
+                        "outline": "#8d706e",
+                        "inverse-surface": "#31302d",
+                        "surface-container-highest": "#e6e2dd",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#ffb3ad",
+                        "surface-tint": "#af2d2d",
+                        "surface-bright": "#fdf9f4",
+                        "on-secondary-fixed-variant": "#6b3b00",
+                        "on-secondary-fixed": "#2d1600",
+                        "primary-container": "#af2d2d",
+                        "primary-fixed": "#ffdad7",
+                        "surface": "#fdf9f4",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "background": "#fdf9f4",
+                        "surface-dim": "#ddd9d5",
+                        "tertiary-container": "#cca72f",
+                        "on-tertiary-container": "#4e3d00",
+                        "on-surface-variant": "#59413f",
+                        "surface-variant": "#e6e2dd",
+                        "on-primary-fixed": "#410004",
+                        "tertiary-fixed": "#ffe088",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "surface-container-low": "#f7f3ee",
+                        "on-secondary-container": "#734000",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "primary": "#8d1219",
+                        "secondary-fixed": "#ffdcbf",
+                        "secondary-fixed-dim": "#ffb874",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#8e1319",
+                        "on-surface": "#1c1c19",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#fead5c",
+                        "secondary": "#8c4f00",
+                        "on-background": "#1c1c19",
+                        "inverse-primary": "#ffb3ad",
+                        "on-primary-container": "#ffccc8",
+                        "tertiary": "#735c00",
+                        "outline-variant": "#e1bfbc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, .serif-text { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-[#fdf9f4] dark:bg-stone-950 backdrop-blur-md bg-opacity-90 w-full sticky top-0 z-50 shadow-sm dark:shadow-none">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold font-['Newsreader'] text-[#8d1219] dark:text-[#af2d2d]">Aksh Dining Hall</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] font-['Newsreader'] uppercase tracking-wide cursor-pointer active:scale-95 transition-transform" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] font-['Newsreader'] uppercase tracking-wide cursor-pointer active:scale-95 transition-transform" href="#">Menu</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] font-['Newsreader'] uppercase tracking-wide cursor-pointer active:scale-95 transition-transform" href="#">About Us</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] font-['Newsreader'] uppercase tracking-wide cursor-pointer active:scale-95 transition-transform" href="#">Feedback</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative cursor-pointer active:scale-95 transition-transform text-[#8d1219] dark:text-[#af2d2d] border-b-2 border-[#fead5c] pb-1">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute -top-2 -right-2 bg-secondary text-on-secondary text-[10px] rounded-full w-4 h-4 flex items-center justify-center">3</span>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-medium text-sm hover:opacity-90 transition-all">Login</button>
+</div>
+</nav>
+</header>
+<main class="flex-grow max-w-7xl mx-auto w-full px-6 py-12">
+<div class="mb-12">
+<h1 class="text-5xl font-semibold text-primary mb-2">Your Selection</h1>
+<p class="text-on-surface-variant font-light">The flavors of heirloom recipes, curated for your journey.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Cart Items List -->
+<div class="lg:col-span-8 space-y-8">
+<!-- Item 1 -->
+<div class="flex flex-col md:flex-row gap-6 p-4 bg-surface-container-low rounded-xl group transition-all duration-300">
+<div class="relative w-full md:w-32 h-32 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Gourmet saffron infused biryani served in a traditional clay pot with fresh mint garnish on a rustic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj3NhQbCmEZmqxwwJv_GRobMbcew0jmE3KaIiNAmz1HEk5wRm30KDHW5h94Achdqk1SEVYxBaKpuGL401wOaQ5n973Yi3ogGVJ0QmDKzrizcmyzEvFnhOOwBu6DCGQPkc51FpVGPya4kRm18o0LsXPbZT5vjKhsEv0zh1fp0lXm9OuetN7vTyaNLJGS5k2N6TjCkbdLDdQrOCZ6PtZuaJcW0rv0ssD9c9NUYSS0SUl_6sDrTiFBEc2pdOzgGH9em_KhliIZb9pnMtN"/>
+</div>
+<div class="flex-grow flex flex-col justify-between py-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold text-on-surface">Royal Awadhi Biryani</h3>
+<p class="text-sm text-on-surface-variant mt-1">Slow-cooked with aged basmati and 24 secret spices.</p>
+</div>
+<span class="text-lg font-semibold text-primary">₹650.00</span>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center bg-surface-container-highest rounded-full px-2 py-1">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="px-4 font-semibold text-on-surface">1</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-error transition-colors text-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-base">delete</span>
+                                Remove
+                            </button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col md:flex-row gap-6 p-4 bg-surface-container-low rounded-xl group transition-all duration-300">
+<div class="relative w-full md:w-32 h-32 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal paneer tikka skewers with charred edges and vibrant bell peppers on a white ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9nuF6rfzkYNNUplQslRGH7kI-ZZ6fxqB056QmPBnbbgCTz_qBXKN7ZL8Nv2D4u1yBicJ4OEgv9XCX1bUFiYk-0a0qiS6EfLQoP9iHmLu2Yc3v2xRHPxDg3eSBUPjypJK4Y_aHBogpMTtGCbYxwHIbTN2X6tUI7MsWHh94cda_f1gcURzCaw39LpW8ZYxB5vjBm2DSapCqaZxV8agdSPGplAOATlggL_epA3Su7uBHzdx_dhhq4TXBepr7H1QuQ2Atbyc-za73Bol3"/>
+</div>
+<div class="flex-grow flex flex-col justify-between py-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold text-on-surface">Smoked Malai Paneer</h3>
+<p class="text-sm text-on-surface-variant mt-1">Charcoal grilled house-made cottage cheese.</p>
+</div>
+<span class="text-lg font-semibold text-primary">₹420.00</span>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center bg-surface-container-highest rounded-full px-2 py-1">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="px-4 font-semibold text-on-surface">2</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-error transition-colors text-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-base">delete</span>
+                                Remove
+                            </button>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col md:flex-row gap-6 p-4 bg-surface-container-low rounded-xl group transition-all duration-300">
+<div class="relative w-full md:w-32 h-32 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Fresh organic heirloom tomato salad with herbs and a drizzle of premium olive oil in a minimalist bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEPDdF9aqKqoRCihWGayMIS34fgY53NEIcd6ppb0Msk8Grujxwvh5JXkGbUZXfktyPoOxCUDjQd-wEliL6nZFy7We0X16p7URUk_uO7oZsjKlWWWxPLKF5DNJerp80MCdFMcEJBavyf4naleVdeQylOczQM-1DuqRBWgYxL8v-mHbwgMU07IaTDsCBvhi9gNbZc0yBxdfSCVljjFIvRx4Huujb5Rs3e4tFhstLPa3yovOru6VX4DoLC7RgVtpFB2Oxfbd5yOysaXx6"/>
+</div>
+<div class="flex-grow flex flex-col justify-between py-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold text-on-surface">Harvest Garden Salad</h3>
+<p class="text-sm text-on-surface-variant mt-1">Seasonal greens with cold-pressed lemon oil dressing.</p>
+</div>
+<span class="text-lg font-semibold text-primary">₹310.00</span>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center bg-surface-container-highest rounded-full px-2 py-1">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="px-4 font-semibold text-on-surface">1</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-error transition-colors text-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-base">delete</span>
+                                Remove
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Order Summary -->
+<div class="lg:col-span-4">
+<div class="bg-surface-container-high rounded-xl p-8 sticky top-28 shadow-sm">
+<h2 class="text-2xl font-bold text-on-surface mb-6 border-b border-outline-variant pb-4">Order Summary</h2>
+<div class="space-y-4 mb-8">
+<div class="flex justify-between text-on-surface-variant">
+<span>Subtotal</span>
+<span>₹1,800.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Convenience Fee</span>
+<span>₹120.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Taxes &amp; Charges</span>
+<span>₹90.00</span>
+</div>
+<div class="pt-4 border-t border-outline-variant flex justify-between items-center">
+<span class="text-lg font-bold text-on-surface">Total</span>
+<span class="text-2xl font-bold text-primary">₹2,010.00</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="relative group">
+<input class="w-full bg-surface-container-lowest border border-outline-variant/20 rounded-lg px-4 py-3 focus:ring-1 focus:ring-secondary focus:outline-none transition-all placeholder:text-stone-400" placeholder="Promo Code" type="text"/>
+<button class="absolute right-2 top-2 text-primary font-bold text-xs uppercase tracking-widest px-3 py-1 hover:bg-primary/5 rounded">Apply</button>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-opacity-90 active:scale-[0.98] transition-all">
+                            Proceed to Checkout
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<p class="text-[10px] text-center text-on-surface-variant uppercase tracking-widest mt-4">
+                            Secure payment powered by heirloom banking systems
+                        </p>
+</div>
+</div>
+<div class="mt-8 p-6 bg-tertiary-container/10 border-l-4 border-tertiary rounded-r-xl">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary">restaurant_menu</span>
+<div>
+<p class="text-sm font-bold text-on-tertiary-container">Chef's Note</p>
+<p class="text-xs text-on-tertiary-container/80 mt-1">Ordering for a special occasion? Add a note in the next step and we'll ensure the plating matches the moment.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f7f3ee] dark:bg-stone-900 w-full py-12 px-6 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 max-w-7xl mx-auto">
+<div class="text-xl font-['Newsreader'] text-[#8d1219]">Aksh Dining Hall</div>
+<div class="font-['Plus_Jakarta_Sans'] text-sm text-stone-500">© 2024 Aksh Dining Hall. The Modern Heirloom.</div>
+<div class="flex gap-6">
+<a class="text-stone-500 hover:text-[#8d1219] font-['Plus_Jakarta_Sans'] text-sm transition-all duration-200 underline decoration-[#fead5c] underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-[#8d1219] font-['Plus_Jakarta_Sans'] text-sm transition-all duration-200 underline decoration-[#fead5c] underline-offset-4" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-[#8d1219] font-['Plus_Jakarta_Sans'] text-sm transition-all duration-200 underline decoration-[#fead5c] underline-offset-4" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</body></html>

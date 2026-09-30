@@ -1,0 +1,23 @@
+body 
+{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+background-color: aquamarine;    
+}
+.app 
+{
+width: 50%;
+height: auto;
+margin: auto;
+padding: 15px;
+background-color: black;
+color: white;    
+margin-top: 5%;
+border-radius: 15px;
+}
+.app:hover 
+{
+background-color: blue;
+color: white;    
+}

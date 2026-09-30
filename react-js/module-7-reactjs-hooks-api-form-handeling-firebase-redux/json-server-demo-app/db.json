@@ -1,0 +1,142 @@
+{
+"customers": [
+{
+"id": 1,
+"name": "John Doe",
+"email": "john.doe@example.com"
+},
+{
+"id": 2,
+"name": "Jane Smith",
+"email": "jane.smith@example.com"
+}
+],
+
+"orders": [
+{
+"id": 1,
+"customerId": 1,
+"product": "Laptop",
+"quantity": 1
+},
+{
+"id": 2,
+"customerId": 2,
+"product": "Smartphone",
+"quantity": 2
+}
+],
+
+"cart": [
+{
+"id": 1,
+"customerId": 1,
+"product": "Headphones",
+"quantity": 1
+},
+{
+"id": 2,
+"customerId": 2,
+"product": "Keyboard",
+"quantity": 1
+}
+],
+
+"reviews": [
+{
+"id": 1,
+"customerId": 1,
+"product": "Laptop",
+"rating": 5,
+"comment": "Great laptop!"
+},
+{
+"id": 2,
+"customerId": 2,
+"product": "Smartphone",
+"rating": 4,
+"comment": "Good smartphone, but battery life could be better."
+}
+],
+
+"products": [
+{
+"id": 1,
+"name": "Laptop",
+"price": 999.99,
+"photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGsMz9g3T9PfjNeDzAEoCqWCfjp53afA-f8Q&s"
+},
+{
+"id": 2,
+"name": "Smartphone",
+"price": 499.99,
+"photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBj2eIvoWVb67Mo891UGXD6pR3sEvlwLrt9Q&s"
+},
+{
+"id": 3,
+"name": "Headphones",
+"price": 199.99,
+"photo": "https://dellstatic.luroconnect.com/media/catalog/product/cache/74ae05ef3745aec30d7f5a287debd7f5/h/e/headset-dell-wl7024-hero.jpg"
+},
+{
+"id": 4,
+"name": "Keyboard",
+"price": 49.99,
+"photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfXzV5v5v5v5v5v5v5v5v5v5v5v5v5v5v5&s"
+}
+],
+
+"categories": [
+{
+"id": 1,
+"name": "Electronics"
+},
+{
+"id": 2,
+"name": "Accessories"
+}
+],
+
+"suppliers": [
+{
+"id": 1,
+"name": "Tech Supplier Inc.",
+"contact": "contact@techsupplier.com"
+},
+{
+"id": 2,
+"name": "Gadget Wholesale",
+"contact": "contact@techsupplier.com"
+}
+],
+
+"bills": [
+{
+"id": 1,
+"customerId": 1,
+"amount": 999.99,
+"date": "2024-01-01"
+},
+{"id": 2,
+"customerId": 2,
+"amount": 499.99,
+"date": "2024-01-02"
+}
+
+],
+
+"payments": [
+{
+"id": 1,
+"customerId": 1,
+"amount": 999.99,
+"date": "2024-01-01"
+},
+{
+"id": 2,
+"customerId": 2,
+"amount": 499.99,
+"date": "2024-01-02"
+}
+]
+}

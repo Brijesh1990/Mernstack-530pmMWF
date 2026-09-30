@@ -1,0 +1,11 @@
+.navbar-links li 
+{
+display: inline-block;
+padding: 0px 20px;
+font-size: 25px;  
+}
+.navbar-links a 
+{
+  color: white;
+  text-decoration: none;
+}

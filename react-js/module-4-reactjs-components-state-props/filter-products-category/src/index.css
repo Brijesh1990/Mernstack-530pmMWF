@@ -1,0 +1,23 @@
+.btn-danger
+{
+width: 18% !important;
+height: auto;
+margin: 3px;    
+}
+.prod-grid img 
+{
+width: 80%;
+height: 220px;    
+}
+@media only screen and (max-width:587px)
+{
+.prod-grid
+{
+margin-left: 10%;    
+}    
+.btn-danger
+{
+width: 100% !important;    
+margin-left: 0%;
+}    
+}

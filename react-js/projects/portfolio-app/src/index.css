@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+body 
+{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+background-color: #ecf3fd;  
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+  .menu-open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menu-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .hero-text {
+    font-size: clamp(5rem, 18vw, 13rem);
+    line-height: 0.9;
+  } 

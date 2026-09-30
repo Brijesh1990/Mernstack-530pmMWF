@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login - Mock Flipkart Portal</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<style>
+/* Custom Keyframes to simulate a subtle, continuous animated background */
+@keyframes flow {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+.animate-flow-background {
+background-size: 200% 200%;
+animation: flow 10s ease infinite;
+}
+</style>
+<script>
+// Tailwind Config to define the Flipkart Blue/Orange (optional, but good practice)
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+'flipkart-blue': '#2874f0',
+'flipkart-orange': '#ff9f00',
+}
+}
+}
+}
+</script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+<div class="relative w-full max-w-6xl bg-white shadow-2xl rounded-xl overflow-hidden flex h-[600px]">
+
+<div class="hidden lg:block lg:w-3/5 p-8 relative bg-flipkart-blue/90 grid grid-cols-3 grid-rows-3 gap-1 animate-flow-background">
+
+<div class="bg-flipkart-orange/30 rounded-lg flex items-center justify-center p-2 transition duration-500 hover:scale-[1.05] hover:bg-flipkart-orange/40">
+<span class="text-white text-sm font-semibold opacity-70 animate-pulse">Inventory</span>
+</div>
+<div class="bg-white/10 rounded-lg flex items-center justify-center p-2 transition duration-500 hover:scale-[1.05] hover:bg-white/20">
+<span class="text-white text-sm font-semibold opacity-70">Logistics</span>
+</div>
+<div class="bg-flipkart-orange/30 rounded-lg flex items-center justify-center p-2 transition duration-500 hover:scale-[1.05] hover:bg-flipkart-orange/40">
+<span class="text-white text-sm font-semibold opacity-70 animate-pulse delay-500">Payments</span>
+</div>
+
+<div class="bg-white/10 rounded-lg flex items-center justify-center p-2 transition duration-500 hover:scale-[1.05] hover:bg-white/20">
+<span class="text-white text-sm font-semibold opacity-70">Analytics</span>
+</div>
+<div class="bg-flipkart-orange rounded-lg flex flex-col items-center justify-center p-4 shadow-xl">
+<svg class="animate-spin h-8 w-8 text-white mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+</svg>
+<span class="text-white text-xs font-bold">DATA STREAM</span>
+</div>
+<div class="bg-flipkart-orange/30 rounded-lg flex items-center justify-center p-2 transition duration-500 hover:scale-[1.05] hover:bg-flipkart-orange/40">
+<span class="text-white text-sm font-semibold opacity-70">Security</span>
+</div>
+
+<div class="bg-white/10 rounded-lg flex items-center justify-center p-2 transition duration-500 hover:scale-[1.05] hover:bg-white/20">
+<span class="text-white text-sm font-semibold opacity-70 animate-pulse delay-1000">Orders</span>
+</div>
+<div class="bg-flipkart-orange/30 rounded-lg flex items-center justify-center p-2 transition duration-500 hover:scale-[1.05] hover:bg-flipkart-orange/40">
+<span class="text-white text-sm font-semibold opacity-70">Support</span>
+</div>
+<div class="bg-white/10 rounded-lg flex items-center justify-center p-2 transition duration-500 hover:scale-[1.05] hover:bg-white/20">
+<span class="text-white text-sm font-semibold opacity-70">Reports</span>
+</div>
+
+</div>
+
+<div class="w-full lg:w-2/5 p-12 flex flex-col justify-center">
+
+<div class="text-center mb-10">
+<h1 class="text-4xl font-extrabold text-flipkart-blue">
+F<span class="text-flipkart-orange">K</span><span class="text-flipkart-blue"> ADMIN</span>
+</h1>
+<p class="text-gray-500 text-sm mt-2">Internal Management Portal</p>
+</div>
+
+<form  method="POST">
+<div class="mb-6">
+<label for="username" class="block text-sm font-medium text-gray-700 mb-2">Admin ID / Email</label>
+<input type="text" id="username" name="username" placeholder="Enter your Admin ID" required
+class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-flipkart-blue transition duration-300">
+</div>
+
+<div class="mb-8">
+<label for="password" class="block text-sm font-medium text-gray-700 mb-2">Password</label>
+<input type="password" id="password" name="password" placeholder="••••••••" required
+class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-flipkart-blue transition duration-300">
+</div>
+
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center">
+<input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-flipkart-blue border-gray-300 rounded focus:ring-flipkart-blue">
+<label for="remember-me" class="ml-2 block text-sm text-gray-900">Remember Me</label>
+</div>
+<a href="#" class="text-sm font-medium text-flipkart-blue hover:text-flipkart-orange transition duration-300">Forgot Password?</a>
+</div>
+
+<button type="button" onclick="login()"
+class="w-full py-3 bg-flipkart-orange text-white font-semibold rounded-lg shadow-md hover:bg-flipkart-blue transition duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-flipkart-orange/50">
+<span class="animate-pulse-slow">SECURE LOGIN</span>
+</button>
+</form>
+
+<p class="mt-8 text-xs text-center text-gray-400">
+© 2024 Flipkart. For internal use only. Unauthorized access is prohibited.
+</p>
+</div>
+
+</div>
+
+</body>
+</html>

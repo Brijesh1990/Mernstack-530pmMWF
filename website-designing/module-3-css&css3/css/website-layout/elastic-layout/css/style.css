@@ -1,0 +1,92 @@
+/* elastic layout : elastic layout is always width in em and height in em
+Note : elastic layout not much help to create responsive content
+
+1em = 1/16px;
+
+*/
+* 
+{
+margin: 0em;
+padding: 0em;    
+font-family: cursive;
+}
+body 
+{
+background-color: aliceblue;    
+overflow-x: hidden;
+}
+#header
+{
+width: 85.625em;
+height: 7.5em;
+background-color: white;
+top: 0em;
+position: sticky;
+border-bottom: solid 0.125em lightblue;
+}
+
+#navbar
+{
+
+width: 81.25em;
+height: 5em;
+background-color: white;
+margin-top: 0.625em;
+margin-left: 2.1875em;
+}
+#slider
+{
+
+width: 81.25em;
+height: 15.625em;
+background-color: white;
+margin-top: 0.625em;
+margin-left: 2.1875em;    
+}
+#slider img 
+{
+width: 81.25em;
+height: 15.625em;    
+}
+#content
+{
+
+width: 81.25em;
+height: auto;
+margin-top: 0.625em;
+margin-left: 2.1875em;       
+}
+.product-grid
+{
+width: 81.25em;
+height: auto;
+margin-top: 0.625em;     
+display: flex;
+flex-direction: row;
+}
+.product-grid1
+{
+width: 56.25em;
+height: 12.5em;
+background-color: white;
+}
+.product-adv1
+{
+width: 21.875em;
+height: 12.5em;
+background-color: white;
+margin-left: 3.125em;
+}
+.product-adv1 img
+{
+width: 21.875em;
+height: 12.5em;
+}
+
+#footer 
+{
+width: 85.625em;
+height: 25em;
+background-color: gray;
+margin-top: 0.75em;    
+}

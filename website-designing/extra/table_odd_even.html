@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        table 
+        {
+            text-align: center;
+            width: 50%;
+            margin: auto;
+        }
+        th:nth-child(odd),th:nth-child(even)
+        {
+            background-color: lightgray;
+        }
+        th:nth-child(odd)
+        {
+            background-color: black;
+            color: white;
+        }
+        td:nth-child(odd)
+        {
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+
+    <table border="1" width="50%" align="center">
+        <tr>
+            <th>Index</th>
+            <th>Number</th>
+            <th>Type</th>
+            <th>Square</th>
+            <th>Action</th>
+        </tr>
+
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>Odd</td>
+        <td>1</td>
+        <td><button>Delete</button></td>
+      </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>Even</td>
+            <td>4</td>
+            <td><button>Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>Odd</td>
+            <td>9</td>
+            <td><button>Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>4</td>
+            <td>Even</td>
+            <td>16</td>
+            <td><button>Delete</button></td>
+        </tr>
+
+    </table>
+</body>
+</html>

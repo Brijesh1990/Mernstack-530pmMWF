@@ -1,0 +1,24 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+body 
+{
+margin: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+.app 
+{
+ @include center;
+ height:50vh;
+ background-color: $primary-color; 
+ padding: $padding; 
+}
+.box 
+{
+ width: 30%;
+ height: 30vh;
+ margin: $margin;
+ padding: $padding;
+ background-color: $success-color;
+}

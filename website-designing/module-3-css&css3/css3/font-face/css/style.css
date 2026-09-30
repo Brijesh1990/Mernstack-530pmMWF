@@ -1,0 +1,25 @@
+@import url(font-face.css);
+body 
+{
+/* background-color: black;     */
+background: url('https://www.solidbackgrounds.com/download/2560x1440-blue-abstract-noise-free-website-background-image.jpg') no-repeat;
+background-size: cover;
+background-attachment: fixed;
+font-family: type-write-bold;
+}
+div 
+{
+width: 50%;
+height: auto;
+margin: auto;
+padding: 20px;
+background-color: white;
+color: black;
+margin-top: 5%;    
+}
+div h1 
+{
+font-family: cofee-town;
+font-size: 48px;
+letter-spacing: 3px;    
+}

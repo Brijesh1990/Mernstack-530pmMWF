@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f1ede8",
+                        "surface-container-high": "#ebe8e3",
+                        "inverse-on-surface": "#f4f0eb",
+                        "outline": "#8d706e",
+                        "inverse-surface": "#31302d",
+                        "surface-container-highest": "#e6e2dd",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#ffb3ad",
+                        "surface-tint": "#af2d2d",
+                        "surface-bright": "#fdf9f4",
+                        "on-secondary-fixed-variant": "#6b3b00",
+                        "on-secondary-fixed": "#2d1600",
+                        "primary-container": "#af2d2d",
+                        "primary-fixed": "#ffdad7",
+                        "surface": "#fdf9f4",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "background": "#fdf9f4",
+                        "surface-dim": "#ddd9d5",
+                        "tertiary-container": "#cca72f",
+                        "on-tertiary-container": "#4e3d00",
+                        "on-surface-variant": "#59413f",
+                        "surface-variant": "#e6e2dd",
+                        "on-primary-fixed": "#410004",
+                        "tertiary-fixed": "#ffe088",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "surface-container-low": "#f7f3ee",
+                        "on-secondary-container": "#734000",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "primary": "#8d1219",
+                        "secondary-fixed": "#ffdcbf",
+                        "secondary-fixed-dim": "#ffb874",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#8e1319",
+                        "on-surface": "#1c1c19",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#fead5c",
+                        "secondary": "#8c4f00",
+                        "on-background": "#1c1c19",
+                        "inverse-primary": "#ffb3ad",
+                        "on-primary-container": "#ffccc8",
+                        "tertiary": "#735c00",
+                        "outline-variant": "#e1bfbc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<nav class="w-full sticky top-0 z-50 bg-[#fdf9f4] dark:bg-stone-950 backdrop-blur-md bg-opacity-90 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold font-['Newsreader'] text-[#8d1219] dark:text-[#af2d2d]">
+                Aksh Dining Hall
+            </div>
+<div class="hidden md:flex items-center gap-8 font-['Newsreader'] uppercase tracking-wide">
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] cursor-pointer active:scale-95 transition-transform" href="#">Home</a>
+<a class="text-[#8d1219] dark:text-[#af2d2d] border-b-2 border-[#fead5c] pb-1 cursor-pointer active:scale-95 transition-transform" href="#">Menu</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] cursor-pointer active:scale-95 transition-transform" href="#">About Us</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] cursor-pointer active:scale-95 transition-transform" href="#">Feedback</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-[#8d1219] cursor-pointer active:scale-95 transition-transform" href="#">Branches</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-stone-400">search</span>
+<input class="pl-10 pr-4 py-2 rounded-xl bg-surface-container-high border-none focus:ring-2 focus:ring-secondary text-sm w-48 lg:w-64" placeholder="Search menu..." type="text"/>
+</div>
+<button class="material-symbols-outlined text-[#8d1219] cursor-pointer active:scale-95 transition-transform" data-icon="shopping_cart">shopping_cart</button>
+<button class="bg-[#8d1219] text-white px-6 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity">Login</button>
+</div>
+</div>
+</nav>
+<!-- Hero / Category Header -->
+<header class="relative w-full h-[409px] overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Authentic Indian dining table with variety of bronze plates and bowls containing colorful Gujarati and Punjabi dishes under warm soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoeC2SDl5vksoksKFq5M9L1-9A1GmBkmciH0GLZ5_XaDEqiq2m2IX-99GVg3Jk3a9hzI8LoQQMLorMCrQ1HbaXpW_YLRiVRv_OfjaMIZ6Q14NyITF68GGcmynT48PhrdKA1j_UxAiCzxmUgGgeU6KVAKbnOmSy8sgFlVWuTzjSDStruHgdW4C9fumtczvjiMPMynEwIWXSBaGcXZYo3gpKI3zp9jC0UTsEPCAUXUc68l4XKKKppznyY1Kq2oVc_cAv3DH-lPruyyMX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<div class="absolute bottom-12 left-6 md:left-24 max-w-2xl">
+<h1 class="text-5xl md:text-7xl text-primary font-bold mb-4">The Culinary Manuscript</h1>
+<p class="text-on-surface-variant font-body text-lg max-w-lg">A curated journey through the heart of Gujarat and Punjab, crafted with heirloom recipes and modern precision.</p>
+</div>
+</header>
+<!-- Filters & Category Navigation -->
+<section class="max-w-7xl mx-auto px-6 py-12 w-full">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16">
+<div class="flex flex-wrap gap-4">
+<button class="px-6 py-2 rounded-full border border-outline-variant/20 bg-surface-container-low text-primary font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+                    All
+                </button>
+<button class="px-6 py-2 rounded-full border border-outline-variant/20 hover:bg-surface-container-high transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-green-600">eco</span>
+                    Veg
+                </button>
+<button class="px-6 py-2 rounded-full border border-outline-variant/20 hover:bg-surface-container-high transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-red-600">local_fire_department</span>
+                    Spicy
+                </button>
+<button class="px-6 py-2 rounded-full border border-outline-variant/20 hover:bg-surface-container-high transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-amber-500">star</span>
+                    Popular
+                </button>
+</div>
+<div class="flex gap-8 font-headline text-2xl text-stone-400">
+<a class="text-primary border-b-2 border-secondary pb-1" href="#gujarati">Gujarati</a>
+<a class="hover:text-primary transition-colors" href="#punjabi">Punjabi</a>
+<a class="hover:text-primary transition-colors" href="#chinese">Chinese</a>
+</div>
+</div>
+<!-- Gujarati Thali Section -->
+<div class="mb-24" id="gujarati">
+<div class="flex items-baseline gap-6 mb-12">
+<h2 class="text-4xl font-bold text-primary">Gujarati Thali</h2>
+<div class="h-px flex-grow bg-outline-variant/20"></div>
+<span class="font-label text-stone-400 uppercase tracking-widest text-sm">The Heritage Selection</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Card 1 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden mb-6 bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Traditional Gujarati Thali with small bowls of dal, kadi, shaak, rotli, and rice on a reflective metal plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5xrZSUvC__w7bCrmFX1Q2wPpj83KzzuRXbvUcNE6nBYsExIUYFuk6YLSCg7mX5hRzfn77tsYgqVvsvjaMqC-xtHRFmPhLEsluNGhjv1VrheiIy5vD6JJzYErvFfik_6o-CGy8gIeQoBaWIAs0zxl4xtVB8ULyb_ELnHtScTR3SThAnbhQOU2toxNyzxUOgl5GsW8ZlLccirdzrXfZWRINjQnCCNHin3KqdPs2kuFDA1HGdCQSRwnYQN-E_an3LAtZHYp5PFDXwT0z"/>
+<div class="absolute top-4 right-4">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-bold uppercase tracking-tighter">Popular</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-semibold">The Royal Gujarati Thali</h3>
+<span class="font-body font-bold text-primary text-xl">₹450</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Unlimited servings of Dal, Kadhi, 4 types of Shaak, Farsan, Sweets, and hand-rolled Rotli.</p>
+<button class="mt-auto w-full py-4 bg-primary text-on-primary font-body font-semibold rounded-lg flex items-center justify-center gap-3 hover:opacity-90 transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col md:mt-12">
+<div class="relative aspect-[4/5] overflow-hidden mb-6 bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Plate of golden-brown Dhokla pieces garnished with mustard seeds, green chilies, and coriander leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgm4TLeNkWAlKK1rTDwTjIvoGCe8yN3pZXe3nsqTKTz8Fm7c6oXmXiRktQGkWf75G2u9ZwmS7m9vva27L6RMGQYEqki9w_7dGut-WXRMRFuovtupabSllHoRYYUSj_XhuhI0KOr7tCh6fSohylNJlokcrTHQB2TwL2syucz_xVUjE7K-OJlU20eJzAJQOfjMR4Ss7n9rFXn6-uFEUuAZvB3JTh89tAGsn2pLaaBEvNgaRvzYXqZ96Q-D5BJjpdYDzsfOxb_5_CahOO"/>
+<div class="absolute top-4 right-4">
+<span class="bg-surface-container-lowest text-green-700 px-3 py-1 rounded-full text-xs font-bold uppercase border border-green-100 flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-green-600"></span> Veg
+                            </span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-semibold">Surti Locho Platter</h3>
+<span class="font-body font-bold text-primary text-xl">₹180</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Steamed chickpea flour delicacy topped with spicy chutney, butter, and sev.</p>
+<button class="mt-auto w-full py-4 bg-primary text-on-primary font-body font-semibold rounded-lg flex items-center justify-center gap-3 hover:opacity-90 transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden mb-6 bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Seasonal Gujarati Undhiyu with various root vegetables and muthia in a clay pot, garnished with coconut" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIAPjXhQFbj11ISt0gm_fCW3tQH82fkC0DvrY9xaCfZYUYE0xgFUIpoK3p4sXYhG7tFgHNRqnn-GVongbj8J-wWxPff3I8UNIyelbQUDesIDsBhAHjOSbyDE82pXuk5TjF1N_yT_NHBvGHPYuEdnfKBEg_9K1i_Z8grksXcZ4JjCO7tpfr1mmypYHjt-ucFb8PofV0Nhvo0whTt0GQw6mvvXrwJ4SnNb2SkFRfYwKl0Gvc5OHEPpWyu8MqvwTEIFnlLPxr0Nk-Bxp-"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-semibold">Authentic Undhiyu</h3>
+<span class="font-body font-bold text-primary text-xl">₹320</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">A winter special slow-cooked vegetable casserole with fenugreek dumplings.</p>
+<button class="mt-auto w-full py-4 bg-primary text-on-primary font-body font-semibold rounded-lg flex items-center justify-center gap-3 hover:opacity-90 transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+</div>
+</div>
+<!-- Punjabi Thali Section -->
+<div class="mb-24" id="punjabi">
+<div class="flex items-baseline gap-6 mb-12">
+<h2 class="text-4xl font-bold text-primary">Punjabi Thali</h2>
+<div class="h-px flex-grow bg-outline-variant/20"></div>
+<span class="font-label text-stone-400 uppercase tracking-widest text-sm">Rich &amp; Soulful</span>
+</div>
+<!-- Bento Layout for Punjabi -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-2 group flex flex-col bg-surface-container-low p-6 rounded-xl">
+<div class="relative aspect-video overflow-hidden mb-6 rounded-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Creamy Paneer Tikka Masala in a copper handi with steam rising, surrounded by butter naan pieces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_g_SF_XakEmtFpKc0jT1X5W2tFVOtcVhtuSTizsp8gPx7QaORupKQESK2ONTkM7ONfG5fS9ThEbKh6ZJL3SCIMcRr4laXGenNBgDPaKCA1JK5_TyEHOiZIpDYsxr-ZsDylfcG29Cer8fZeeDiPlnapFv3mLlRWHEI2Xrk4smk_DvzQu9_G6nIFp_9sM4F-xxF0SaE0Rua6BsEQnooHYOEMQHhZyo3OL9bi4yvB0PvdaIi3qU4sg-LXlJ0zVPI4_QFpPWQv9DSOXww"/>
+</div>
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-3xl font-bold">Amritsari Kulcha Thali</h3>
+<span class="text-2xl font-bold text-primary">₹380</span>
+</div>
+<p class="text-on-surface-variant mb-6 italic">Butter-soaked kulchas served with pindi chole and creamy dal makhani.</p>
+<button class="bg-secondary-container text-on-secondary-container py-3 px-8 rounded-lg font-semibold self-start hover:opacity-90 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined">add</span> Quick Add
+                    </button>
+</div>
+<div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group flex flex-col">
+<div class="relative aspect-square overflow-hidden mb-4 rounded-lg bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Dark and rich Dal Makhani with a swirl of fresh cream and ginger juliennes on top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYZliBJ1_2lw5qbJ8eufvO-JQzpy5RINTs4lmEn9VFhyjMEFjvgtpSjykktU0AsG7p8iYIzLox6jIaC8nu7EmlWJXQz8ORsoBNNenpmX9D_UWfNUwNnDn53o5Cn9yL-e1dxEMiUX0xvpvNPRkZCB88xMyrU3RJtSjwqbB7NqidYiDYBFXpXVOjYWOw72N84UYrP5EnLRrEHjpZHsJ4j_CP1Vh5_QAF1uMfUI51r3kw7FIFRjVNyaRDCSNroxVcojvJyWSWSphPPi0A"/>
+</div>
+<h4 class="font-bold text-xl">Dal Makhani Prime</h4>
+<p class="text-primary font-bold">₹240</p>
+</div>
+<div class="group flex flex-col">
+<div class="relative aspect-square overflow-hidden mb-4 rounded-lg bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Tender pieces of Paneer Tikka with charred edges and bell peppers on a white plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGIoYAh9f18j67iEiOhZCmBWAnxQDyF8g8ztEwUYWao8C1oLIsn5IC6hyq6DlTUgeksJtb4vKNgYNz0b3uvgUuEmAMhrebQeleQrXJwU_LYNk-iV1lDusNFZrXzc3KeK_8m6BIB1xK5ij0ik98e1xnKSY2ss3TrEhnM555tdzi7pRfiMlTzoWhcP254Bn_6vNnyGAySRXQ5U76O8MQBQFL75E9zFrijGIIIUZTAdrLAMYmOre-b5tkNR5Q4E8KSwUtIAl5QrVbScSR"/>
+</div>
+<h4 class="font-bold text-xl">Paneer Lababdar</h4>
+<p class="text-primary font-bold">₹310</p>
+</div>
+<div class="group flex flex-col">
+<div class="relative aspect-square overflow-hidden mb-4 rounded-lg bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Stack of assorted Indian breads including garlic naan, tandoori roti and lachha paratha" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAONgghF2fwmeHesNVij11muGWJ-lhXz5aRB9uSp6BbYNJaMnIUZevr54sbzN3P-AexLucIp4xDKJzJsOZ15MxO7aQGIB3AZW00wBudgAhawastYhA4AJOwQs6gIvf5Xu1GRsxLMQIDXidwn1KLsXVt-QVFedAxjMgYMLzjTE-EX0c2Ep0BP_WZAbRAY5NJ8B-grZyx5p0MyYuxQP3sDM7723m0cjjlUiz0Bi7ENkKjteLy2e7KNa3sZxoEaeZeMPd03tun6e7zf7cH"/>
+</div>
+<h4 class="font-bold text-xl">Bread Basket</h4>
+<p class="text-primary font-bold">₹220</p>
+</div>
+<div class="group flex flex-col">
+<div class="relative aspect-square overflow-hidden mb-4 rounded-lg bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Tall glasses of thick sweet Lassi with a layer of cream and pistachios on top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd9aH9Kpw8C29vMxChEmwHap2pc-Ht9V0omGsX3KDLUxtDEwxA_kYiZ6IUsxxYCA631c26J1LnYx0jP9hB_UkuGYXqLx2Eo5P4yRBymOA7wm69zF7Q625llJjvQ5kluY_dNM-9u2elinzyGbLp2EVKezEqKzhCnlYMSzTNWe2erQ7NsPZZGePgeJMERrj0wu89oLRNRybYqP5NcgBpUvdp9d5HFdPx-nksjk_H-QUN8S0GUA4NMa29v76t35GTPEw8UPXBAXpVF13c"/>
+</div>
+<h4 class="font-bold text-xl">Royal Patiala Lassi</h4>
+<p class="text-primary font-bold">₹120</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Chinese Food Section -->
+<div class="mb-24" id="chinese">
+<div class="flex items-baseline gap-6 mb-12">
+<h2 class="text-4xl font-bold text-primary">Chinese Food</h2>
+<div class="h-px flex-grow bg-outline-variant/20"></div>
+<span class="font-label text-stone-400 uppercase tracking-widest text-sm">Oriental Fusion</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card -->
+<div class="bg-surface-container-low p-4 rounded-2xl group">
+<div class="overflow-hidden rounded-xl mb-4 aspect-square">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Colorful vegetable fried rice with peas, carrots and spring onions in a black bowl with chopsticks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh5st4v8KYZe8ZbpjuM8c0gctE0BGVzpz_bvlz3-pdgBQCb6WQJ3ThQ7MQSXP47I6FyF8OXFcaOJQff8ONovCiOEC13yEkEWCDvSn0Mh2_CqUE0XZckQ_gLvcN5iNxQC3iB0fymOpKQlUJowHxhGFGqI5T4OVIVYz6u2qZhoeuUhOaMpNvBggrFLTNdImGC0np9UJ9ICUqQqPNNoHgjZI3Emijk6JmRZnVcOizU7kjcDQdfm_9b987fohlCAhSdIq5o4OoleiWkFUD"/>
+</div>
+<div class="flex flex-col gap-1 mb-4">
+<span class="text-xs text-secondary font-bold uppercase tracking-widest">Wok Tossed</span>
+<h3 class="text-xl font-bold">Schezwan Fried Rice</h3>
+<p class="text-primary font-bold">₹260</p>
+</div>
+<button class="w-full py-3 bg-primary/5 text-primary border border-primary/20 rounded-lg hover:bg-primary hover:text-white transition-all active:scale-95 font-semibold">
+                        Add to Cart
+                    </button>
+</div>
+<!-- Card -->
+<div class="bg-surface-container-low p-4 rounded-2xl group">
+<div class="overflow-hidden rounded-xl mb-4 aspect-square">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Plate of vegetable Hakka noodles with thin strips of bell peppers, carrots, and cabbage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5et8EBrgiSrQ0cxj7LEGzfic7QpzR4N0GdAH5puz83Pb48kpn4HAWWgM2pSZ4tr3iBpF3xi0zhBVsImBSj1XGwBnqL8m9N-wc7Z8o8App-prSEd8GC7fBAdzN1uCHNZzc1_S27Ue06SOqAuhj2Wy1gWXb_ofK3sLl9cT8eMn8pU_q1YYKQu7s-jTj_EySX4wss-7BFNsBtZJfC2X-Frhjw6c-kf2m25fk7220ADA6dJ77DoxbBaUs4bFuT0aqS6qpdNFSltUFL-Hk"/>
+</div>
+<div class="flex flex-col gap-1 mb-4">
+<span class="text-xs text-secondary font-bold uppercase tracking-widest">Signature</span>
+<h3 class="text-xl font-bold">Veg Hakka Noodles</h3>
+<p class="text-primary font-bold">₹240</p>
+</div>
+<button class="w-full py-3 bg-primary/5 text-primary border border-primary/20 rounded-lg hover:bg-primary hover:text-white transition-all active:scale-95 font-semibold">
+                        Add to Cart
+                    </button>
+</div>
+<!-- Card -->
+<div class="bg-surface-container-low p-4 rounded-2xl group">
+<div class="overflow-hidden rounded-xl mb-4 aspect-square">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Crispy dry Manchurian balls tossed in a dark spicy sauce with spring onion garnish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-1iQkISM1gDzP9Zc4Q25oJYZpaxycaQ3yVZdFDUXyUiFXv8nRh_EolYEIJT_jtRqiAYTjdCgQVt9MB7_x6aXydUzsE24MZp2Uz-lqcjUFFSyK7p1gEinsNYxn7QGVVH8GW-3zAjqacLdRFLBEmiI9iOQ3sb2weNtR3og4Jx70l65NkAYflNuOeHoNhlyTV9ugbkoZW05e2YHpojhlwJ2uZJOCtFgEULXdyAY85Yx1pv1Oqmg_Rhvb5B8sZqS6DSlOQamv1oi7_F0G"/>
+</div>
+<div class="flex flex-col gap-1 mb-4">
+<span class="text-xs text-secondary font-bold uppercase tracking-widest">Spicy</span>
+<h3 class="text-xl font-bold">Veg Manchurian Dry</h3>
+<p class="text-primary font-bold">₹210</p>
+</div>
+<button class="w-full py-3 bg-primary/5 text-primary border border-primary/20 rounded-lg hover:bg-primary hover:text-white transition-all active:scale-95 font-semibold">
+                        Add to Cart
+                    </button>
+</div>
+<!-- Card -->
+<div class="bg-surface-container-low p-4 rounded-2xl group">
+<div class="overflow-hidden rounded-xl mb-4 aspect-square">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Deep fried crispy spring rolls cut in half showing vegetable filling, served with sweet chili sauce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGWkfcvjc2DGIrH5c_DMLYE8Q-UBmvyr-NF8TAqiKM8SAQptkm2k5BJCxHNBGOcQ15U8SvKInff9ytCMSrk0kljkY3l6ON9opmfVw2oqgC3-HQWdJIDQNYM7enf8iAgDZ1LLDbZ9aMyja8TclnaS9LiawH7yqSeA4ETno6gCXEGo9JdgIW8JWSYc27EvWoBpim-bfp5F2F2ve9dXPRPk8B4mjq4ylAMsIqq1CYnCKGym1Gm66RbqvhTqcSVOHkajsVA0e-sYKL-o9V"/>
+</div>
+<div class="flex flex-col gap-1 mb-4">
+<span class="text-xs text-secondary font-bold uppercase tracking-widest">Appetizer</span>
+<h3 class="text-xl font-bold">Spring Rolls (6 Pcs)</h3>
+<p class="text-primary font-bold">₹190</p>
+</div>
+<button class="w-full py-3 bg-primary/5 text-primary border border-primary/20 rounded-lg hover:bg-primary hover:text-white transition-all active:scale-95 font-semibold">
+                        Add to Cart
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 mt-auto bg-[#f7f3ee] dark:bg-stone-900 border-t border-outline-variant/5">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 max-w-7xl mx-auto">
+<div class="text-xl font-['Newsreader'] text-[#8d1219]">Aksh Dining Hall</div>
+<div class="flex gap-8 font-['Plus_Jakarta_Sans'] text-sm">
+<a class="text-stone-500 hover:text-[#8d1219] underline decoration-[#fead5c] underline-offset-4 transition-all duration-200" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-[#8d1219] underline decoration-[#fead5c] underline-offset-4 transition-all duration-200" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-[#8d1219] underline decoration-[#fead5c] underline-offset-4 transition-all duration-200" href="#">Contact Us</a>
+</div>
+<div class="text-stone-500 text-sm font-['Plus_Jakarta_Sans']">
+                © 2024 Aksh Dining Hall. The Modern Heirloom.
+            </div>
+</div>
+</footer>
+</body></html>

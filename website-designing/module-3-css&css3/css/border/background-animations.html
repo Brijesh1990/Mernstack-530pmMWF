@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/font-awesome.min.css'>
+    <script src='main.js'></script>
+    <style>
+        @keyframes anim {
+/* 
+            from 
+            {
+              margin: 0;
+              padding: 0;
+              background-color: #fad2d2;
+            }
+            to 
+            {
+
+              margin: 0;
+              padding: 0;
+              background-color: #a9a7cf;
+            } */
+
+            0%
+            {
+              margin: 0;
+              padding: 0;
+              background-color: #a9a7cf;   
+            }
+            10% 
+            {
+                 margin: 0;
+              padding: 0;
+              background-color: blue;
+            }
+            20%{
+                 margin: 0;
+              padding: 0;
+              background-color: red;
+            }
+            30% 
+            {
+                 margin: 0;
+              padding: 0;
+              background-color: green;
+            }
+            40%
+            {
+                 margin: 0;
+              padding: 0;
+              background-color: yellow;
+            }
+            50% 
+            {
+                 margin: 0;
+              padding: 0;
+              background-color: coral;
+            }
+            
+        }
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+            /* animation: anim infinite 15s; */
+            /* animation: anim infinite 0.2s; */
+             /* animation: anim alternate 22s; */
+             animation-delay: 5s !important;
+             animation: anim infinite 10s;
+             /* animation-direction: alternate-reverse; */
+        }
+        #parent
+        {
+         width: 50%;
+         height: auto;
+         margin: auto;   
+        background-color: white;
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+        border-top: solid 5px blue;
+        }
+        .box1 
+        {
+            width: 25%;
+            height: 200px;
+            padding: 25px;
+            border-right: solid 1px lightgray;
+        }
+        
+        .box2 
+        {
+            width: 60%;
+            height: 200px;
+            padding: 25px;
+        }
+        .box1 img 
+        {
+            border-radius: 50%;
+        }
+        .box3
+        {
+         width: 15%;
+         height: 200px;
+         padding: 0px; 
+        }
+        #btn 
+        {
+        width: 40px;
+        height: 40px;
+        border: solid 2px red;
+        background-color: white;
+        font-size: 20px;    
+        }
+        .fa-pencil
+        {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="parent">
+
+        <div class="box1">
+            <p align="center"><img src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" width="150px" height="150px" /></p>
+        </div>
+        <div class="box2"></div>
+         <div class="box3">
+            <button type="button" id="btn"><span class="fa far fa-pencil"> </span></button>
+         </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body 
+{
+margin: 0;
+padding: 0;
+background-color: aliceblue;    
+}
+
+#content, 
+#content1,
+#content2
+{
+width: 30%;
+height: auto;
+margin: auto;    
+margin-top: 5%;
+}
+#content img 
+{
+width: 100%;   
+height: auto;
+-webkit-filter: grayscale(100%); 
+-moz-filter: grayscale(100%); 
+-o-filter: grayscale(100%); 
+-ie-filter: grayscale(100%); 
+filter: grayscale(100%); 
+
+}
+#content img:hover 
+{
+width: 100%;   
+height: auto;
+-webkit-filter: grayscale(50%); 
+-moz-filter: grayscale(50%); 
+-o-filter: grayscale(50%); 
+-ie-filter: grayscale(50%); 
+filter: grayscale(50%); 
+
+}
+#content1 img 
+{
+width: 100%;   
+height: auto;
+-webkit-filter: blur(10px); 
+-moz-filter: blur(10px); 
+-o-filter: blur(10px); 
+-ie-filter: blur(10px); 
+filter: blur(10px); 
+
+}
+#content1 img:hover 
+{
+width: 100%;   
+height: auto;
+-webkit-filter: blur(0px); 
+-moz-filter: blur(0px); 
+-o-filter: blur(0px); 
+-ie-filter: blur(0px); 
+filter: blur(0px);
+transition: 2s ease all;
+
+}
+
+
+#content2 img 
+{
+width: 100%;   
+height: auto;
+-webkit-filter: brightness(20%); 
+-moz-filter: brightness(20%); 
+-o-filter:brightness(20%);  
+-ie-filter:brightness(20%);
+filter: brightness(20%);
+
+}
+#content2 img:hover 
+{
+width: 100%;   
+height: auto;
+-webkit-filter: brightness(100%); 
+-moz-filter: brightness(100%); 
+-o-filter:brightness(100%);  
+-ie-filter:brightness(100%);
+filter: brightness(100%);
+filter: brightness(100%);
+transition: 2s ease all;
+
+}

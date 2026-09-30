@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        #content 
+        {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding: 25px;
+        background-color: lightgray;   
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        }
+        .box 
+        {
+         width: 80%;
+         height: auto;
+         margin: 5px;
+         padding: 25px;
+         background-color: red;   
+        }
+        #navbar 
+        {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        background-color: black;    
+        padding: 25px;
+        }
+        #navbar ul li 
+        {
+         /* display: inline;    */
+         display: inline-block;
+         padding: 2px 25px;
+        }
+        #navbar ul li a 
+        {
+         text-decoration: none;
+         list-style-type: none;
+         color: white; 
+        }
+    </style>
+</head>
+<body>
+   <section id="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+   </section> 
+   <section id="content">
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+   </section>
+
+</body>
+</html>

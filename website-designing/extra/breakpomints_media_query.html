@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        
+        .box
+        {
+            width: 50%;
+            height: 300px;
+            margin-left: 25%;
+    
+            position: relative;
+            border: solid 2px #000;
+        }
+        .box1
+        {
+            width: 80%;
+            height: 300px;
+             position: absolute;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%,-50%);
+        }
+
+        /* create all breakpoints */
+        @media (max-width: 600px) {
+            .box {
+                width: 80%;
+                margin-left: 10%;
+            }
+            .box1 {
+                width: 100%;
+            }
+        }
+        @media (min-width: 601px) and (max-width: 900px) {
+            .box {
+                width: 70%;
+                margin-left: 15%;
+            }
+            .box1 {
+                width: 90%;
+            }
+        }
+
+        @media (min-width: 901px) and (max-width: 1200px) {
+            .box {
+                width: 60%;
+                margin-left: 20%;
+            }
+            .box1 {
+                width: 85%;
+            }
+        }
+
+            @media (min-width: 1201px) {
+                .box {
+                    width: 50%;
+                    margin-left: 25%;
+                }
+                .box1 {
+                    width: 80%;
+                }
+            }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="box1">
+            <p>Resize the browser window to see the effect!</p>
+            <p>The box width and position will change based on the screen size.</p>
+            <p>Try to make the window smaller than 600px to see the changes.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

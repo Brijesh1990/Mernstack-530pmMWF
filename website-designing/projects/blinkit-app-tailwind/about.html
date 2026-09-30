@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<!-- tailwinds css -->
+<link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+<!-- font address  -->
+ <link rel='stylesheet' type='text/css' media='screen' href='css/font-awesome.css'>
+<!-- tailwind js -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+<header class="bg-white shadow top-0  z-50 sticky">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Top row -->
+    <div class="flex items-center justify-between py-4">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <h1 class="font-bold text-3xl sm:text-4xl">
+            <a href="index.html">
+          <span class="text-yellow-400">Blink</span
+          ><span class="text-green-600">it</span>
+          </a></h1>
+      </div>
+
+      <!-- Desktop / Tablet search -->
+      <div class="hidden md:block flex-1 mx-6">
+        <input
+          type="text"
+          placeholder="Search for products..."
+          class="border border-gray-300 rounded-full px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
+      </div>
+
+      <!-- Desktop / Tablet buttons -->
+      <div class="hidden md:flex items-center gap-3">
+        <button command="show-modal" commandfor="dialog"
+          class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700"
+        >
+          Login
+        </button>
+        <button command="show-modal" commandfor="dialog1"
+          class="bg-yellow-400 text-white px-4 py-2 rounded-full hover:bg-yellow-500"
+        >
+          Cart
+        </button>
+      </div>
+
+      <!-- Mobile toggler -->
+      <button
+        id="menuToggle"
+        class="md:hidden inline-flex items-center justify-center p-2 rounded-md border border-gray-200 hover:bg-gray-100"
+        aria-label="Toggle menu"
+      >
+        <!-- simple hamburger icon -->
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile dropdown menu -->
+    <div id="mobileMenu" class="md:hidden space-y-3 pb-4 hidden">
+      <!-- search box -->
+      <div>
+        <input
+          type="text"
+          placeholder="Search for products..."
+          class="border border-gray-300 rounded-full px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
+      </div>
+
+      <!-- login & cart buttons -->
+      <div class="flex flex-col xs:flex-row gap-3">
+        <button command="show-modal" commandfor="dialog"
+          class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 w-full"
+        >
+          Login
+        </button>
+        <button command="show-modal" commandfor="dialog1"
+          class="bg-yellow-400 text-white px-4 py-2 rounded-full hover:bg-yellow-500 w-full"
+        >
+          Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- content section -->
+<section class="py-5 content">
+
+  <!-- HERO SECTION -->
+  <div class="bg-green-500 text-white py-16 px-6 text-center rounded-xl">
+    <h1 class="text-4xl font-bold">About Blinkit</h1>
+    <p class="mt-3 text-lg max-w-2xl mx-auto">
+      We deliver everything you need in just minutes. Fast, fresh and trusted by millions.
+    </p>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <div class="max-w-7xl mx-auto px-6 mt-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Left text -->
+      <div>
+        <h2 class="text-3xl font-semibold mb-4">Who We Are</h2>
+        <p class="text-gray-600 leading-relaxed">
+          Blinkit is India’s fastest-growing quick-commerce platform, helping millions
+          of customers get groceries, essentials, home supplies, and more—delivered
+          in minutes. With a strong network of partner stores and cutting-edge
+          technology, we ensure a lightning-fast experience.
+        </p>
+      </div>
+
+      <!-- Right Image -->
+      <div>
+        <img src="https://media.assettype.com/freepressjournal/2023-04/ea771449-4d3d-44c2-8709-38d2e46d9cec/Untitled_design___2023_04_16T150008_134.jpg"
+             class="rounded-xl shadow w-full object-cover" alt="About Blinkit">
+      </div>
+    </div>
+  </div>
+
+  <!-- OUR MISSION -->
+  <div class="max-w-7xl mx-auto px-6 mt-16">
+    <h2 class="text-3xl font-semibold text-center">Our Mission</h2>
+    <p class="text-center text-gray-600 mt-3 max-w-2xl mx-auto">
+      To make shopping unbelievably fast and easy for every household.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+      <div class="p-6 bg-white shadow rounded-xl text-center">
+        <h3 class="text-xl font-semibold mb-2">Fast Delivery</h3>
+        <p class="text-gray-600">We deliver essentials in minutes—saving you time every day.</p>
+      </div>
+
+      <div class="p-6 bg-white shadow rounded-xl text-center">
+        <h3 class="text-xl font-semibold mb-2">Fresh Products</h3>
+        <p class="text-gray-600">We ensure top-quality groceries, fruits, vegetables, and dairy.</p>
+      </div>
+
+      <div class="p-6 bg-white shadow rounded-xl text-center">
+        <h3 class="text-xl font-semibold mb-2">Affordable Pricing</h3>
+        <p class="text-gray-600">Best prices with great offers and deals every day.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS SECTION -->
+  <div class="bg-gray-100 mt-20 py-14">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 text-center">
+      
+      <div>
+        <h3 class="text-4xl font-bold text-green-600">10M+</h3>
+        <p class="text-gray-600">Happy Customers</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl font-bold text-green-600">500+</h3>
+        <p class="text-gray-600">Cities Served</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl font-bold text-green-600">5K+</h3>
+        <p class="text-gray-600">Partner Stores</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl font-bold text-green-600">3,00,000+</h3>
+        <p class="text-gray-600">Daily Deliveries</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM SECTION -->
+  <div class="max-w-7xl mx-auto px-6 mt-16">
+    <h2 class="text-3xl font-semibold text-center">Our Leadership</h2>
+    <p class="text-center text-gray-600 mt-3 mb-10">Meet the people who power Blinkit</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      
+      <div class="bg-white shadow rounded-xl p-4 text-center">
+        <img src="https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2024-12/Untitled%20design%20-%202024-12-20T121815.355.jpg"
+             class="rounded-full mx-auto w-32 h-32 object-cover mb-4">
+        <h3 class="font-semibold text-lg">Amit Sharma</h3>
+        <p class="text-gray-600 text-sm">CEO</p>
+      </div>
+
+      <div class="bg-white shadow rounded-xl p-4 text-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqTHNtWa9xy5FhOrqGz0hF9Yu4gFA1KdcziA&s"
+             class="rounded-full mx-auto w-32 h-32 object-cover mb-4">
+        <h3 class="font-semibold text-lg">Neha Gupta</h3>
+        <p class="text-gray-600 text-sm">CTO</p>
+      </div>
+
+      <div class="bg-white shadow rounded-xl p-4 text-center">
+        <img src="https://blinkit.com/careers/sites/default/files/2021-05/Albi_0.png"
+             class="rounded-full mx-auto w-32 h-32 object-cover mb-4">
+        <h3 class="font-semibold text-lg">Ravi Kumar</h3>
+        <p class="text-gray-600 text-sm">Head of Operations</p>
+      </div>
+
+      <div class="bg-white shadow rounded-xl p-4 text-center">
+        <img src="https://blinkit.com/careers/sites/default/files/2021-05/Albi_0.png"
+             class="rounded-full mx-auto w-32 h-32 object-cover mb-4">
+        <h3 class="font-semibold text-lg">Priya Singh</h3>
+        <p class="text-gray-600 text-sm">Marketing Head</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- create a footer of blinkit -->
+ <footer class="bg-gray-100 mt-10 py-10">
+  <div class="max-w-7xl mx-auto px-4">
+    
+    <!-- Top Section -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-gray-700">
+      
+      <!-- About -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">About Blinkit</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="about.html" class="hover:text-black">About us</a></li>
+          <li><a href="career.html" class="hover:text-black">Careers</a></li>
+          <li><a href="press.html" class="hover:text-black">Press</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Categories</h3>
+        <ul class="space-y-2 text-sm">
+            <li><a href="404.html" class="hover:text-black">Fruits & Vegetables</a></li>
+          <li><a href="404.html" class="hover:text-black">Dairy & Bakery</a></li>
+          <li><a href="404.html" class="hover:text-black">Snacks & Beverages</a></li>
+        </ul>
+      </div>
+
+      <!-- Customer Help -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Customer Help</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="faq.html" class="hover:text-black">FAQ</a></li>
+          <li><a href="privacy.html" class="hover:text-black">Privacy Policy</a></li>
+          <li><a href="terms.html" class="hover:text-black">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Follow Us</h3>
+        <div class="flex items-center space-x-4 text-2xl text-gray-600">
+          <i class="fa fa-facebook hover:text-blue-600"></i>
+          <i class="fa fa-twitter hover:text-blue-400"></i>
+          <i class="fa fa-instagram hover:text-pink-500"></i>
+          <i class="fa fa-whatsapp hover:text-green-500"></i>
+          <i class="fa fa-snapchat hover:text-yellow-500"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-300 my-6"></div>
+
+    <!-- Bottom Section -->
+    <div class="text-center text-sm text-gray-600">
+      &copy; 2024 Blinkit. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- login form modal -->
+<el-dialog>
+  <dialog id="dialog" aria-labelledby="dialog-title" class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent top-0   mt-5">
+    <el-dialog-backdrop class="fixed inset-0 bg-gray-300 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
+
+    <div tabindex="0" class="w-100 mx-auto mt-15 min-h-full rounded-2xl items-end justify-center p-10 text-center focus:outline-none sm:items-center sm:p-0">
+      
+      <el-dialog-panel class="relative transform overflow-hidden rounded-3xl bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
+
+        <div class="bg-white p-15 px-4 pt-5 pb-4 sm:p-0 sm:pb-0">
+          <div class="sm:flex sm:items-start">
+           
+            <div class="mt-3 text-center p-10 sm:mt-0 sm:ml-4 sm:text-left">
+              <h3 id="dialog-title" class="font-semibold text-gray-900 text-4xl">Login Form</h3>
+              <div class="mt-2 ">
+                <form class="space-y-4">
+                  <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+                    <input type="email" id="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring-yellow-400 focus:border-yellow-400" placeholder="you@example.com" />
+                  </div>
+
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                        <input type="password" id="password" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring-yellow-400 focus:border-yellow-400" placeholder="Enter your password" />
+                    </div>
+
+                     <div>
+                      
+                        <input type="submit" id="password" class="mt-1 block w-full border border-red-500 bg-red-500 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring-yellow-400 focus:border-yellow-400" placeholder="Enter your password" value="Login" />
+                    </div>
+
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+          <button type="button" command="close" commandfor="dialog" class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-red-500 sm:ml-3 sm:w-auto">Deactivate</button>
+          <button type="button" command="close" commandfor="dialog" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs inset-ring inset-ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Cancel</button>
+        </div>
+      </el-dialog-panel>
+    </div>
+  </dialog>
+</el-dialog>
+<!-- cart  modal -->
+<el-dialog>
+  <dialog id="dialog1" aria-labelledby="dialog-title" class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent top-0   mt-5">
+    <el-dialog-backdrop class="fixed inset-0 bg-gray-300 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
+
+    <div tabindex="0" class="w-100 mx-auto mt-25 rounded-2xl min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0">
+      <el-dialog-panel class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
+
+        <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <div class="sm:flex sm:items-start p-10">
+           
+            <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                <h3 id="dialog-title" class="font-semibold text-gray-900 text-4xl">Cart Items</h3>
+                <div class="mt-2">
+                <p class="text-gray-500">Your cart is currently empty.</p>
+                <!-- add button go to home -->
+                <div class="mt-4">
+                   <!-- create a login button -->
+                     <button command="show-modal" commandfor="dialog"
+          class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 w-full"
+        >
+          Login
+        </button>
+                </div>
+           
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+        <a href="index.html" class="inline-block bg-red-600 text-white px-4 py-2 rounded-full hover:bg-green-700">Go to Home</a>
+        </div>
+      </el-dialog-panel>
+    </div>
+  </dialog>
+</el-dialog>
+<!-- modal js -->
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+<!-- simple JS for toggler -->
+<script>
+  const menuBtn = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+</body>
+</html>

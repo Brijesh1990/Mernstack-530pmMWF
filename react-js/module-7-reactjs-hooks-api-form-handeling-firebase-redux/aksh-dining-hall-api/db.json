@@ -1,0 +1,93 @@
+{
+  "feedback": [
+    {
+      "fullname": "aksh patel",
+      "email": "aksh@gmail.com",
+      "phone": "9998003879",
+      "rate": "5star",
+      "msg": "good i am attending merrage of my brother happy merrage date",
+      "id": "roOdJENW_rA"
+    },
+    {
+      "fullname": "jaydeep",
+      "email": "jaydeep@gmail.com",
+      "phone": "9998003879",
+      "rate": "5star",
+      "msg": "hey give me a customers care numbers i dont find but your service is nice",
+      "id": "TSCPhZ7udZc"
+    },
+    {
+      "fullname": "kumar",
+      "email": "kumar@gmail.com",
+      "phone": "9998003879",
+      "rate": "1star",
+      "msg": "hey all if not revised its forget",
+      "id": "JaNMl9LmaDc"
+    },
+    {
+      "fullname": "krishna",
+      "email": "krish0078@gmail.com",
+      "phone": "09714111189",
+      "rate": "5star",
+      "msg": "hei i am krishna and i always absent",
+      "id": "gDfHKiz-hvo"
+    },
+    {
+      "fullname": "priyanshi tilwa",
+      "email": "tilwariyanshi@gmail.com",
+      "phone": "9998003879",
+      "rate": "5star",
+      "msg": "ok good to see",
+      "id": "p9-psFQWSEs"
+    }
+  ],
+  "contact": [
+    {
+      "name": "brijesh",
+      "email": "brijesh@gmail.com",
+      "phone": "9998003879",
+      "subject": "24x7 customer support",
+      "comment": "hi",
+      "id": "DfH_MRtUYKo"
+    },
+    {
+      "name": "jinesh",
+      "email": "jinesh@gmail.com",
+      "phone": "9998003879",
+      "subject": "hi",
+      "comment": "hi",
+      "id": "WEXoy3fwAcE"
+    },
+    {
+      "name": "mitesh",
+      "email": "mitesh@gmail.com",
+      "phone": "911121546565",
+      "subject": "hi",
+      "comment": "hi",
+      "id": "nK_GiMGIT60"
+    }
+  ],
+  "addmenu": [
+    {
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQITiseVdpQ-_oRYpNCM0j4O4YKJdPmdanb0w&s",
+      "name": "margritta cheej pizza",
+      "category": "Pizza",
+      "oldprice": "255",
+      "offerprice": "205",
+      "qty": "1",
+      "description": "The ingredients of traditional pizza Margherita—tomatoes (red), mozzarella (white), and basil (green)—are held by popular legend to be inspired by the colours of the national flag of Italy",
+      "id": "FnAkNNh23wA"
+    },
+    {
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqMwasKr-NTa5EV6qWoEQzRmGPdJbNLFgPwQ&s",
+      "name": "family combo big burger",
+      "category": "Burger",
+      "oldprice": "3600",
+      "offerprice": "2550",
+      "qty": "1",
+      "description": "Plenty of Vegetarian Options, Nice Crowd, Cute Little Place, Great Recommendations, Polite Staff, Worth the Money",
+      "id": "Sr_NZUlKZYU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

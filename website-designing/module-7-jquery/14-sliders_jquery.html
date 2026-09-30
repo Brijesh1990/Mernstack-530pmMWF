@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- jquery cycle plugins -->   
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<!-- Include the Cycle plugin -->
+<script src="https://malsup.github.io/jquery.cycle2.js"></script>
+<!-- jquery slider code -->
+ <script>
+$(document).ready(function(){
+
+    $("#slide").cycle({
+        "fx":"shuffle,zoom,turnLeft",
+
+    });
+})    
+ </script>
+<style>
+body 
+{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+box-sizing: border-box;    
+}    
+#slider
+{
+width: 100%;
+height: 350px;    
+}
+#slide img 
+{
+width: 100%;
+height: 350px;    
+}
+</style>
+</head>
+<body>
+<div id="slide">
+<img src="https://rm-micro-assets.s3.ap-south-1.amazonaws.com/680f512d-a472-4830-a56f-f1586ecfa2f3-Flipkart+Business+Model+Pioneering+E-commerce+in+India.png" />
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZG8sazWm41NwBCDrIxyUFZa3HAItjynhcVDDucrbHvKIf7EzQAfm8mdU&s=10" />       
+</div>
+</body>
+</html>

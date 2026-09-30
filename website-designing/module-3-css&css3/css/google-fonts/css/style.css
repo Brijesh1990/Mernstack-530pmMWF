@@ -1,0 +1,21 @@
+body 
+{
+background-color: coral;    
+}
+div 
+{
+width: 50%;
+height: auto;
+margin: auto;
+background-color: skyblue;
+padding: 20px;
+margin-top: 5%;
+font-family: "Dancing Script", cursive;    
+}
+div h1 
+{
+font-size: 50px;
+letter-spacing: 3px;   
+/* color: blue;  */
+color: red !important;
+}

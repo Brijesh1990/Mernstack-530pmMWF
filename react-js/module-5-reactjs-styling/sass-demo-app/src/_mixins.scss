@@ -1,0 +1,14 @@
+// mixins is used to re-used css properties one block to another block
+
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin center1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

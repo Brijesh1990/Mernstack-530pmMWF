@@ -1,0 +1,13 @@
+body 
+{
+background-color: coral;    
+}
+div 
+{
+width: 50%;
+height: auto;
+margin: auto;
+margin-top: 5%;
+background-color: white;
+padding: 45px;    
+}

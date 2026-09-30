@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e6e2dd",
+                        "on-primary-container": "#ffccc8",
+                        "primary-fixed": "#ffdad7",
+                        "on-surface-variant": "#59413f",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-primary-fixed-variant": "#8e1319",
+                        "primary": "#8d1219",
+                        "tertiary-container": "#cca72f",
+                        "surface-bright": "#fdf9f4",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "on-tertiary-container": "#4e3d00",
+                        "secondary-fixed": "#ffdcbf",
+                        "outline": "#8d706e",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f4f0eb",
+                        "on-primary-fixed": "#410004",
+                        "secondary-container": "#fead5c",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#ffb3ad",
+                        "outline-variant": "#e1bfbc",
+                        "inverse-primary": "#ffb3ad",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#2d1600",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f7f3ee",
+                        "surface": "#fdf9f4",
+                        "on-tertiary-fixed": "#241a00",
+                        "tertiary": "#735c00",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#af2d2d",
+                        "primary-container": "#af2d2d",
+                        "inverse-surface": "#31302d",
+                        "surface-container-high": "#ebe8e3",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e6e2dd",
+                        "on-secondary-container": "#734000",
+                        "surface-dim": "#ddd9d5",
+                        "on-surface": "#1c1c19",
+                        "on-secondary-fixed-variant": "#6b3b00",
+                        "secondary-fixed-dim": "#ffb874",
+                        "on-background": "#1c1c19",
+                        "tertiary-fixed": "#ffe088",
+                        "background": "#fdf9f4",
+                        "surface-container": "#f1ede8",
+                        "secondary": "#8c4f00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-overlap { margin-top: -4rem; }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fdf9f4]/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-4 w-full max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-[#8d1219]">The Culinary Manuscript</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label text-sm uppercase tracking-widest text-[#1c1c19]/70 hover:text-[#8d1219] transition-colors duration-300" href="#">Our Story</a>
+<a class="font-label text-sm uppercase tracking-widest text-[#1c1c19]/70 hover:text-[#8d1219] transition-colors duration-300" href="#">Menu</a>
+<a class="font-label text-sm uppercase tracking-widest text-[#8d1219] border-b border-[#fead5c] font-bold" href="#">Private Dining</a>
+<a class="font-label text-sm uppercase tracking-widest text-[#1c1c19]/70 hover:text-[#8d1219] transition-colors duration-300" href="#">Reservations</a>
+<a class="font-label text-sm uppercase tracking-widest text-[#1c1c19]/70 hover:text-[#8d1219] transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label text-sm uppercase tracking-wider scale-95 active:scale-90 transition-transform">Book Now</button>
+</div>
+</nav>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<section class="relative w-full h-[716px] overflow-hidden px-8">
+<div class="relative w-full h-full overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover brightness-75" data-alt="luxury private dining table set with crystal glasses, fine china, and warm candlelight in a dark sophisticated room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3HF7llsKflG2tCjRPI5YKCaxuLgegqumLHlD3mXvP8dZEWRa7Phr0kWElMATTI3ANqveG7mR90rTz133QSMqKJb9yAf6tdEe-rQBauiza7_NGjnqdBslD8UZpRXu8zbVNbeH-A7nttpG-XYAqlrFzaCQY8RAlDEr4JmjCN_o8iCgKZWVN9fr8-uGxOmdCzbnCRfZluvOWxes0trZfI0ZhgdJi_E6xS7ElRCsYrv1nKY8D0BlqQvC17jOzu2d4G3nc42zTi9NITARM"/>
+<div class="absolute inset-0 flex flex-col justify-end p-12 bg-gradient-to-t from-on-surface/60 to-transparent">
+<h1 class="text-6xl md:text-8xl text-on-primary font-serif leading-tight">Private Occasions</h1>
+<p class="text-xl text-on-primary/90 font-body max-w-2xl mt-4">Elevating the art of gathering with tailored experiences and ancestral hospitality in Aksh Dining Hall's most exclusive sanctuaries.</p>
+</div>
+</div>
+</section>
+<!-- Intro Content -->
+<section class="max-w-7xl mx-auto px-8 py-24 grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-5 flex flex-col justify-center">
+<span class="text-secondary font-label uppercase tracking-widest text-sm mb-4">The Art of the Feast</span>
+<h2 class="text-5xl text-primary font-serif mb-6 leading-tight">Curated Settings for Your Most Cherished Stories</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">Whether an intimate union, a celebratory milestone, or a strategic corporate gathering, our private rooms offer the discretion and grandeur required for your most significant moments.</p>
+</div>
+<div class="md:col-span-7 flex justify-end">
+<div class="relative w-full max-w-lg aspect-[3/4] bg-surface-container-low rounded-xl overflow-hidden p-4">
+<img class="w-full h-full object-cover rounded-lg" data-alt="close up of a waiter pouring fine wine into a tall glass at a formal dining event with soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmECMEYYhyRISBRYoGTtgTQajfoTGu88-wRqNlNXEcHv64ymv8vcoA7gQzo-EMI0g60khojjC-kCTbYG-l1l8dmSzkZONnpLES9JmAre71AqMeL7FCIeHbccMZnh8lmNRSej-LK6sXnBWy1Lj_8-jHABA9usp_05XyV3NnAAGuimMdFA8ZbiDOAIUHZaD-RoyDIXE3x1gQzCAWYRgah1tM28l_4vbrMYiHVeLdf-PAEHfo1iQVY7DP-S0nzFJgSbC5k5Lp8C3B_eCp"/>
+<div class="absolute -bottom-6 -left-6 bg-surface-container-highest p-8 rounded-lg shadow-xl border border-outline-variant/10 max-w-xs">
+<p class="font-serif italic text-xl text-on-surface">"Every plate is a verse, every room a chapter."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Exclusive Spaces Bento Grid/Cards -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<h2 class="text-4xl text-on-surface font-serif">The Sanctuaries</h2>
+<p class="text-on-surface-variant mt-2">Discover the perfect backdrop for your evening.</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- The Maharaja Suite -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="opulent grand dining room with mahogany wood panels, gold chandeliers, and a long formal table set for twelve" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4RlXjBupdT830bpFeKs23urlpc_BIKkaLdTy6yGZk7UuOm6gAd_fgsmVIUWOYgGMhuDu-g4dO7px71MfXVg_4cRT_zJZQrKWx5iQrKcce7foyae00cTowhVei8fjRDr8rWwjKEUwAyinZIf34es6ZKIjF1qT1c0zl9QYECuLokAI7OVPjUOriALycx3rYsOC7ZAg0LNWsYa_27PleQeMF12zeSU1GudTfXz0bCmcO2gH8ZIH-bClopq7tw84cm_IgrmITuG6Ap7_o"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-2xl font-serif text-primary">The Maharaja Suite</h3>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-[10px] uppercase tracking-tighter px-2 py-1 rounded-full font-bold">Premier</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Our most prestigious sanctuary, featuring hand-carved mahogany panels and a dedicated butler team.</p>
+<div class="flex flex-wrap gap-4 text-xs font-label text-outline mb-8">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">groups</span>
+<span>Up to 16 Guests</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+<span>Imperial Luxury</span>
+</div>
+</div>
+<button class="w-full py-3 bg-secondary-container text-on-secondary-container rounded-lg font-label uppercase text-xs tracking-widest font-bold hover:bg-secondary hover:text-on-secondary transition-colors">Inquire Now</button>
+</div>
+</div>
+<!-- The Lotus Room -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="ethereal airy dining room with light fabric hangings, floral arrangements, and soft warm lighting for an intimate dinner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSRPMFnwik2mVQZqCTIfU9XNUuu2wJBZ_M91TcTTAsJqC_FCEnYeza-1wlt-4PaJYNMJMWA0Zii_nPGeATiAHz243BufM-Z9mNNozD83oj2Jl-OfFi7VlWbBQhbyK3qgIv2TV7_fGrxPWJEwN_eO6rDF8qiVhjVtkhAYJQeawWoUScYQ6QDXvxp6nGzuZavOzJw5M6QEKr3OQydNv9pj8RoHIQh-wzVBWLCLZdXfc_f3GQhdZ5V9FdA3tQzE54WBe9w2M8g7j6G7sH"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-2xl font-serif text-primary">The Lotus Room</h3>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">An ethereal space designed for intimate celebrations, bathed in soft ambient light and floral aromas.</p>
+<div class="flex flex-wrap gap-4 text-xs font-label text-outline mb-8">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">groups</span>
+<span>Up to 8 Guests</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">local_florist</span>
+<span>Intimate &amp; Airy</span>
+</div>
+</div>
+<button class="w-full py-3 bg-secondary-container text-on-secondary-container rounded-lg font-label uppercase text-xs tracking-widest font-bold hover:bg-secondary hover:text-on-secondary transition-colors">Inquire Now</button>
+</div>
+</div>
+<!-- The Courtyard -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="open air courtyard dining area with string lights, lush green plants, and marble flooring at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHexDMdhIrnHFTPWqZwTkGGSm9Oiv8c-ywiwTCE2EVsp8X9nlxaeoLismvi9cE1u73d0yi6JxVgftUf7dvxP1YxM0QmUGQJTl3uoY2iGmN19wU1p3ub1XWyEzXg0Q77OA4okO_MDTsOD4GvsBUIrDsS31rXua12imgXbzIkm5dQUlxec_RhHAps2_kq5TxOhIcL3HDCFwqgyjmC0CuUdUXj5v9S97Sc-325xq04-SsJqvfakCSgtz6c1nRNwLcAiKUoPe8w9cTI00J"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-2xl font-serif text-primary">The Courtyard</h3>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Experience open-air grandeur under the stars, surrounded by lush foliage and ancestral stone architecture.</p>
+<div class="flex flex-wrap gap-4 text-xs font-label text-outline mb-8">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">groups</span>
+<span>Up to 40 Guests</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">wb_twilight</span>
+<span>Al Fresco Soul</span>
+</div>
+</div>
+<button class="w-full py-3 bg-secondary-container text-on-secondary-container rounded-lg font-label uppercase text-xs tracking-widest font-bold hover:bg-secondary hover:text-on-secondary transition-colors">Inquire Now</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services / Menu Highlight -->
+<section class="max-w-7xl mx-auto px-8 py-32 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1 relative">
+<div class="grid grid-cols-2 gap-4">
+<img class="w-full aspect-square object-cover rounded-lg mt-12" data-alt="gourmet plated dish with vibrant sauces and garnishes on a ceramic plate, cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCifjepjH__8rHTTOhMkA1ckPh9-QVv5hB57G-cZsR6zbRHYXD1G0V_yEPx0qvbHIf7YeCDRqAPTvGAdop3Nf_x1ZO0T5sXt8m5rkFR5RY1vQuMn1t9AGjDwXwGGIzlLUfQC7FudrciEs0Sgpb6HAhBCd0hM9ztnlhVk11PiZFzXKBrAeDFnZrzj37NL1LNLYInHjC0vlb7IB7rkUEGntO6J5gYML7EUL-2Xda2G2HiEcmEadLj-Q6fh5xoeJx_e7L0gFjyNEJ3SHeM"/>
+<img class="w-full aspect-square object-cover rounded-lg" data-alt="rustic wooden table with several traditional indian bowls filled with colorful curries and artisanal naan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnqvQk_Mc3loKyzhtqdLQzSLukOWkLNy1DvuDIdfG4JO9-vYwIi149QQug-_Y7bWuKSrgT6lQscFy7v0WJ4Ii5Owhszeg2pInnJhTAugDH0CBrzHNhSqhuaIml576-EUaiFNnFErDyoTJBXKd-gKgB-wVhXSNbEgLDaV23krPEKM8Kge2QAhqRXeSQQDXiFr8mWGkxPvdXzOhf6nBLn5-DnL5QWawjJbQeEumrW9sDOJrl6hjMvKTg4SyzfmbXSzzGznPCTysjgdjp"/>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-primary/95 rounded-full flex items-center justify-center text-center p-4 border-4 border-surface shadow-2xl">
+<p class="text-on-primary font-serif italic text-lg leading-tight">Signature Menus Included</p>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="text-4xl text-primary font-serif mb-8">A Bespoke Culinary Narrative</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 flex-shrink-0 bg-surface-container-high rounded-full flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-2">Customized Menus</h4>
+<p class="text-sm text-on-surface-variant">Our Executive Chef works with you to design a multi-course progression that reflects your personal taste.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 flex-shrink-0 bg-surface-container-high rounded-full flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">wine_bar</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-2">Sommelier Pairings</h4>
+<p class="text-sm text-on-surface-variant">Access our vintage cellar and enjoy expert pairings curated by our master sommelier.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 flex-shrink-0 bg-surface-container-high rounded-full flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">stylus_note</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-2">Discrete Concierge</h4>
+<p class="text-sm text-on-surface-variant">From floral arrangements to audio-visual support, our team handles every detail with silent efficiency.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Inquiry Form -->
+<section class="max-w-4xl mx-auto px-8 py-24 text-center">
+<h2 class="text-5xl font-serif text-primary mb-6">Begin Your Story</h2>
+<p class="text-on-surface-variant mb-12">Submit an inquiry and our Events Director will contact you within 24 hours to begin planning your bespoke experience.</p>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+<div class="flex flex-col gap-2">
+<label class="text-xs uppercase font-label tracking-widest text-on-surface-variant">Name</label>
+<input class="bg-surface-container-high border-outline-variant/20 rounded-lg p-4 focus:ring-secondary focus:border-secondary transition-all outline-none" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs uppercase font-label tracking-widest text-on-surface-variant">Email</label>
+<input class="bg-surface-container-high border-outline-variant/20 rounded-lg p-4 focus:ring-secondary focus:border-secondary transition-all outline-none" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs uppercase font-label tracking-widest text-on-surface-variant">Space of Interest</label>
+<select class="bg-surface-container-high border-outline-variant/20 rounded-lg p-4 focus:ring-secondary focus:border-secondary transition-all outline-none">
+<option>The Maharaja Suite</option>
+<option>The Lotus Room</option>
+<option>The Courtyard</option>
+<option>Entire Hall</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs uppercase font-label tracking-widest text-on-surface-variant">Estimated Guests</label>
+<input class="bg-surface-container-high border-outline-variant/20 rounded-lg p-4 focus:ring-secondary focus:border-secondary transition-all outline-none" type="number"/>
+</div>
+<div class="md:col-span-2 flex flex-col gap-2">
+<label class="text-xs uppercase font-label tracking-widest text-on-surface-variant">Your Vision</label>
+<textarea class="bg-surface-container-high border-outline-variant/20 rounded-lg p-4 focus:ring-secondary focus:border-secondary transition-all outline-none resize-none" placeholder="Tell us about the occasion..." rows="4"></textarea>
+</div>
+<div class="md:col-span-2 pt-6">
+<button class="w-full py-4 bg-primary text-on-primary rounded-lg font-label uppercase tracking-widest font-bold shadow-lg hover:brightness-110 active:scale-95 transition-all">Request a Proposal</button>
+</div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f7f3ee] dark:bg-stone-900 w-full py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div>
+<div class="text-lg font-serif text-[#8d1219] mb-4">The Culinary Manuscript</div>
+<p class="text-xs font-sans Plus Jakarta Sans text-[#1c1c19]/60">Preserving the flavor of history through modern gastronomy and ancestral craft.</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-xs font-bold uppercase tracking-widest text-primary">Discover</span>
+<a class="text-xs text-[#1c1c19]/60 hover:text-[#8d1219] transition-opacity" href="#">Private Policy</a>
+<a class="text-xs text-[#1c1c19]/60 hover:text-[#8d1219] transition-opacity" href="#">Terms of Service</a>
+<a class="text-xs text-[#1c1c19]/60 hover:text-[#8d1219] transition-opacity" href="#">Careers</a>
+<a class="text-xs text-[#1c1c19]/60 hover:text-[#8d1219] transition-opacity" href="#">Press Kit</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-xs font-bold uppercase tracking-widest text-primary">Connect</span>
+<p class="text-xs text-[#1c1c19]/60">12 Heritage Lane, New Delhi</p>
+<p class="text-xs text-[#1c1c19]/60">+91 11 2345 6789</p>
+<p class="text-xs text-[#1c1c19]/60">events@akshdining.com</p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-xs font-bold uppercase tracking-widest text-primary">Follow Our Story</span>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center opacity-80 hover:opacity-100 cursor-pointer">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center opacity-80 hover:opacity-100 cursor-pointer">
+<span class="material-symbols-outlined text-sm">movie</span>
+</div>
+</div>
+<p class="text-[10px] text-[#1c1c19]/60 mt-4">© 2024 The Culinary Manuscript. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<!-- CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- modal script tailwinds -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</head>
+<body class="bg-amber-500">
+<!-- navbar  -->
+<nav class="bg-black text-white p-5">
+<ul class="inline-flex gap-15 mx-6">    
+<li><a href="">Home</a></li>
+<li class="relative group"><a href="">About</a>
+  <ul class="absolute bg-black p-5 hidden group-hover:block min-w-60">
+   <li><a href=""><i class="bi bi-person"></i> Chairman messages</a></li>
+   <li><a href=""><i class="bi bi-person"></i> About us</a></li>
+   <li><a href=""><i class="bi bi-person"></i> Our History</a></li> 
+  </ul>
+</li>
+<li><a href="">Services</a></li>
+<li class="relative group"><a href="">Account</a>
+  <ul class="absolute bg-black p-5 hidden group-hover:block min-w-30">
+   <li><a href=""><i class="bi bi-person"></i> Login</a></li>
+   <li><a href=""><i class="bi bi-person"></i> Register</a></li>
+   <li><a href=""><i class="bi bi-person"></i> Guest</a></li> 
+  </ul>
+</li>
+<li><button type="button" command="show-modal" commandfor="dialog">Contact</button></li>
+</ul>
+</nav>
+<div class="w-1/2 mt-15 mx-auto">
+<div class="grid grid-flow-col grid-rows-3 gap-4">  
+<div class="row-span-3 bg-pink-700">01</div>  
+<div class="col-span-2 bg-green-600">02</div>
+<div class="col-span-2 row-span-2 bg-green-950">03</div>
+</div>
+</div>
+<!-- modal for contact us -->
+<el-dialog>
+  <dialog id="dialog" aria-labelledby="dialog-title" class="fixed inset-0 size-auto max-h-none  overflow-y-auto bg-transparent backdrop:bg-transparent">
+    <el-dialog-backdrop class="fixed inset-0 bg-gray-950 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
+
+    <div  class="w-200 mx-auto ms-35 mt-15 p-4 text-center focus:outline-none sm:items-center sm:p-0">
+      <el-dialog-panel class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
+        <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <div class="mt-2">
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="w-150 p-0">
+                        <h1 class="text-xl">Contact Form</h1>
+                        <div class="form-group mt-2">
+                            <input type="text" placeholder="Name *" class="bg-gray-200 p-1 border-0 w-1/2" />
+                        </div>
+
+                         <div class="form-group mt-2">
+                            <input type="email" placeholder="Email *" class="bg-gray-200 p-1 border-0 w-1/2" />
+                        </div>
+
+                         <div class="form-group mt-2">
+                            <input type="text" placeholder="Phone *" class="bg-gray-200 p-1 border-0 w-1/2" />
+                        </div>
+                         <div class="form-group mt-2">
+                            <textarea  placeholder="Message *" class="bg-gray-200 p-1 border-0 w-1/2"></textarea>
+                        </div>
+
+                         <div class="form-group mt-2">
+                            <input type="submit" value="Send" placeholder="Name *" class="bg-gray-500 text-white p-1 border-0 w-20" />
+                        </div>
+                    </div>
+                    <div class="w-90 p-0">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.6799314943046!2d70.77238027412226!3d22.29011104326695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca248c77c099%3A0xdf5ac10af64ac8ee!2sTOPS%20Technologies!5e0!3m2!1sen!2sin!4v1764766431561!5m2!1sen!2sin" style="border:0; width: 100%; height: 250px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+          <button type="button" command="close" commandfor="dialog" class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-red-500 sm:ml-3 sm:w-auto">Ok</button>
+          <button type="button" command="close" commandfor="dialog" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs inset-ring inset-ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Cancel</button>
+        </div>
+      </el-dialog-panel>
+    </div>
+  </dialog>
+</el-dialog>
+
+</body>    

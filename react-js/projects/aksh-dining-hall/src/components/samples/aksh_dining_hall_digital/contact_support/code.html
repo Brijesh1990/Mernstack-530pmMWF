@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Support | Aksh Dining Hall</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#af2d2d",
+                    "surface-dim": "#ddd9d5",
+                    "secondary-container": "#fead5c",
+                    "background": "#fdf9f4",
+                    "outline-variant": "#e1bfbc",
+                    "surface-bright": "#fdf9f4",
+                    "primary-fixed": "#ffdad7",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#f1ede8",
+                    "surface-container-low": "#f7f3ee",
+                    "on-primary-fixed": "#410004",
+                    "tertiary": "#735c00",
+                    "surface": "#fdf9f4",
+                    "on-primary-fixed-variant": "#8e1319",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "primary": "#8d1219",
+                    "on-tertiary-container": "#4e3d00",
+                    "on-primary-container": "#ffccc8",
+                    "tertiary-fixed": "#ffe088",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e6e2dd",
+                    "on-secondary-fixed-variant": "#6b3b00",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#8c4f00",
+                    "secondary-fixed-dim": "#ffb874",
+                    "surface-container-high": "#ebe8e3",
+                    "primary-fixed-dim": "#ffb3ad",
+                    "inverse-surface": "#31302d",
+                    "surface-container-highest": "#e6e2dd",
+                    "tertiary-container": "#cca72f",
+                    "on-background": "#1c1c19",
+                    "on-secondary-container": "#734000",
+                    "on-surface-variant": "#59413f",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed": "#241a00",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#ffdcbf",
+                    "on-error": "#ffffff",
+                    "on-surface": "#1c1c19",
+                    "on-secondary-fixed": "#2d1600",
+                    "inverse-on-surface": "#f4f0eb",
+                    "inverse-primary": "#ffb3ad",
+                    "error": "#ba1a1a",
+                    "outline": "#8d706e",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#af2d2d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Plus Jakarta Sans", "sans-serif"],
+                    "label": ["Plus Jakarta Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fdf9f4;
+        }
+        .font-newsreader { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col text-on-surface">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#fdf9f4]/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="font-newsreader text-2xl font-bold tracking-tight text-[#8d1219]">Aksh Dining Hall</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="font-newsreader italic text-lg text-[#1c1c19]/70 hover:text-[#8d1219] transition-colors duration-300" href="#">Menu</a>
+<a class="font-newsreader italic text-lg text-[#1c1c19]/70 hover:text-[#8d1219] transition-colors duration-300" href="#">Reservations</a>
+<a class="font-newsreader italic text-lg text-[#1c1c19]/70 hover:text-[#8d1219] transition-colors duration-300" href="#">Private Dining</a>
+<a class="font-newsreader italic text-lg text-[#1c1c19]/70 hover:text-[#8d1219] transition-colors duration-300" href="#">Our Story</a>
+<a class="font-newsreader italic text-lg text-[#8d1219] font-semibold border-b-2 border-[#fead5c] transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-body font-medium tracking-wide hover:bg-surface-tint transition-all duration-300">Book a Table</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-32 pb-24 px-6 md:px-12 flex items-center justify-center relative overflow-hidden">
+<!-- Abstract Background Detail -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-secondary-fixed/20 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl -z-10"></div>
+<div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Headline & Intro Section -->
+<div class="lg:col-span-5 space-y-8 lg:sticky lg:top-40">
+<div>
+<h1 class="font-newsreader text-5xl md:text-6xl text-primary leading-tight font-medium">How can we <span class="italic">assist</span> you?</h1>
+<p class="mt-6 text-on-surface-variant text-lg leading-relaxed max-w-md">Whether it's a question about your reservation, dietary requirements, or a special occasion, our team is here to ensure your experience at Aksh is nothing short of exceptional.</p>
+</div>
+<div class="space-y-6 pt-6">
+<h3 class="font-newsreader text-2xl italic text-primary">Need immediate help?</h3>
+<div class="space-y-4">
+<div class="flex items-center space-x-4 group">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container transition-transform duration-300 group-hover:scale-110">
+<span class="material-symbols-outlined" data-icon="phone">phone</span>
+</div>
+<div>
+<p class="text-label text-sm text-on-surface-variant font-semibold">Call Us</p>
+<p class="font-body text-on-surface">+1 (555) 123-4567</p>
+</div>
+</div>
+<div class="flex items-center space-x-4 group">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary transition-transform duration-300 group-hover:scale-110">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<div>
+<p class="text-label text-sm text-on-surface-variant font-semibold">Email Directly</p>
+<p class="font-body text-on-surface">concierge@akshdining.com</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Image Inset -->
+<div class="relative rounded-xl overflow-hidden aspect-[16/9] shadow-sm">
+<img alt="Elegant dining table setup" class="object-cover w-full h-full" data-alt="Close-up of an elegant dining table at Aksh Dining Hall with gold cutlery, white linen, and warm atmospheric lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhscLKoHZGb6nqAtsQmuYOnWvp1aW2C_e1xnNEtRmy6x6s_NGed3u68SAB5zrvaf-eLt0iEGHV8BDCjdjvHGFA1I88PxeO_-oJPz2riw_UEFMkT916bMXWEtkuNcPU0ZeD5nHPqMIHNjXB83t-xdVvhW2BNkBANeHs-_tD-0er5ZNJONZXzEftQhl_pMvfEO2r4E2Cu-fBnxbpaAIIr6brSRuMhP7ic8Hdbbo33VrpH-ROKl563sgRv2aGTGvb56V819wepq88baFW"/>
+</div>
+</div>
+<!-- Form Container -->
+<div class="lg:col-span-7 bg-surface-container rounded-xl p-8 md:p-12 shadow-sm relative">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Name Field -->
+<div class="space-y-2">
+<label class="block font-label text-sm font-semibold text-on-surface-variant px-1" for="name">Name</label>
+<input class="w-full bg-surface-container-high border-none ring-1 ring-outline-variant/20 rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary transition-all duration-300 font-body text-on-surface placeholder-on-surface-variant/40" id="name" name="name" placeholder="Your full name" type="text"/>
+</div>
+<!-- Email Field -->
+<div class="space-y-2">
+<label class="block font-label text-sm font-semibold text-on-surface-variant px-1" for="email">Email</label>
+<input class="w-full bg-surface-container-high border-none ring-1 ring-outline-variant/20 rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary transition-all duration-300 font-body text-on-surface placeholder-on-surface-variant/40" id="email" name="email" placeholder="you@example.com" type="email"/>
+</div>
+</div>
+<!-- Order Number Field -->
+<div class="space-y-2">
+<label class="block font-label text-sm font-semibold text-on-surface-variant px-1" for="order-number">Order Number <span class="text-xs font-normal opacity-60 ml-1">(Optional)</span></label>
+<input class="w-full bg-surface-container-high border-none ring-1 ring-outline-variant/20 rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary transition-all duration-300 font-body text-on-surface placeholder-on-surface-variant/40" id="order-number" name="order-number" placeholder="e.g. AKSH-8821" type="text"/>
+</div>
+<!-- Message Field -->
+<div class="space-y-2">
+<label class="block font-label text-sm font-semibold text-on-surface-variant px-1" for="message">Message</label>
+<textarea class="w-full bg-surface-container-high border-none ring-1 ring-outline-variant/20 rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary transition-all duration-300 font-body text-on-surface placeholder-on-surface-variant/40 resize-none" id="message" name="message" placeholder="How can we help you today?" rows="6"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="pt-4">
+<button class="w-full md:w-auto bg-primary text-on-primary px-12 py-4 rounded-lg font-body font-bold text-lg tracking-wide hover:bg-surface-tint shadow-lg shadow-primary/20 transform hover:-translate-y-1 transition-all duration-300" type="submit">
+                            Send Message
+                        </button>
+<p class="mt-4 text-xs text-on-surface-variant opacity-60 text-center md:text-left">Our support team typically responds within 2 hours during service times.</p>
+</div>
+</form>
+<!-- Corner Accent -->
+<div class="absolute top-0 right-0 p-6 opacity-10">
+<span class="material-symbols-outlined text-6xl" data-icon="restaurant">restaurant</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full border-t border-[#e1bfbc]/15 bg-[#f7f3ee] mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-12 w-full max-w-screen-2xl mx-auto">
+<div class="font-newsreader text-xl font-bold text-[#8d1219] mb-6 md:mb-0">Aksh Dining Hall</div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="font-plus-jakarta-sans text-sm tracking-wide text-[#1c1c19]/60 hover:text-[#8d1219] transition-all" href="#">Privacy Policy</a>
+<a class="font-plus-jakarta-sans text-sm tracking-wide text-[#1c1c19]/60 hover:text-[#8d1219] transition-all" href="#">Terms of Service</a>
+<a class="font-plus-jakarta-sans text-sm tracking-wide text-[#1c1c19]/60 hover:text-[#8d1219] transition-all" href="#">Accessibility</a>
+<a class="font-plus-jakarta-sans text-sm tracking-wide text-[#1c1c19]/60 hover:text-[#8d1219] transition-all" href="#">Careers</a>
+</div>
+<div class="font-plus-jakarta-sans text-sm tracking-wide text-[#1c1c19]/60">
+                © 2024 Aksh Dining Hall. All Rights Reserved.
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grand Maharaja Thali - The Culinary Manuscript</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .newsreader-display { font-family: 'Newsreader', serif; }
+        .plus-jakarta-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #e1bfbc; border-radius: 10px; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed": "#410004",
+                      "primary-fixed-dim": "#ffb3ad",
+                      "outline": "#8d706e",
+                      "inverse-surface": "#31302d",
+                      "primary-fixed": "#ffdad7",
+                      "surface-dim": "#ddd9d5",
+                      "surface-container-low": "#f7f3ee",
+                      "secondary-container": "#fead5c",
+                      "primary": "#8d1219",
+                      "primary-container": "#af2d2d",
+                      "background": "#fdf9f4",
+                      "outline-variant": "#e1bfbc",
+                      "surface": "#fdf9f4",
+                      "secondary-fixed-dim": "#ffb874",
+                      "on-error-container": "#93000a",
+                      "surface-bright": "#fdf9f4",
+                      "on-primary-fixed-variant": "#8e1319",
+                      "surface-variant": "#e6e2dd",
+                      "tertiary-fixed": "#ffe088",
+                      "on-error": "#ffffff",
+                      "on-surface-variant": "#59413f",
+                      "on-surface": "#1c1c19",
+                      "inverse-primary": "#ffb3ad",
+                      "secondary-fixed": "#ffdcbf",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-high": "#ebe8e3",
+                      "surface-container-highest": "#e6e2dd",
+                      "secondary": "#8c4f00",
+                      "inverse-on-surface": "#f4f0eb",
+                      "on-tertiary-container": "#4e3d00",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed": "#2d1600",
+                      "surface-container": "#f1ede8",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed-dim": "#e9c349",
+                      "on-primary-container": "#ffccc8",
+                      "tertiary-container": "#cca72f",
+                      "surface-tint": "#af2d2d",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#1c1c19",
+                      "tertiary": "#735c00",
+                      "on-secondary-fixed-variant": "#6b3b00",
+                      "on-secondary-container": "#734000",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed-variant": "#574500",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed": "#241a00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.5rem",
+                      "xl": "1rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Newsreader"],
+                      "body": ["Plus Jakarta Sans"],
+                      "label": ["Plus Jakarta Sans"]
+              }
+            },
+          }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fdf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-md flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-90">
+<span class="material-symbols-outlined text-primary">arrow_back</span>
+</button>
+<h1 class="font-serif newsreader-display text-2xl font-bold italic text-[#8d1219] dark:text-[#ffb4ab]">The Culinary Manuscript</h1>
+</div>
+<nav class="hidden md:flex gap-8 items-center font-label font-semibold text-sm uppercase tracking-widest">
+<a class="text-[#8d1219] dark:text-[#ffb4ab] font-bold transition-opacity duration-300" href="#">Menu</a>
+<a class="text-[#1c1c19] dark:text-[#fdf9f4] hover:opacity-80 transition-opacity duration-300" href="#">Reserve</a>
+<a class="text-[#1c1c19] dark:text-[#fdf9f4] hover:opacity-80 transition-opacity duration-300" href="#">Orders</a>
+</nav>
+<div class="flex gap-4">
+<button class="hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-90">
+<span class="material-symbols-outlined text-primary">favorite</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-90">
+<span class="material-symbols-outlined text-primary">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pt-20 pb-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Hero Section: Asymmetric Image Carousel & Title -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-20">
+<div class="lg:col-span-7 relative group">
+<div class="grid grid-cols-6 grid-rows-6 gap-4 h-[500px] md:h-[700px]">
+<div class="col-span-4 row-span-6 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" data-alt="Luxurious Indian Maharaja Thali set on a rustic table with steam rising from small copper bowls, dramatic warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD34j-mo0MAR6AcATMNTdQZ25G1sVjhRbNfkbMhBHtJ815QjzxoJ13nF1-affxjhpBx6aMGQsgdQOrvecHIdt1YDxbGyYn0iBAVqfjD8mxflXOoMmL6aGbovBRh-siPq7jdLu2sXx060MlwZRfhwCoJ6BnEpplVWL8-L9_e4cCjAsq3DtE2WAM8gVJQIYcejzby0uIEEzP6H6ghjFK7CPDMk2WaZh5TSA3-8iUBVqHF-WIV8thCl_UuQTjyTqi44_tgiOvzELingu-X"/>
+</div>
+<div class="col-span-2 row-span-3 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Extreme close up of Dal Baati Churma with a generous pour of golden clarified butter ghee dripping down" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuuK0rnVzqBXEk41xZ95ZCtl-lkt_DYnBw0wSEcodNfdIFrqi7jgkuSIBZR8U484Z8jiSyB-CFTkMZdyyBAV20QjpiGghcaWShk1YsFQGHR7qOEcQOeSBQa8gQ5mkoSwhSAkpB14T2f3WRDt2cmOz6QqsGRBoVe5P4EN5LbGr1hM_yfSFnSb66u6JC9IVdMUj_c0hfC6u9m7c2y4f6uPCqNQJd3fd4iYxob1YFppilC3JmpRMfp18ZrdfA2odOSoXCaDoXMj0uxMzA"/>
+</div>
+<div class="col-span-2 row-span-3 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Close up of traditional Indian sweets including Gulab Jamun and saffron infused rice pudding on an ornate plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDepyMJhGbiRwGbCS3AMdC4fGRABJTW_nFaELP6PtMxUOE_wUijQ2UHyowuIBu-C5apIqqw1T0P5K9LU6nhuJDAsztGY-1Rr828LRAYsNSpmeLtjpscoJsKWZbntQ6_ukXgqJwa6lMO-pfquywKaD7N7p13bWD3W-g-TB56ETfG4N-JCUyZXoF1r3TmWw1__idY8nINblIg1xSfUDt4H2XjCW7i6mKxQSjlmo8la2ZwqtJLT77rUkhYWCMaWa_sQYPAq4a4jCQ90XSA"/>
+</div>
+</div>
+<!-- Float Price Label -->
+<div class="absolute -bottom-6 right-8 bg-secondary-container text-on-secondary-container px-8 py-6 rounded-xl shadow-2xl z-10">
+<p class="font-label text-xs uppercase tracking-widest font-bold mb-1">Standard Offering</p>
+<p class="font-headline text-4xl font-bold italic">₹1,250</p>
+</div>
+</div>
+<div class="lg:col-span-5 lg:pl-12 pt-10 lg:pt-20">
+<div class="inline-flex gap-2 mb-6">
+<span class="px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold uppercase tracking-widest rounded-full">Vegetarian</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant text-[10px] font-bold uppercase tracking-widest rounded-full">Contains Dairy</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-primary leading-tight mb-8">Grand Maharaja Thali</h1>
+<div class="space-y-6 relative">
+<!-- The Story -->
+<div class="relative">
+<span class="absolute -left-4 -top-4 text-7xl text-outline-variant/30 font-headline italic">“</span>
+<p class="font-headline text-xl italic text-on-surface-variant leading-relaxed">
+                            A culinary pilgrimage through the royal kitchens of Rajputana. This manuscript of flavors is curated to honor the timeless tradition of the 'Atithi Devo Bhava', where every spice tells a story of heritage, and every morsel is a tribute to the kings of old.
+                        </p>
+</div>
+<div class="pt-8 flex flex-col gap-4">
+<button class="w-full bg-primary text-on-primary py-5 rounded-lg font-label font-bold uppercase tracking-widest shadow-xl hover:opacity-90 transition-all active:scale-[0.98]">
+                            Add to My Manuscript
+                        </button>
+<button class="w-full bg-surface-container-lowest border border-outline-variant/20 text-secondary py-5 rounded-lg font-label font-bold uppercase tracking-widest hover:bg-surface-container-low transition-all">
+                            Book a Royal Table
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Dishes Breakdown: Bento-style Grid -->
+<section class="mb-24">
+<div class="flex items-baseline justify-between mb-12">
+<h2 class="font-headline text-4xl font-bold text-on-surface italic">The Anthology of Dishes</h2>
+<div class="h-[1px] flex-grow mx-8 bg-outline-variant/20"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Dish Card -->
+<div class="bg-surface-container-low p-8 rounded-xl transition-colors hover:bg-surface-container">
+<p class="font-label text-primary text-xs font-bold uppercase tracking-tighter mb-2">Heritage Star</p>
+<h3 class="font-headline text-2xl font-bold mb-3">Dal Baati Churma</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Hard wheat rolls roasted over charcoal, served with spicy panchmel dal and sweetened crushed wheat.</p>
+<div class="w-12 h-[2px] bg-secondary-container"></div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl transition-colors hover:bg-surface-container">
+<p class="font-label text-primary text-xs font-bold uppercase tracking-tighter mb-2">The Royal Stew</p>
+<h3 class="font-headline text-2xl font-bold mb-3">Gatte ki Sabzi</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Hand-rolled gram flour dumplings simmered in a velvet-smooth yogurt gravy infused with dry fenugreek.</p>
+<div class="w-12 h-[2px] bg-secondary-container"></div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl transition-colors hover:bg-surface-container">
+<p class="font-label text-primary text-xs font-bold uppercase tracking-tighter mb-2">Desert Treasure</p>
+<h3 class="font-headline text-2xl font-bold mb-3">Ker Sangri</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Wild desert berries and beans sautéed with traditional Rajasthani pickling spices and cold-pressed mustard oil.</p>
+<div class="w-12 h-[2px] bg-secondary-container"></div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl transition-colors hover:bg-surface-container">
+<p class="font-label text-primary text-xs font-bold uppercase tracking-tighter mb-2">Creamy Classic</p>
+<h3 class="font-headline text-2xl font-bold mb-3">Paneer Rajwada</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Artisanal cottage cheese cubes slow-cooked in a rich saffron-cashew paste with a hint of smoked cardamom.</p>
+<div class="w-12 h-[2px] bg-secondary-container"></div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl transition-colors hover:bg-surface-container">
+<p class="font-label text-primary text-xs font-bold uppercase tracking-tighter mb-2">Fragrant Grains</p>
+<h3 class="font-headline text-2xl font-bold mb-3">Kesariya Pulao</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Long-grain Basmati rice steamed with Kashmiri saffron strands, dried barberries, and toasted almonds.</p>
+<div class="w-12 h-[2px] bg-secondary-container"></div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl transition-colors hover:bg-surface-container">
+<p class="font-label text-primary text-xs font-bold uppercase tracking-tighter mb-2">Sweet Finale</p>
+<h3 class="font-headline text-2xl font-bold mb-3">Shahi Tukda</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Ghee-fried bread soaked in fragrant milk reduction, topped with edible silver leaf and pistachios.</p>
+<div class="w-12 h-[2px] bg-secondary-container"></div>
+</div>
+</div>
+</section>
+<!-- Customization & Ingredients -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+<div class="bg-surface-container-low rounded-2xl p-10">
+<h3 class="font-headline text-3xl font-bold mb-8">Personalize Your Feast</h3>
+<div class="space-y-6">
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary">local_drink</span>
+<div>
+<p class="font-bold text-on-surface">Malai Lassi</p>
+<p class="text-xs text-on-surface-variant">Churned yogurt with thick cream topper</p>
+</div>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-lg font-bold text-sm">+ ₹150</button>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary">water_drop</span>
+<div>
+<p class="font-bold text-on-surface">Extra Ghee</p>
+<p class="text-xs text-on-surface-variant">A2 Gir Cow Desi Ghee on the side</p>
+</div>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-lg font-bold text-sm">+ ₹80</button>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary">bakery_dining</span>
+<div>
+<p class="font-bold text-on-surface">Extra Garlic Naan</p>
+<p class="text-xs text-on-surface-variant">Clay oven roasted with fresh garlic</p>
+</div>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-lg font-bold text-sm">+ ₹95</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="font-headline text-3xl font-bold mb-6">Purity &amp; Provenance</h3>
+<p class="text-on-surface-variant mb-10 leading-relaxed">
+                    We source our spices directly from the organic farms of Nagaur and Jodhpur. Every thali is prepared using 100% pure Desi Ghee and traditional stone-ground flour to preserve the nutritional integrity of your meal.
+                </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-3 p-4 bg-surface-container-high rounded-lg">
+<span class="material-symbols-outlined text-primary">eco</span>
+<span class="font-label text-sm font-bold uppercase tracking-wider">100% Organic</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-surface-container-high rounded-lg">
+<span class="material-symbols-outlined text-primary">skillet</span>
+<span class="font-label text-sm font-bold uppercase tracking-wider">Coal Fired</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-surface-container-high rounded-lg">
+<span class="material-symbols-outlined text-primary">nutrition</span>
+<span class="font-label text-sm font-bold uppercase tracking-wider">No Preservatives</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-surface-container-high rounded-lg">
+<span class="material-symbols-outlined text-primary">verified</span>
+<span class="font-label text-sm font-bold uppercase tracking-wider">Royal Recipe</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#fdf9f4]/90 dark:bg-[#1c1c19]/90 backdrop-blur-xl shadow-[0_-8px_30px_rgb(0,0,0,0.04)] rounded-t-3xl border-t-[0.5px] border-[#e1bfbc]/20">
+<button class="flex flex-col items-center justify-center bg-[#fead5c] dark:bg-[#8c4f00] text-[#734000] dark:text-[#ffdea1] rounded-full px-6 py-2 transition-all">
+<span class="material-symbols-outlined">restaurant_menu</span>
+<span class="font-sans plus-jakarta-sans text-[11px] font-semibold uppercase tracking-wider">Menu</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#1c1c19]/60 dark:text-[#fdf9f4]/60 px-4 py-2 hover:text-[#8d1219] dark:hover:text-[#ffb4ab]">
+<span class="material-symbols-outlined">event_seat</span>
+<span class="font-sans plus-jakarta-sans text-[11px] font-semibold uppercase tracking-wider">Reserve</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#1c1c19]/60 dark:text-[#fdf9f4]/60 px-4 py-2 hover:text-[#8d1219] dark:hover:text-[#ffb4ab]">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-sans plus-jakarta-sans text-[11px] font-semibold uppercase tracking-wider">Orders</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#1c1c19]/60 dark:text-[#fdf9f4]/60 px-4 py-2 hover:text-[#8d1219] dark:hover:text-[#ffb4ab]">
+<span class="material-symbols-outlined">person</span>
+<span class="font-sans plus-jakarta-sans text-[11px] font-semibold uppercase tracking-wider">Account</span>
+</button>
+</nav>
+<div class="fixed bottom-24 md:bottom-8 left-0 right-0 z-[60] px-4 pointer-events-none" id="confirmation-banner">
+<div class="max-w-4xl mx-auto bg-surface-container-lowest/90 backdrop-blur-xl border border-outline-variant/50 shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-2xl p-5 md:p-6 pointer-events-auto flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex w-12 h-12 rounded-full bg-primary-container/20 items-center justify-center">
+<span class="material-symbols-outlined text-primary">auto_stories</span>
+</div>
+<p class="font-headline newsreader-display text-xl italic text-on-surface leading-tight text-center md:text-left">
+                'Grand Maharaja Thali' has been added to your manuscript.
+            </p>
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto">
+<button class="flex-1 md:flex-none px-8 py-3.5 bg-primary text-on-primary rounded-lg font-label font-bold uppercase tracking-widest text-[10px] shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
+                View Manuscript
+            </button>
+<button class="px-4 py-3.5 text-on-surface-variant font-label font-bold uppercase tracking-widest text-[10px] hover:bg-surface-container-high rounded-lg transition-all duration-300" onclick="document.getElementById('confirmation-banner').style.display='none'">
+                Dismiss
+            </button>
+</div>
+</div>
+</div></body></html>

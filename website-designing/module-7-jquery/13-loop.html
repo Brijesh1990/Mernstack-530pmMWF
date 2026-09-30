@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#btn1").click(function()
+{
+  var number=document.getElementById("number").value;
+  var i;
+  for(i=1;i<=number;i++)
+  {
+    if(i%2==1)
+    {
+        //document.getElementById("res").innerHTML=+i;
+        //console.log(i);
+        document.write(i,"<br>");
+    }
+  } 
+});
+})
+</script>
+</head>
+<body>
+<div style="width: 60%; height: auto; margin: auto; padding: 20px;">
+<p>print odd numbers only between 1 to 10</p>
+<p id="res"></p>    
+<input type="text" id="number" />
+<br><br>
+<button type="button" id="btn1">odd|even</button>
+</div>
+</body>
+</html>

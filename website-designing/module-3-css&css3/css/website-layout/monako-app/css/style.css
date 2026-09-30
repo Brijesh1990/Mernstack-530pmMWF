@@ -1,0 +1,138 @@
+@import url('font-face.css');
+:root 
+{
+--bg-lightpink:#ffe5de;
+--bg-orange:#fe734c;
+--bg-black:#1d2323;
+--bg-white:#fcfcfc;
+
+--text-lightpink:#ffe5de;
+--text-orange:#fe734c;
+--text-black:#1d2323;
+--text-white:#fcfcfc;
+}
+* 
+{
+font-family:dejaVuRegular;
+margin: 0;
+padding: 0;
+}
+body 
+{
+margin: 0;
+padding: 0;
+background-color: var(--bg-lightpink);
+}
+#monato-app
+{
+width: 100%;
+height: auto;    
+}
+.monato-app-content
+{
+width: 28%;
+height: auto;
+margin: auto;
+background-color: var(--bg-white);
+padding: 25px;
+margin-top: 5%;
+border-radius: 25px;
+}
+.monato-app-content h1 
+{
+text-align: center;
+font-size: 35px;
+font-weight: bolder;    
+font-family:dejaVuBold;
+}
+.monato-app-content span 
+{
+    color: var(--text-orange);    
+    font-size: 30px;
+    /* animation: flash 2s infinite; */
+    animation: flash 2s infinite;
+}
+.monato-app-content p 
+{
+ width: 60%;
+ height: auto;
+ margin: auto;
+ margin-top: 2%;       
+}
+.fa-ellipsis-h
+{
+font-size: 30px !important;
+letter-spacing: 8px;
+color: var(--text-orange);    
+}
+#btn-start 
+{
+width: 80%;
+height: auto;
+background-color: var(--bg-orange);
+color: var(--text-white);
+border: none;
+padding: 14px;
+margin-top: 5%;    
+}
+.fa-th-list
+{
+color: var(--text-orange);
+text-align: right !important;
+float: right;    
+}
+.cart-parent
+{
+display: flex;
+flex-direction: row;    
+box-shadow: 2px 2px 2px lightgray;
+border-radius: 20px;
+margin-top: 5%;
+justify-content: space-evenly;
+}
+.cart-img img
+{
+width: 85px;
+height: 65px;    
+}
+.cart-details
+{
+margin-top: 2%;
+margin-left: 10%;    
+}
+.cart-details span
+{
+margin-top: 0%;    
+font-size: 16px !important;
+margin-left: 10%;
+font-family:dejaVuRegular;
+}
+.cart-qty
+{
+margin-left: 0%;    
+width: auto;
+height: auto;   
+float: right !important;    
+}
+.cart-qty input[type="number"]
+{
+    width: 35px;
+    height: 62px;
+    line-height: 1.65;
+    background-color: #fe734c;  
+    border: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 2px;
+    border: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+    font-size: 0.8rem;
+    border-radius: 4px;
+    margin-left: 105%;
+}
+.cart-payments
+{
+margin-left: 35%;
+margin-top: 3%;    
+}

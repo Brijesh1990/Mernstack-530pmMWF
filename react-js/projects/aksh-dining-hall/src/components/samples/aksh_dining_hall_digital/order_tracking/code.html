@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Track Order | The Culinary Manuscript</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#ffdcbf",
+                    "on-primary": "#ffffff",
+                    "outline": "#8d706e",
+                    "surface-dim": "#ddd9d5",
+                    "on-secondary-fixed": "#2d1600",
+                    "primary-fixed": "#ffdad7",
+                    "secondary": "#8c4f00",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#734000",
+                    "surface-container-low": "#f7f3ee",
+                    "on-background": "#1c1c19",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e6e2dd",
+                    "surface-container-high": "#ebe8e3",
+                    "on-primary-fixed-variant": "#8e1319",
+                    "inverse-surface": "#31302d",
+                    "on-tertiary-container": "#4e3d00",
+                    "on-surface": "#1c1c19",
+                    "surface-tint": "#af2d2d",
+                    "tertiary-fixed": "#ffe088",
+                    "on-surface-variant": "#59413f",
+                    "tertiary": "#735c00",
+                    "primary": "#8d1219",
+                    "inverse-primary": "#ffb3ad",
+                    "on-tertiary-fixed": "#241a00",
+                    "outline-variant": "#e1bfbc",
+                    "surface-bright": "#fdf9f4",
+                    "primary-container": "#af2d2d",
+                    "on-error": "#ffffff",
+                    "background": "#fdf9f4",
+                    "on-primary-container": "#ffccc8",
+                    "inverse-on-surface": "#f4f0eb",
+                    "on-primary-fixed": "#410004",
+                    "surface-container": "#f1ede8",
+                    "surface-variant": "#e6e2dd",
+                    "on-secondary-fixed-variant": "#6b3b00",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface": "#fdf9f4",
+                    "secondary-fixed-dim": "#ffb874",
+                    "secondary-container": "#fead5c",
+                    "tertiary-container": "#cca72f",
+                    "primary-fixed-dim": "#ffb3ad",
+                    "on-tertiary-fixed-variant": "#574500"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Plus Jakarta Sans", "sans-serif"],
+                    "label": ["Plus Jakarta Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-red-900 dark:text-red-500 cursor-pointer active:scale-95">The Culinary Manuscript</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-stone-600 dark:text-stone-400 font-sans hover:text-red-800 transition-colors duration-300" href="#">Menu</a>
+<a class="text-stone-600 dark:text-stone-400 font-sans hover:text-red-800 transition-colors duration-300" href="#">Reservations</a>
+<a class="text-stone-600 dark:text-stone-400 font-sans hover:text-red-800 transition-colors duration-300" href="#">Our Story</a>
+<a class="text-red-900 dark:text-red-500 border-b-2 border-amber-500 pb-1 cursor-pointer active:scale-95" href="#">Track Order</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-stone-600 dark:text-stone-400 hover:text-red-800 transition-all cursor-pointer active:scale-95" data-icon="shopping_bag">shopping_bag</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/20">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="professional headshot of a person with a warm smile in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB797304bbF-6ZAMX3K7WhLcQVncxsuMuGvFj1x7r3BbJ9Eq0_aZAHvBEyqTqU_gXj6UhsIaBNGRhNfuUUz1477kQQqk2iA3rawUwlMG6EcHAydV2w4k0l3haEbk9xfTrw1RqmuhkSs1r0aR906PF1xUKMsDtplRno88yo2nnWrbqlmwAITu_yrkshOpwuSDnuJlDw7Dxlt5AhUcM0hk0MroFNkQFYx72GhkFu7rCDX5BBI-DB6wTp_EmGWUs7mr6kFA9nkspezZClS"/>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 max-w-7xl mx-auto">
+<!-- Hero Header -->
+<header class="mb-16 relative">
+<div class="absolute -left-4 top-0 w-1 h-24 bg-primary rounded-full hidden md:block"></div>
+<p class="text-secondary font-label font-semibold tracking-[0.2em] uppercase text-xs mb-3">Aksh Dining Hall</p>
+<h1 class="text-5xl md:text-6xl font-serif font-bold text-primary leading-tight">Order #CM-74291</h1>
+<p class="text-on-surface-variant mt-4 text-lg max-w-2xl">The aroma is rising. Your culinary journey is being meticulously prepared in our hearth.</p>
+</header>
+<!-- Status & Progress Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+<!-- Live Status Card -->
+<div class="lg:col-span-8 bg-surface-container-low p-8 md:p-12 relative overflow-hidden">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6">
+<div>
+<h2 class="text-3xl font-serif font-bold text-on-surface mb-2">Preparing</h2>
+<p class="text-on-surface-variant font-medium">Estimated arrival: 8:45 PM</p>
+</div>
+<div class="flex space-x-2">
+<span class="px-4 py-2 bg-tertiary-fixed text-on-tertiary-fixed rounded-full text-sm font-semibold tracking-wide">LATEST UPDATE</span>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="relative py-8">
+<div class="absolute top-1/2 left-0 w-full h-1 bg-outline-variant/30 -translate-y-1/2"></div>
+<div class="absolute top-1/2 left-0 w-2/3 h-1 bg-secondary -translate-y-1/2"></div>
+<div class="relative flex justify-between">
+<div class="flex flex-col items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center z-10 shadow-lg">
+<span class="material-symbols-outlined fill-icon" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">Received</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center z-10 shadow-lg">
+<span class="material-symbols-outlined fill-icon" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">Preparing</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center z-10">
+<span class="material-symbols-outlined" data-icon="delivery_dining">delivery_dining</span>
+</div>
+<span class="text-xs font-bold text-on-surface-variant/60 uppercase tracking-widest">Out</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center z-10">
+<span class="material-symbols-outlined" data-icon="dining">dining</span>
+</div>
+<span class="text-xs font-bold text-on-surface-variant/60 uppercase tracking-widest">Enjoy</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Map/Action Insight Card -->
+<div class="lg:col-span-4 flex flex-col gap-8">
+<div class="flex-1 bg-surface-container-highest/30 overflow-hidden relative group">
+<img alt="Delivery Map" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="abstract minimalist map visualization with elegant thin gold lines and soft cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxPgxgQkqzqBY3mINPxktOSJ9hAG35t4ceoYFouVGTkWPpI9jItOI-0t9JKYyB10vekFG6LHFUsZVFOTHJ5t2R33O4vuPz31RdffSY_4TG8k1-cvpRAFX3pNSCP23L2sbfmajegNt75yfbrIYqQnJEm4rEGpX6pJSafgY67OZXXUMix-Uwjnp6vEbJ4_LG-5icP52n-PNUOK5KeiL759W55BEzYAjjK0RJcXK8iOTyXh7bl_JSPeKcP_METAuFT5MSG-ncAuzekv48"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<div class="flex items-center gap-3 text-primary mb-2">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+<span class="font-serif font-bold text-xl">Destination</span>
+</div>
+<p class="text-on-surface text-sm leading-relaxed max-w-[200px]">124 Heritage Lane, Apartment 4B, Emerald Heights</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Order Details Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+<!-- Items Summary -->
+<section>
+<h3 class="text-3xl font-serif font-bold text-primary mb-8">Order Summary</h3>
+<div class="space-y-8">
+<div class="flex items-center gap-6 group">
+<div class="w-24 h-24 overflow-hidden">
+<img alt="Paneer Tikka" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close-up of golden grilled paneer cubes with charred edges served on an artisanal clay plate with herb garnish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCptPcIguJw0WxJ3tG2r5uAR4Izo42pIrUR_pvEieapWAJJm0ABgCnLMC3xLFroEybPF2t-iKFnVznZ91Tj40CRouqCATPEcl3hvQCx1pp3EU3Aaq1hykTvDgQ7Bj1moHi-SlqT3ySVFLWMsJXfsozquzz4GfRRJ_9HZNaLxcyFgUCPrALosoXUxsYcR6nO5cWrbVI2x6xlywRDdwcs8kjft1XA3zqI8b22ny-JMwtjAGSbGpl1QhVzkwREQXwZLrjwYz_w9HMSYMcQ"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-baseline mb-1">
+<h4 class="font-serif font-bold text-xl text-on-surface">Smoked Paneer Tikka</h4>
+<span class="text-on-surface font-medium">₹540.00</span>
+</div>
+<p class="text-on-surface-variant text-sm">Qty: 01 — Heirloom spices &amp; mustard oil</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-24 h-24 overflow-hidden">
+<img alt="Dal Makhani" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Slow-cooked creamy black lentils topped with a swirl of fresh cream and cilantro in a copper bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDTpUK6Sd-APVhTSCiZJRkO4P_HkH1wF-4J8oF-kHyWxAV7oX2ferpUqLJxLfd9NYnTfArnqLozy71DyAK7hN5X9OOLltr2STA0_DcxePbGrkTezKY9rU-WtZ6Ai_oHFB56xD6_t49rauWZu-VOpVuzxGTlMcOMTKPikTonU7ZD1_HLQxh4rPvYwGfS4KAaXDAizJ1lmsB386h8d1ApVkB0OCizOUeG0g-tRXKfp-B-Nhx00nK4MXEJggUtgW2wihPwmTwh5JfYEPG"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-baseline mb-1">
+<h4 class="font-serif font-bold text-xl text-on-surface">Manuscript Dal</h4>
+<span class="text-on-surface font-medium">₹420.00</span>
+</div>
+<p class="text-on-surface-variant text-sm">Qty: 02 — 24-hour slow cooked black lentils</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-24 h-24 overflow-hidden">
+<img alt="Garlic Naan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Soft leavened flatbread with toasted garlic and melted butter, glistening under warm restaurant light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwyisvf6ezO0vSN78UN1x10-kIOGr3dFx-YMwBEVZa7s4wVOdqWDSNd8mNDhDAIMwAYybKm5iElBzx25ql4w3rQZq4SPyH5gm7JGm8iSXHDw-A6arO5-GkyGPL2tyQJ_IRHFJfuTTo3fcgAwNU_kg807-CtbuBGvsvOYa0a8gdzf1-Irk66yEl7weUsi7Ar-DVvs7Z_usnU49kOQHX6aO_Y5xUXVuuWMw1nwkTCrtx7b2bo4R2DwKV_zX77Lmei7U88ed4Ptq2LV1Z"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-baseline mb-1">
+<h4 class="font-serif font-bold text-xl text-on-surface">Burnt Garlic Naan</h4>
+<span class="text-on-surface font-medium">₹180.00</span>
+</div>
+<p class="text-on-surface-variant text-sm">Qty: 03 — Tandoor-fired with artisanal butter</p>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-outline-variant/20">
+<div class="flex justify-between items-center text-on-surface-variant mb-3">
+<span>Subtotal</span>
+<span>₹1,140.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant mb-6">
+<span>Heritage Delivery</span>
+<span>₹60.00</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-serif font-bold text-2xl text-primary">Total Amount</span>
+<span class="font-serif font-bold text-2xl text-primary">₹1,200.00</span>
+</div>
+</div>
+</section>
+<!-- Next Steps & Actions -->
+<section class="bg-surface-container-low p-10 md:sticky md:top-32">
+<h3 class="text-3xl font-serif font-bold text-primary mb-6">Next Steps</h3>
+<p class="text-on-surface-variant mb-10 leading-relaxed">While your meal is coming to life, you can explore your previous culinary selections or finalize any pending additions.</p>
+<div class="flex flex-col gap-4">
+<button class="w-full py-4 px-8 bg-primary text-on-primary font-bold tracking-wide rounded-lg flex justify-between items-center group active:scale-[0.98] transition-all">
+<span>Proceed to Checkout</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="w-full py-4 px-8 border border-outline/30 text-primary font-bold tracking-wide rounded-lg flex justify-between items-center hover:bg-surface-container-high active:scale-[0.98] transition-all">
+<span>View Order History</span>
+<span class="material-symbols-outlined" data-icon="history">history</span>
+</button>
+</div>
+<div class="mt-12 p-6 bg-surface-container-lowest flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="contact_support">contact_support</span>
+<div>
+<h5 class="font-bold text-on-surface mb-1">Need assistance?</h5>
+<p class="text-sm text-on-surface-variant">Our concierge is available at <span class="font-semibold text-secondary">1-800-CULINARY</span> for any order adjustments.</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-stone-200/20 bg-stone-100 dark:bg-stone-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 space-y-6 md:space-y-0 max-w-7xl mx-auto">
+<div class="font-serif text-lg text-red-900 dark:text-red-500">The Culinary Manuscript</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:text-red-900 dark:hover:text-red-500 transition-all underline-offset-4" href="#">Privacy Policy</a>
+<a class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:text-red-900 dark:hover:text-red-500 transition-all underline-offset-4" href="#">Terms of Service</a>
+<a class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:text-red-900 dark:hover:text-red-500 transition-all underline-offset-4" href="#">Accessibility</a>
+<a class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:text-red-900 dark:hover:text-red-500 transition-all underline-offset-4" href="#">Contact Us</a>
+</div>
+<div class="font-sans text-sm tracking-wide text-stone-800 dark:text-stone-200">
+                © 2024 The Culinary Manuscript. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
