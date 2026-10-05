@@ -208,3 +208,94 @@ or
 
 rename table feedback to tbl_feedback;
 ```
+
+# alter :
+ 1. alter is used to add new columns | modify column name | change column name | rename column name 
+ 2. alter also used to add unique key in column name 
+ 3. drop a column name using alter 
+
+**examples**
+```
+alter table tbl_users add address text;
+or
+alter table tbl_users add email varchar(255) after name;
+or 
+alter table tbl_users change mobile phone bigint;
+or 
+alter table tbl_users drop address 
+or
+alter table tbl_users add UNIQUE (`email`);
+
+```
+
+# drop : 
+
+1. drop is used to delete database after drop we never rllback anything else 
+2. drop also used to drop or delete  table 
+
+**examples**
+```
+drop database flipkart_db_app;
+or
+drop table tbl_users
+or
+drop table tbl_feedback
+
+```
+
+# truncate :
+
+1. truncate is used to delete data from tables 
+2. after truncate we never rollback data from tables 
+
+**examples**
+```
+truncate table tbl_users;
+or
+truncate table tbl_feedback;
+or
+TRUNCATE table tbl_users;
+```
+
+# change :
+
+1. change is used in alter for change a column name 
+
+**examples**
+```
+alter table tbl_users change mobile phone bigint;
+
+```
+# DML :(data manipulation language)
+
+1. using DML we insert data in table 
+2. using DML we delete data in table 
+3. using DML we update  data in table 
+
+# DML query are 
+1. insert 
+2. delete 
+3. update 
+
+# how to insert data in tables 
+
+**examples**
+
+```
+insert into tbl_users (name,email,password,gender,hobby,phone) values('twinkle','twinkle@gmail.com','t24565526','female','teaching',9842212212);
+
+or
+
+insert into tbl_users (name,email,password,gender,hobby,phone) values('mahiraj','mahiraj@gmail.com','m24565526','male','reading',9842218645),('brijesh','brijesh@gmail.com','b24565526','male','teaching',632218645);
+or
+
+insert into tbl_users  values(null,'rupesh','rupesh@gmail.com','m24565526','male','reading',9842218645),(null,'mitesh','mitesh@gmail.com','b24565526','male','teaching',632218645);
+
+```
+# how to delete data ?
+
+**examples**
+
+```
+
+```
