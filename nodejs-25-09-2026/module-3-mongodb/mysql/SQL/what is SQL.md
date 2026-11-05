@@ -672,12 +672,297 @@ create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 # SQL joins ? 
 
+1. SQL join are used to join with matched data from one table to another tables 
+2. SQL join are used to join with common field 
+
+# types of join 
+
+1. inner join 
+2. join 
+3. outer join 
+   - left join 
+   - right join 
+   - full join 
+4. cross join 
+
+# inner join .......
+
+1. SQL inner join are used to join with matched data from one table to another tables 
+2. SQL inner join are used to join with common field 
+3. inner join are used to join one tables data with another tables with common field 
+
+**examples**
+
+```
+select tbl_users.*, cname , sname, ctname from tbl_users inner join tbl_country on tbl_users.cid=tbl_country.cid  inner join tbl_state on tbl_users.sid=tbl_state.sid inner join tbl_city on tbl_users.ctid=tbl_city.ctid;
+
+or
+
+select uid,uname,age,address,mobile, cname , sname, ctname from tbl_users inner join tbl_country on tbl_users.cid=tbl_country.cid  inner join tbl_state on tbl_users.sid=tbl_state.sid inner join tbl_city on tbl_users.ctid=tbl_city.ctid;
+
+```
+
+#  join .......
+
+1. SQL join are used to join with matched data from one table to another tables 
+2. SQL  join are used to join with common field 
+3. join are used to join one tables data with another tables with common field 
+
+**examples**
+
+```
+select tbl_users.*, cname , sname, ctname from tbl_users  join tbl_country on tbl_users.cid=tbl_country.cid   join tbl_state on tbl_users.sid=tbl_state.sid  join tbl_city on tbl_users.ctid=tbl_city.ctid;
+
+or
+
+select uid,uname,age,address,mobile, cname , sname, ctname from tbl_users  join tbl_country on tbl_users.cid=tbl_country.cid   join tbl_state on tbl_users.sid=tbl_state.sid  join tbl_city on tbl_users.ctid=tbl_city.ctid;
+
+```
+
+# outer join 
+
+ - left join 
+ - right join 
+ - full join (mysql is not supported full join)
+ - union join 
+
+# left join : 
+1. left join is used to join first table of left rows with second table of left rows if data matched return all data otherwise return null values 
+
+2. left join return all data of first table of left rows and join with second tables of left rows and return joined data with common field
+
+**examples**
+
+```
+select tbl_users.*, cname , sname, ctname from tbl_users left join tbl_country on tbl_users.cid=tbl_country.cid   left join tbl_state on tbl_users.sid=tbl_state.sid  left join tbl_city on tbl_users.ctid=tbl_city.ctid;
+
+or
+
+select uid,uname,age,address,mobile, cname , sname, ctname from tbl_users left join tbl_country on tbl_users.cid=tbl_country.cid  left join tbl_state on tbl_users.sid=tbl_state.sid left join tbl_city on tbl_users.ctid=tbl_city.ctid;
+
+or
+
+select tbl_users.*, cname  from tbl_users left join tbl_country on tbl_users.cid=tbl_country.cid;
+```
+
+
+# right join : 
+1. right join is used to join second table of right rows with first table of right rows if data matched return all data otherwise return null values 
+
+2. right join return all data of second table of right rows and join with first tables of right rows and return joined data with common field
+
+**examples**
+```
+select tbl_users.*, cname , sname, ctname from tbl_users right join tbl_country on tbl_users.cid=tbl_country.cid  right join tbl_state on tbl_users.sid=tbl_state.sid   right join  tbl_city on tbl_users.ctid=tbl_city.ctid;
+
+or
+
+select uid,uname,age,address,mobile, cname , sname, ctname from tbl_users right join tbl_country on tbl_users.cid=tbl_country.cid  right join tbl_state on tbl_users.sid=tbl_state.sid right join tbl_city on tbl_users.ctid=tbl_city.ctid;
+
+or
+
+select tbl_users.*, cname  from tbl_users right join tbl_country on tbl_users.cid=tbl_country.cid;
+```
+# full join : left join + right join 
+# note : not supported
+# union join :
+
+1. this is a combination of left and right join there we used union join 
+
+**examples**
+
+```
+select tbl_users.*, cname  from tbl_users left join tbl_country on tbl_users.cid=tbl_country.cid
+union 
+select tbl_users.*, cname  from tbl_users right join tbl_country on tbl_users.cid=tbl_country.cid;
+
+```
+# cross join :  
+  
+1. cross join are used to join tables with cross or multiplication of rows of tables and return a dublicate data 
+2. cross join only multiply or cross each rows but can not be matched data i.e a reasion its return a dublicate values of data 
+
+**examples**
+
+```
+select * from tbl_users cross join tbl_country;
+or
+select * from tbl_users cross join tbl_country cross join tbl_state cross join tbl_city;
+
+```
 # SQL string function 
 
-# SQL indexer 
+1. string function provides some inbuilt function 
+2. string function are used on string 
+
+# examples or list f string function 
+
+- length()
+- upper()
+- lower()
+- concat()
+- trim()
+- replace()
+- right()
+- left()
+
+**examples**
+
+1. select length(name) from tbl_employee;
+2. select length('twinkle') from tbl_employee where empid=2;
+3. select upper(name) from tbl_employee;
+4. select lower(name) from tbl_employee;
+5. select concat(name , salary) from tbl_employee;
+
+# SQL indexer
+
+1. indexer is used to create for speed optimizations 
+2. indexer is used  fast lookups data from tables 
+3. index create to fast search or looks ups  data or did speed optimised of tables in sql
+
+
+# how to create indexer
+<!-- there are two way to create indexer -->
+1. single column indexer
+  
+  ```
+  create index index_employee1 on tbl_employee (empid);  
+  ```
+
+2. comsposit indexer
+  
+  ```
+  create index index_employee2 on tbl_employee (empid, name, email, mobile);
+
+  ```
 
 # sql view 
 
+1. sql view create a virtual or dublicate tables of main table 
+2. sql view create a virtual tables 
+3. sql view is used to hide some data from some users there we used view 
+4. sql view create to update | insert | delete | alter in views tables its effected in its main tables 
+
+
+**examples of views**
+
+```
+create view viewname as select empid, name, email , password, mobile from tbl_employee where empid in(5,6);
+
+or
+
+create view tbl_employee_views as select empid, name, email , password, mobile from tbl_employee where empid in(5,6);
+
+or
+
+update  tbl_employee_views set name='ankit', email='ankit007@gmail.com', password='ankit@123456', mobile=635428789 where empid=6;
+
+```
+
 # SQL windows function 
 
-# SQL CTE 
+1. windows function provides some inbuilt function of SQL
+2. windows function are used to applied calculations and add unique rows in a tables 
+3. windows function are used to add or set a rows related to current row without grouping the result into a single row.
+
+# types of windows function 
+
+1.  row_number() over()
+2.  rank() over()
+3.  Ntile() over()
+4.  lag() over()
+5.  lead() over()
+6.  first_value() over()
+7.  last_value() over()
+8.  sum() over()
+9.  avg() over()
+10. count() over()
+11. max() over()
+12. min() over()
+
+
+**examples of windows**
+
+```
+1. assign a unique number t each rows there we used row_number()
+   
+   select name,salary , row_number() over(order by salary desc) from tbl_employee;
+
+2. assign a or provides a rank with gaps for dublicate values there we used rank()
+   
+   select empid , name,salary , rank() over(order by salary desc) from tbl_employee;
+
+3. provide a rows in equal group there  we used ntile()
+   
+   select empid , name,salary , ntile(2) over(order by salary desc) from tbl_employee;
+
+
+4. provide a rank without gaps for dublicate values  there  we used dense_rank()
+   
+   select empid , name,salary , dense_rank() over(order by salary desc) from tbl_employee;
+
+
+5. returns a previous rows values   there  we used lag()
+   
+   select empid , name, salary , lag(salary) over(order by salary desc) from tbl_employee;
+
+
+6. returns a next rows values   there  we used lead()
+   
+   select empid , name, salary , lead(salary) over(order by salary desc) from tbl_employee;
+
+7.  returns a first values in a windows    there  we used first_values()
+   
+   select empid , name, salary , first_value(salary) over(order by salary desc) from tbl_employee;
+
+8. returns a last values in a windows    there  we used last_values()
+   
+   select empid , name, salary , last_value(salary) over(order by salary desc) from tbl_employee;
+
+
+9. running with total sum of salary in windows    there  we used sum()
+   
+   select empid , name, salary , sum(salary) over(order by salary desc) from tbl_employee;
+
+9. running with total avg of salary in windows  there  we used avg()
+   
+   select empid , name, salary , avg(salary) over(order by salary desc) from tbl_employee;
+
+
+10. running a max of salary in windows  there  we used max()
+   
+   select empid , name, salary , max(salary) over(order by salary desc) from tbl_employee;
+
+
+11. running a min of salary in windows  there  we used min()
+   
+   select empid , name, salary , min(salary) over(order by salary desc) from tbl_employee;
+
+
+
+12. running a count of employee in windows  there  we used count()
+   
+   select empid , name, salary , count(empid) over(order by salary desc) from tbl_employee;
+
+
+
+```
+# SQL CTE or with clause ?
+
+1. SQL CTE stands for common table expression 
+2. SQL CTE is also called with clause
+3. CTE is created for some complex SQL statements making them easier to read manage and reuse there we used with or CTE(common table expression) in SQL
+
+# average salary query 
+
+```
+select avg(salary) from tbl_employee
+
+```
+
+# how to create CTE ? 
+
+```
+with AverageValueCTE as (select avg(salary) from tbl_employee) select empid, name , email, mobile, salary  from tbl_employee where salary >(select * from AverageValueCTE);
+```
+
